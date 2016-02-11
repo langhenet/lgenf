@@ -46,67 +46,67 @@ $nero: #000000;
     ),
 
     main: (
-      body:       $grigio-scuro,
-      heading:    $tortora,
-      link:       $arancio,
-      bg:         $bianco-2,
+      body:       $nero,
+      heading:    $nero,
+      link:       $nero,
+      bg:         $bianco,
 
-      accent:     $arancio,
+      accent:     $nero,
 
-      border:     $tortora,
+      border:     $nero,
 
       body-alt:   $grigio-scuro, // colore form e box
       bg-alt:     $tortora, // BG form e box
       overlay:    rgba($grigio-scuro, 0.25),
 
-      button:     $bianco-2,
+      button:     $tortora,
       button-bg:  $grigio-scuro,
     ),
 
     alternate: (
       body:       $grigio-scuro,
       heading:    $grigio-scuro,
-      link:       $arancio,
-      bg:         $bianco-1,
+      link:       $grigio-scuro,
+      bg:         $bianco,
 
-      accent:     $arancio,
+      accent:     $nero,
       border:     $tortora,
-      bg-alt:     $bianco-2,
+      bg-alt:     $grigio-scuro,
       overlay:    rgba($grigio-scuro, 0.25),
-      button:     $bianco-2,
-      button-bg:  $arancio
+      button:     $bianco,
+      button-bg:  $nero
     ),
 
     socket: (
-      body:       $bianco-2,
-      heading:    $bianco-2,
-      link:       $bianco-2,
-      bg:         $arancio,
+      body:       $nero,
+      heading:    $nero,
+      link:       $nero,
+      bg:         $tortora,
 
-      accent:     $bianco-2,
-      border:     $bianco-2,
+      accent:     $nero,
+      border:     $nero,
 
-      body-alt:   $grigio-scuro, // colore form e box
-      bg-alt:     rgba(white,0.75),
-      overlay:    rgba($grigio-scuro, 0.25),
+      body-alt:   $nero, // colore form e box
+      bg-alt:     $tortora,
+      overlay:    rgba($tortora, 0.35),
 
-      button:     $bianco-2,
-      button-bg:  $grigio-scuro
+      button:     $nero,
+      button-bg:  $tortora-leggero,
     ),
 
     footer: (
-      body:       $grigio-scuro,
-      heading:    $grigio-scuro,
-      link:       $grigio-scuro,
-      bg:         $grigio-chiaro,
+      body:       $bianco,
+      heading:    $bianco,
+      link:       $bianco,
+      bg:         $nero,
 
-      accent:     $arancio,
-      border:     $grigio-scuro,
-      bg-alt:     $bianco-1,
-      overlay:    rgba($grigio-scuro, 0.25),
+      accent:     $bianco,
+      border:     $bianco,
+      bg-alt:     $bianco,
+      overlay:    rgba($bianco, 0.25),
 
-      button:     $bianco-2,
-      button-bg:  $arancio
+      button:     $nero,
+      button-bg:  $bianco
     )
   );
 
