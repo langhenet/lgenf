@@ -10,22 +10,22 @@
 ///
   $base: 16;
   $font-size: 1.125em; //TODO
-  $line-height: 1.7777777777777777em; //TODO
+  $line-height: 2em; //TODO
 
 
 ///
 // p and other standard elements
 ///
   $margin-top: 0em; //TODO
-  $margin-bottom: 1.7777777777777777em; //TODO
+  $margin-bottom: 2em; //TODO
 
 
 ///
 // Families
 ///
-  $font-family: 'Muli', sans-serif; //TODO
-  $font-family-heading: $font-family; //TODO
-  $font-family-special: 'Lora', serif; //TODO
+  $font-family: 'Merriweather', serif; //TODO
+  $font-family-heading: 'Josefin Sans', sans-serif; //TODO
+  $font-family-special: $font-family-heading; //TODO
   $font-family-button: $font-family;
 
 
@@ -35,27 +35,27 @@
 $weights: (
   ff: (
     family: $font-family,
-    u-thin: 100,
-    thin: 100,
-    light: 200,
-    normal: 400,
-    bold: 600,
+    u-thin: 300,
+    thin: 300,
+    light: 300,
+    normal: 300,
+    bold: 300,
   ),
 
   ffh: (
     family: $font-family-heading,
     u-thin: 100,
-    thin: 200,
-    light: 200,
+    thin: 300,
+    light: 300,
     normal: 400,
-    bold: 400,
+    bold: 600,
   ),
 
   ffs: (
     family: $font-family-special,
     u-thin: 100,
-    thin: 100,
-    light: 200,
+    thin: 300,
+    light: 300,
     normal: 400,
     bold: 600,
   ),
@@ -71,31 +71,31 @@ $weights: (
       mt: $margin-top,
       mb: $margin-bottom,
       fm: family(ff, family),
-      wt: family(ff, normal),
+      wt: family(ff, light),
     ),
 
     h1: (
-      fs: 6.333333333333333em,
-      lh: 1.1228070175438596em,
-      mt: 0.2807017543859649em,
+      fs: 9.722222222222221em,
+      lh: 1.028571428571429em,
+      mt: 0.2057142857142857em,
       mb: 0em,
       fm: family(ffh, family),
-      wt: family(ffh, thin),
+      wt: family(ffh, normal),
     ),
 
     h2: (
-      fs: 3.4444444444444446em,
-      lh: 1.032258064516129em,
-      mt: 0.5161290322580645em,
-      mb: 0.5161290322580645em,
+      fs: 7.5em,
+      lh: 1.0666666666666667em,
+      mt: 0.2666666666666667em,
+      mb: 0em,
       fm: family(ffh, family),
-      wt: family(ffh, thin),
+      wt: family(ffh, u-thin),
     ),
 
     h3: (
-      fs: 1.8333333333333333em,
-      lh: 1.9393939393939394em,
-      mt: 0.9696969696969697em,
+      fs: 2.777777777777778em,
+      lh: 1.44em,
+      mt: 0.72em,
       mb: 0em,
       fm: family(ffh, family),
       wt: family(ffh, light),
@@ -103,11 +103,11 @@ $weights: (
 
     h4: (
       fs: 1em,
-      lh: 1.7777777777777777em,
-      mt: 1.7777777777777777em,
-      mb: 0em,
+      lh: 2em,
+      mt: 2em,
+      mb: 2em,
       fm: family(ffh, family),
-      wt: family(ffh, normal),
+      wt: family(ffh, bold),
     ),
 
     h5: (
@@ -116,7 +116,7 @@ $weights: (
       mt: 1.9285714em,
       mb: 0em,
       fm: family(ffh, family),
-      wt: family(ffh, normal),
+      wt: family(ffh, u-thin),
     )
 );
 
