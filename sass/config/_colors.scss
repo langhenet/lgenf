@@ -12,13 +12,12 @@
 ///
 //SETUP COLORE //TODO
 ///
-  $tortora: #c7bdb1;
-  $arancio: #db8947;
-  $grigio-scuro: #616266;
-  $grigio-chiaro: #ededeb;
-  $bianco-1: #f7f5f3;
-  $bianco-2: #fdfdf9;
-  $verde: #8BC34A;
+$tortora: #e1e1da;
+$tortora-leggero: #f6f6f3;
+$grigio-scuro: #3c3c3c;
+$grigio-chiaro: #6f6f6f;
+$bianco: #ffffff;
+$nero: #000000;
 
 ///
 // SEZIONI COLORI - //TODO Solo per progetti grossi o NO?
@@ -28,21 +27,21 @@
 
   $colors: (
     header: (
-      body:       $grigio-scuro,      //colore corpo
-      heading:    $bianco-2,          //colore titoli
-      link:       $bianco-2,          //Colore link
-      bg:         $tortora,           //Colore sfondo principale
+      body:       $bianco,      //colore corpo
+      heading:    $bianco,          //colore titoli
+      link:       $bianco,          //Colore link
+      bg:         $nero,           //Colore sfondo principale
 
-      accent:     $arancio,           //Colore accento //TOCHK
+      accent:     $bianco,           //Colore accento //TOCHK
 
-      border:     $grigio-scuro,      //Colore Bordi
+      border:     $bianco,      //Colore Bordi
 
       body-alt:   $grigio-scuro,      //colore body alternativo
       bg-alt:     $grigio-chiaro,     //Colore sfondo alternativo
-      overlay:    rgba($grigio-scuro, 0.25), //Colore overlay
+      overlay:    rgba($bianco, 0.35), //Colore overlay
 
-      button:     $bianco-2,
-      button-bg:  $arancio
+      button:     $nero,
+      button-bg:  $tortora-leggero
 
     ),
 
