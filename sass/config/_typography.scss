@@ -40,15 +40,17 @@ $weights: (
     light: 300,
     normal: 300,
     bold: 700,
+    extra: 900,
   ),
 
   ffh: (
     family: $font-family-heading,
     u-thin: 100,
-    thin: 200,
+    thin: 300,
     light: 300,
     normal: 400,
     bold: 600,
+    extra: 600,
   ),
 
   ffs: (
@@ -58,6 +60,7 @@ $weights: (
     light: 300,
     normal: 400,
     bold: 600,
+    extra: 600,
   ),
 );
 

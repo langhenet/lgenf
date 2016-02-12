@@ -18,7 +18,7 @@ $tortora-leggero: #f6f6f3;
 $grigio-scuro: #3c3c3c;
 $grigio-chiaro: #6f6f6f;
 $bianco: #ffffff;
-$nero: #000000;
+$nero: #010101;
 
 ///
 // SEZIONI COLORI - //TODO
@@ -47,16 +47,16 @@ $nero: #000000;
 
     main: (
       body:       $nero,      //colore corpo
-      body-sec:   $nero,      // Colore secondario - es blockquote
+      body-sec:   $grigio-chiaro,      // Colore secondario - es blockquote
       heading:    $nero,      //colore titoli
-      link:       $nero,,      //Colore link
+      link:       $nero,      //Colore link
       bg:         $bianco,      //Colore sfondo principale
       border:     $nero,      //Colore Bordi
 
       accent:     $nero,      //Colore accento - p.es icone / sfondo icone
 
-      body-alt:   null,      //colore body alternativo
-      bg-alt:     null,      //Colore sfondo alternativo
+      body-alt:   $nero,      //colore body alternativo
+      bg-alt:     $tortora,      //Colore sfondo alternativo
 
       overlay:    rgba($nero, 0.35),  //Colore sfondo overlay
 
@@ -85,7 +85,7 @@ $nero: #000000;
 
     socket: (
       body:       $nero,
-      body-sec:       $nero,
+      body-sec:   $nero,
       heading:    $nero,
       link:       $nero,
       bg:         $tortora,
@@ -104,7 +104,7 @@ $nero: #000000;
 
     footer: (
       body:       $bianco,
-      body-sec:       $bianco,
+      body-sec:   $bianco,
       heading:    $bianco,
       link:       $bianco,
       bg:         $nero,
@@ -113,7 +113,7 @@ $nero: #000000;
       accent:     $bianco,
 
       body-alt:   $nero, // colore form e box
-      bg-alt:     $bianco,
+      bg-alt:     $tortora,
 
       overlay:    rgba($bianco, 0.25),
 

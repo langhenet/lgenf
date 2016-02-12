@@ -42,7 +42,10 @@ ul ul, ol ol, ul ol, ol ul {
 * HEADINGS - TITOLI
 */
 
-h1, h2, h3, h4, h5 { @include deco; }
+h1, h2, h3, h4, h5 {
+  @include deco;
+  text-transform: none;
+}
 
 h1 {
   @include size(h1);
