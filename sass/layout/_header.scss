@@ -70,8 +70,10 @@
  */
 .phone-info {
   padding: 0;
-  font-size: font-size(h5, fs); //TODO
-  font-weight: font-deco(small, weight);
+  font-size: font-size(h5, fs);
+  font-family: family(ffh, family);
+  font-weight: family(ffh, bold);
+  text-transform: uppercase;
 
   span {
     color: palette(header, body);
