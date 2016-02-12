@@ -10,7 +10,8 @@
 //****************************************************************************//
 
 ///
-//SETUP COLORE //TODO
+// SETUP COLORE - //TODO
+// Segnare qui le variabili semantiche dei colori
 ///
 $tortora: #e1e1da;
 $tortora-leggero: #f6f6f3;
@@ -20,74 +21,81 @@ $bianco: #ffffff;
 $nero: #000000;
 
 ///
-// SEZIONI COLORI - //TODO Solo per progetti grossi o NO?
+// SEZIONI COLORI - //TODO
+// Usare qui le variabili semantiche segnate sopra
 ///
-
-
 
   $colors: (
     header: (
       body:       $bianco,      //colore corpo
-      heading:    $bianco,          //colore titoli
-      link:       $bianco,          //Colore link
-      bg:         $nero,           //Colore sfondo principale
-
-      accent:     $bianco,           //Colore accento //TOCHK
-
+      body-sec:   $bianco,      // Colore secondario - es blockquote
+      heading:    $bianco,      //colore titoli
+      link:       $bianco,      //Colore link
+      bg:         $nero,      //Colore sfondo principale
       border:     $bianco,      //Colore Bordi
 
+      accent:     $bianco,      //Colore accento - p.es icone / sfondo icone
+
       body-alt:   $grigio-scuro,      //colore body alternativo
-      bg-alt:     $grigio-chiaro,     //Colore sfondo alternativo
-      overlay:    rgba($bianco, 0.35), //Colore overlay
+      bg-alt:     $grigio-chiaro,      //Colore sfondo alternativo
 
-      button:     $nero,
-      button-bg:  $tortora-leggero
+      overlay:    rgba($bianco, 0.35),      //Colore sfondo overlay
 
+      button:     $nero,      //colore bottone
+      button-bg:  $tortora-leggero       //bg bottone
     ),
 
     main: (
-      body:       $nero,
-      heading:    $nero,
-      link:       $nero,
-      bg:         $bianco,
+      body:       $nero,      //colore corpo
+      body-sec:   $nero,      // Colore secondario - es blockquote
+      heading:    $nero,      //colore titoli
+      link:       $nero,,      //Colore link
+      bg:         $bianco,      //Colore sfondo principale
+      border:     $nero,      //Colore Bordi
 
-      accent:     $nero,
+      accent:     $nero,      //Colore accento - p.es icone / sfondo icone
 
-      border:     $nero,
+      body-alt:   null,      //colore body alternativo
+      bg-alt:     null,      //Colore sfondo alternativo
 
-      body-alt:   $grigio-scuro, // colore form e box
-      bg-alt:     $tortora, // BG form e box
-      overlay:    rgba($grigio-scuro, 0.25),
+      overlay:    rgba($nero, 0.35),  //Colore sfondo overlay
 
-      button:     $tortora,
-      button-bg:  $grigio-scuro,
+      button:     $tortora, //colore bottone
+      button-bg:  $grigio-scuro,  //bg bottone
     ),
 
     alternate: (
       body:       $grigio-scuro,
+      body-sec:   $grigio-scuro,
       heading:    $grigio-scuro,
       link:       $grigio-scuro,
       bg:         $bianco,
+      border:     $tortora,
 
       accent:     $nero,
-      border:     $tortora,
+
+      body-alt:   $tortora,
       bg-alt:     $grigio-scuro,
+
       overlay:    rgba($grigio-scuro, 0.25),
+
       button:     $bianco,
       button-bg:  $nero
     ),
 
     socket: (
       body:       $nero,
+      body-sec:       $nero,
       heading:    $nero,
       link:       $nero,
       bg:         $tortora,
+      border:     $nero,
 
       accent:     $nero,
-      border:     $nero,
 
       body-alt:   $nero, // colore form e box
       bg-alt:     $tortora,
+
       overlay:    rgba($tortora, 0.35),
 
       button:     $nero,
@@ -96,17 +104,21 @@ $nero: #000000;
 
     footer: (
       body:       $bianco,
+      body-sec:       $bianco,
       heading:    $bianco,
       link:       $bianco,
       bg:         $nero,
+      border:     $bianco,
 
       accent:     $bianco,
-      border:     $bianco,
+
+      body-alt:   $nero, // colore form e box
       bg-alt:     $bianco,
+
       overlay:    rgba($bianco, 0.25),
 
       button:     $nero,
-      button-bg:  $bianco
+      button-bg:  $bianco,
     )
   );
 
