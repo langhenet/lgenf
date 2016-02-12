@@ -12,18 +12,18 @@
 //                               TOP BAR - decommentare per utilizzarla
 //****************************************************************************//
 
-//*
-// * Colori e altezza
-// */
-//#top #header_meta {
-//  background-color: palette(header, bg-alt); //TODO
-//  line-height:$line-height; //TODO
-//  margin-bottom:0;
+/*
+ * Colori e altezza
+ */
+#top #header_meta {
+  background-color: transparent; //TODO
+  line-height:$line-height; //TODO
+  margin-bottom:0;
 
-//  a {
-//    color: palette(header, body); //TODO
-//  }
-// }
+  a {
+    color: palette(header, body); //TODO
+  }
+}
 
 
 ///*
@@ -94,16 +94,16 @@
   border-bottom: 2px solid;
 }
 
-///*
-// * Sezione logo: scrollato
-// */
-//.html_header_top.html_bottom_nav_header .header-scrolled .av-logo-container {
-//
-//}
+/*
+ * Sezione logo: scrollato
+ */
+.html_header_top.html_bottom_nav_header .header-scrolled .av-logo-container {
+  display: none;
+}
 
 //***********************************************************************//
 //                LOGO & NAV ## LOGO SOPRA e NAVIGAZIONE SOTTO
-//            scommentare per usare
+//                        scommentare per usare
 //***********************************************************************//
 
 
@@ -114,7 +114,7 @@
 
 
 /*
- * Altezza Logo Scrollato
+ * Altezza Nav Scrollato
  */
 .html_header_top.html_bottom_nav_header .header-scrolled .main_menu {
 line-height: $line-height * 2; //TODO
