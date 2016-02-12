@@ -89,8 +89,9 @@
  * Altezza Header
  */
 .av_minimal_header #header_main .container.av-logo-container {
-  line-height: $line-height * 2; //TODO
-  height: $line-height * 2; //TODO
+  line-height: ($line-height * 2) + 0.1;
+  height: ($line-height * 2) + 0.1; //TODO
+  border-bottom: 2px solid;
 }
 
 
@@ -109,10 +110,10 @@
 /*
  * Altezza Logo Scrollato
  */
-//.html_header_top.html_bottom_nav_header .header-scrolled .main_menu {
-//  line-height: $line-height * 2; //TODO
-//  height: $line-height * 1.5; //TODO
-//}
+.html_header_top.html_bottom_nav_header .header-scrolled .main_menu {
+line-height: $line-height * 2; //TODO
+height: $line-height * 1.5; //TODO
+}
 
 
 
@@ -165,7 +166,7 @@
   &:hover {
 
     &>a>span {
-      border-bottom: 2px solid;
+      border-bottom: 1px solid;
     }
 
     &::after { // aggiunge un elemento grafico agli elementi in hove
