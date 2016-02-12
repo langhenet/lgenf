@@ -89,8 +89,8 @@
  * Altezza Header
  */
 .av_minimal_header #header_main .container.av-logo-container {
-  line-height: $line-height * 3; //TODO
-  height: $line-height * 3; //TODO
+  line-height: $line-height * 2; //TODO
+  height: $line-height * 2; //TODO
 }
 
 
@@ -138,7 +138,7 @@
  * Impostazione navigazione
  */
 #avia-menu.av-main-nav {
-  vertical-align: top; //TODO - può essere middle o bottom anche!
+  vertical-align: middle; //TODO - può essere middle o bottom anche!
 
   &> li {
     line-height: $line-height;
@@ -161,7 +161,7 @@
   // il font family della navigazione e le decorazioni
   font-family: family(ffh, family);
   text-transform: none;
-  
+
   &:hover {
 
     &>a>span {
