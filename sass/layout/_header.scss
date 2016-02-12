@@ -160,8 +160,8 @@
 .av-main-nav > li {
   // il font family della navigazione e le decorazioni
   font-family: family(ffh, family);
-  //text-transform: uppercase;
-
+  text-transform: none;
+  
   &:hover {
 
     &>a>span {
