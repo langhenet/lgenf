@@ -163,7 +163,7 @@
   &:hover {
 
     &>a>span {
-    font-weight: 600;
+      border-bottom: 2px solid;
     }
 
     &::after { // aggiunge un elemento grafico agli elementi in hove
@@ -182,7 +182,7 @@
 
   &.current-menu-item {
     &>a>span {
-      font-weight: 600;
+      border-bottom: 2px solid;
     }
     &::after {
     //  @extend :hover::after; //estende l'elemento "corrente" con l'elemento grafico degli elementi ::hover
