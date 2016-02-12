@@ -28,7 +28,7 @@ p, ul, ol, pre, table, blockquote {
   @include body-margin;
 }
 
-ul, ol, pre, table {
+p, ul, ol, pre, table {
   @include deco();
 }
 
@@ -100,3 +100,12 @@ sub { bottom: $sub-bottom; }
 /*
  * Blockquote - citazione //TOCHK
  */
+
+/*
+ * Capolettera
+ */
+ .avia_textblock p:first-child::first-letter {
+   font-size: 6.5em;
+   float: left;
+   margin-top: 0.34em;
+ }
