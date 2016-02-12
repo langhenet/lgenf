@@ -109,7 +109,6 @@
 //***********************************************************************//
 
 /*
-<<<<<<< HEAD
  * Sovrapporre il logo centrato + nav alla topbar - il bg della topbar deve essere trasparente
  */
 .html_header_top.html_bottom_nav_header #header_main {
@@ -119,7 +118,11 @@
   bottom: 0;
   left: 0;
   right: 0;
+    @include respond-to(step-2) {
+      position: relative;
+    }
 }
+
 
 /*
  * Corregge il logo sovrapposto quando l'header scrolla - il bg della topbar deve essere trasparente
@@ -127,6 +130,7 @@
 .html_header_top.html_bottom_nav_header .header-scrolled #header_main {
   position: relative;
 }
+
 
 /*
  * Nav
