@@ -24,7 +24,7 @@ $cipria: #fce4ec;
 
 $ciano: #00bbd4;
 $ciano-morbido: #00ACC1;
-$ciano-chiaro: #4dd0e1;
+$ciano-chiaro: #80DEEA;
 $ciano-800: #00838F;
 $nuvola: #e0f7fa;
 
@@ -51,7 +51,7 @@ $verde: #4CAF50;
       accent:     $ciano,      //Accento - sfondo lista icone / grassetti / icone
 
       body-alt:   $nero,      //body alternativo - testo in un form o in un box
-      bg-alt:     $nuvola,      //sfondo alt - il bg di un form o di un box
+      bg-alt:     $ciano-chiaro,      //sfondo alt - il bg di un form o di un box
       accent-alt: $ciano-800,      //accento alt - il di un link nel form
 
       overlay:    rgba($ciano, 0.5),      //Colore sfondo overlay
