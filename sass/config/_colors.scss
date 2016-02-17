@@ -27,6 +27,7 @@ $nero: #010101;
 
   $colors: (
     header: (
+<<<<<<< HEAD
       body:       $bianco,      //colore corpo
       body-sec:   $bianco,      // Colore secondario - es blockquote
       heading:    $bianco,      //colore titoli
@@ -38,6 +39,7 @@ $nero: #010101;
 
       body-alt:   $grigio-scuro,      //colore body alternativo
       bg-alt:     $grigio-chiaro,      //Colore sfondo alternativo
+      accent-alt: null,      //accento alt - il di un link nel form
 
       overlay:    rgba($bianco, 0.35),      //Colore sfondo overlay
 
@@ -57,6 +59,7 @@ $nero: #010101;
 
       body-alt:   $nero,      //colore body alternativo
       bg-alt:     $tortora,      //Colore sfondo alternativo
+      accent-alt: null,      //accento alt - il di un link nel form
 
       overlay:    rgba($nero, 0.35),  //Colore sfondo overlay
 
@@ -76,9 +79,9 @@ $nero: #010101;
 
       body-alt:   $tortora,
       bg-alt:     $grigio-scuro,
+      accent-alt: null,      //accento alt - il di un link nel form
 
       overlay:    rgba($grigio-scuro, 0.25),
-
       button:     $bianco,
       button-bg:  $nero
     ),
@@ -95,6 +98,7 @@ $nero: #010101;
 
       body-alt:   $nero, // colore form e box
       bg-alt:     $tortora,
+      accent-alt: null,      //accento alt - il di un link nel form
 
       overlay:    rgba($tortora, 0.35),
 
@@ -114,6 +118,7 @@ $nero: #010101;
 
       body-alt:   $nero, // colore form e box
       bg-alt:     $tortora,
+      accent-alt: null,      //accento alt - il di un link nel form
 
       overlay:    rgba($bianco, 0.25),
 
