@@ -32,6 +32,7 @@
 
     blockquote {
       color: palette($palette, body-alt);
+      border-color: palette($palette, accent-alt)
     }
   }
 }
