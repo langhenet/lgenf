@@ -101,23 +101,23 @@ $verde: #4CAF50;
     ),
 
     socket: (
-      body:       null,      //Corpo - testo
-      body-sec:   null,      //Secondario - blockquote o blog meta
-      heading:    null,      //Titoli
-      link:       null,      //Link
-      bg:         null,      //Sfondo principale
-      border:     null,      //Bordi
+      body:       white,      //Corpo - testo
+      body-sec:   $cipria,      //Secondario - blockquote o blog meta
+      heading:    white,      //Titoli
+      link:       white,      //Link
+      bg:         $rosa-chiaro,      //Sfondo principale
+      border:     $rosa-shock,      //Bordi
 
-      accent:     null,      //Accento - sfondo lista icone / grassetti / icone
+      accent:     $nero,      //Accento - sfondo lista icone / grassetti / icone
 
-      body-alt:   null,      //body alternativo - testo in un form o in un box
-      bg-alt:     null,      //sfondo alt - il bg di un form o di un box
-      accent-alt: null,      //accento alt - il di un link nel form
+      body-alt:   $cipria,      //body alternativo - testo in un form o in un box
+      bg-alt:     $cipria,      //sfondo alt - il bg di un form o di un box
+      accent-alt: $rosa-shock,      //accento alt - il di un link nel form
 
-      overlay:    null,      //Colore sfondo overlay
+      overlay:    rgba($rosa-chiaro, 0.3),      //Colore sfondo overlay
 
-      button:     null,      //colore bottone
-      button-bg:  green      //bg bottone
+      button:     white,      //colore bottone
+      button-bg:  $verde      //bg bottone
     ),
 
     footer: (
