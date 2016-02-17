@@ -104,8 +104,8 @@ sub { bottom: $sub-bottom; }
 /*
  * Capolettera
  */
-.avia-section.main_color .avia_textblock p:first-child::first-letter,
-.av-layout-grid-container.main_color .avia_textblock p:first-child::first-letter {
+.avia-section.main_color .avia_textblock p:first-child:first-letter,
+.av-layout-grid-container.main_color .avia_textblock p:first-child:first-letter {
   font-size: $line-height * 3;
   line-height: 0.4em;
   float: left;

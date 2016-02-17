@@ -107,3 +107,14 @@
 //    @include respond-to(step-3) { border-left: 0;} //TODO
 //  }
 }
+
+#top .av-layout-grid-container:nth-of-type(even) .av_one_half:nth-of-type(even) {
+  width:500px;
+  //background: #111; - control
+  float:left;
+}
+
+#top .av-layout-grid-container:nth-of-type(odd) .av_one_half:first-child {
+  width:500px;
+  float:right;
+}
