@@ -80,8 +80,8 @@
 //                               FLEX CELLS
 //****************************************************************************//
 .flex_cell {
-  padding-top: $line-height * 4;
-  padding-bottom: $line-height * 4;
+  padding-top: $line-height * 2 !important;
+  padding-bottom: $line-height * 2 !important;
 //  position: relative; // se voglio overlay automatico
 
 /*
@@ -108,13 +108,51 @@
 //  }
 }
 
-#top .av-layout-grid-container:nth-of-type(even) .av_one_half:nth-of-type(even) {
-  width:500px;
-  //background: #111; - control
-  float:left;
+/*
+ * Tutte le textbox di numero dispari vengono ristrette a 500px sopra i 1170px
+ */
+.av-flex-cells .flex_cell .av_textblock_section:nth-of-type(odd) {
+    @include respond-to(step-p0) {
+    width: 500px;
+    //background: #111;  //- control
+    }
 }
 
-#top .av-layout-grid-container:nth-of-type(odd) .av_one_half:first-child {
-  width:500px;
-  float:right;
+/*
+ * Tutte le textbox di numero pari vengono fornite di bg colorato e modifcata la larghezza
+ */
+.av-flex-cells .flex_cell {
+    //Niente capolettera per le testblock pari (didascalie)
+    .av_textblock_section:nth-of-type(even) p:first-letter {
+        font-size: 1em;
+        line-height: inherit;
+        float: none;
+        margin-top: 0;
+    }
+
+
+    //nelle celle DISPARI le textblock PARI (didascalie) hanno background con overlay e larghezza più ampia
+    &:nth-of-type(odd) .av_textblock_section:nth-of-type(even) {
+    background: palette(main,overlay);
+    padding:$line-height / 2 2em;
+    width:110%;
+    margin-right:-5%;
+  }
+
+
+  //nelle celle PARI le textblock PARI (didascalie) hanno background con overlay e larghezza più ampia - ma allineate a SX
+  &:nth-of-type(even) .av_textblock_section:nth-of-type(even) {
+    background: palette(main,overlay);
+    padding:$line-height / 2 2em;
+    width:110%;
+    margin-left:-5%;
+  }
+}
+
+
+//Nelle Celle DISPARI - le textblock vengono flottate a DX
+.av-flex-cells .flex_cell:nth-of-type(odd) .av_textblock_section {
+    @include respond-to(step-p0) {
+      float:right;
+    }
 }
