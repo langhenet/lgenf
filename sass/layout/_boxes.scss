@@ -13,14 +13,6 @@
     background: palette($palette, bg-alt);
     border: 1px solid;
     border-color: palette($palette, border);
-    padding: bpad(1) 1em;
-  }
-
-  p {
-    color: palette($palette, body-alt);
-  }
-
-  blockquote {
-    color: palette($palette, body-alt);
+    padding: bpad(1) 2em;
   }
 }
