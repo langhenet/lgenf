@@ -13,8 +13,8 @@
  * Layout iconbox top icon
  */
 .iconbox_top .iconbox_content {
-  padding: bpad(1) 2em;
-  border: 2px solid;
+  padding: bpad(0) 2em;
+  border: 0px solid;
 }
 
 /*
@@ -23,7 +23,6 @@
 @each $palette, $bg in $colors {
   .#{$palette}_color .main_color.iconbox_top .iconbox_content {
     background: palette($palette, bg-alt);
-    border: 1px solid;
     border-color: palette($palette, border);
 
     p {
