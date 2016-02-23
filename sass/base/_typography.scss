@@ -101,6 +101,37 @@ sub { bottom: $sub-bottom; }
  * Blockquote - citazione //TOCHK
  */
 
+blockquote {
+  @include size(blockquote);
+
+  //margin-top: font(blockquote, mt) * 4;
+
+  border-left-width: 0;
+  padding: 0;
+
+  &:before {
+    content: "\201C";
+    font-size: 24em;
+    float:left;
+    font-family: font(blockquote, fm);
+    position: relative;
+    left: 0px;
+    top: 400px;
+    opacity: 0.3;
+  }
+
+    &:after {
+      content: "";
+    }
+
+  p {
+    @include deco(blockquote);
+
+    display: inline-block;
+    padding-left: 3em;
+  }
+}
+
 
 
 /*
