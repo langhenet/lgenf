@@ -108,7 +108,7 @@ sub { bottom: $sub-bottom; }
  */
 .avia-section.main_color .avia_textblock p:first-child:first-letter,
 .av-layout-grid-container.main_color .avia_textblock p:first-child:first-letter {
-  font-size: $line-height * 3;
+  font-size: $line-height * 3.1;
   line-height: 0.4em;
   float: left;
   margin-top: 0.3em;

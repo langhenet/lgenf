@@ -111,17 +111,31 @@
 /*
  * Tutte le textbox di numero dispari vengono ristrette a 500px sopra i 1170px
  */
-.av-flex-cells .flex_cell .av_textblock_section:nth-of-type(odd) {
-    @include respond-to(step-p0) {
-    width: 500px;
-    //background: #111;  //- control
+@include respond-to(step-p0) {
+  .av-flex-cells .flex_cell {
+    .flex_cell_inner {
+      width: 500px;
+      //background: #111;  //- control
     }
+    &:first-child .flex_cell_inner {
+      float:right;
+    }
+    &:last-child .flex_cell_inner {
+      float:left;
+    }
+  }
 }
 
 /*
  * Tutte le textbox di numero pari vengono fornite di bg colorato e modifcata la larghezza
  */
 .av-flex-cells .flex_cell {
+
+  //Mettiamo un altezza minima alle celle nel cellulare, in modo che si vedano le immagini di sfondo
+  @include respond-to(step-3) {
+    min-height: 500px;
+    background-position: bottom center !important;
+  }
     //Niente capolettera per le testblock pari (didascalie)
     .av_textblock_section:nth-of-type(even) p:first-letter {
         font-size: 1em;
@@ -137,6 +151,10 @@
     padding:$line-height / 2 2em;
     width:110%;
     margin-right:-5%;
+
+    p {
+      margin-bottom: 0;
+    }
   }
 
 
@@ -145,7 +163,11 @@
     background: palette(main,overlay);
     padding:$line-height / 2 2em;
     width:110%;
-    margin-left:-5%;
+    margin-left:-6%;
+
+    p {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -153,6 +175,6 @@
 //Nelle Celle DISPARI - le textblock vengono flottate a DX
 .av-flex-cells .flex_cell:nth-of-type(odd) .av_textblock_section {
     @include respond-to(step-p0) {
-      float:right;
+//      float:right;
     }
 }

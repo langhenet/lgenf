@@ -57,10 +57,10 @@ $nero: #010101;
       accent:     $nero,      //Colore accento - p.es icone / sfondo icone
 
       body-alt:   $nero,      //colore body alternativo
-      bg-alt:     $tortora,      //Colore sfondo alternativo
+      bg-alt:     $tortora-leggero,      //Colore sfondo alternativo
       accent-alt: null,      //accento alt - il di un link nel form
 
-      overlay:    rgba($bianco, 0.5),  //Colore sfondo overlay
+      overlay:    rgba($bianco, 0.7),  //Colore sfondo overlay
 
       button:     $tortora, //colore bottone
       button-bg:  $grigio-scuro,  //bg bottone
