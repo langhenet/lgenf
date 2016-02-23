@@ -88,6 +88,10 @@ hr { @include hr-spacing; }
 
 b, strong, em, small, code { line-height: 1; }
 
+strong, b {
+  font-weight: family(ff, bold);
+}
+
 sup {
   line-height: 0;
   position: relative;
@@ -159,9 +163,9 @@ blockquote {
  * Decorazione Link + HOVER
  */
 .content a {
-  //text-decoration: underline;
+  text-decoration: underline;
   //border-bottom: 1px dashed;
-  //font-weight: family(ff, bold);
+  font-weight: family(ff, extra);
 
   &:hover {
     //text-decoration: none;
@@ -170,7 +174,7 @@ blockquote {
   //rimuove eventuali decorazioni da immagini nel testo
   &.lightbox-added {
     border-bottom: none;
-    text-decoration: none;
+    text-decoration: underline;
   }
 }
 

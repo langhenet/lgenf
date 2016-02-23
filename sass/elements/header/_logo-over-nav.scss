@@ -90,7 +90,7 @@
  */
 .av_minimal_header #header_main .container.av-logo-container {
  line-height: ($line-height * 2) + 0.1;
- height: ($line-height * 2) + 0.1; //TODO
+ height: ($line-height * 2) + 0.05; //TODO
  border-bottom: 1px solid;
 }
 
@@ -209,4 +209,8 @@
     //  @extend :hover::after; //estende l'elemento "corrente" con l'elemento grafico degli elementi ::hover
     }
   }
+}
+
+#header_main_alternate {
+    box-shadow: -4px 3px 10px palette(header, bg);
 }
