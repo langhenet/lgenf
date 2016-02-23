@@ -13,7 +13,7 @@
  * Layout iconbox top icon
  */
 .iconbox_top .iconbox_content {
-  padding: bpad(0) 2em;
+  padding: $line-height 2em;
   border: 0px solid;
 }
 
@@ -25,6 +25,9 @@
 
 .iconbox_top .iconbox_content .iconbox_content_title {
   @include size(h3);
+
+  padding:0;
+  text-transform: none;
 }
 
 
@@ -37,13 +40,17 @@
     .iconbox_icon {
       background-color: palette($palette, accent-alt);
       color: white;
+      display:none;
     }
 
     .iconbox_content {
       background: palette($palette, bg-alt);
       border-color: palette($palette, border);
+      text-align:left;
 
       p {
+        @include size(h5);
+
         color: palette($palette, body-alt);
       }
 
