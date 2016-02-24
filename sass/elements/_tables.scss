@@ -14,13 +14,13 @@
 td {
   font-size: font(h5, fs);
   line-height: font(h5, lh) / 2;
-  padding: (font(h5, lh) / 2) 2em;
+  padding: (font(h5, lh) / 4) 2em;
   border: 0;
 }
 
 
 /*
- * La TH e la TD della prima TR
+ * La TH e la TD della prima TR - da resettare perché richiamato da tema
  */
 tr:first-child th,
 tr:first-child td {
@@ -30,7 +30,7 @@ tr:first-child td {
 
 
 /*
- * La prima TH e la prima TD delle TR
+ * La prima TH e la prima TD delle TR - da resettare perché richiamato da tema
  */
 tr th:first-child,
 tr td:first-child {
