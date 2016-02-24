@@ -59,3 +59,21 @@ tr td:first-child {
     color: palette($palette, body-alt);
   }
 }
+
+/*
+ * Riga di intestazione Tabella
+ */
+.main_color thead tr {
+
+  td,
+  th {
+    font-size: font(p, fs);
+    line-height: font(p, lh);
+  }
+
+  &:nth-child(odd),
+  &:nth-child(even), {
+    background: $tortora;
+    font-weight: family(ff, bold);
+  }
+}
