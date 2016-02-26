@@ -20,12 +20,14 @@
 ///
 $rosa-shock: #F50057;
 $rosa-chiaro: #EC407A;
+$rosa-900: #880E4F;
 $cipria: #fce4ec;
 
 $ciano: #00bbd4;
 $ciano-morbido: #00ACC1;
 $ciano-chiaro: #80DEEA;
 $ciano-800: #00838F;
+$ciano-900: #006064;
 $nuvola: #e0f7fa;
 
 $nero: #212121;
@@ -54,7 +56,7 @@ $verde: #4CAF50;
       bg-alt:     $ciano-chiaro,      //sfondo alt - il bg di un form o di un box
       accent-alt: $ciano-800,      //accento alt - il di un link nel form
 
-      overlay:    rgba($ciano, 0.5),      //Colore sfondo overlay
+      overlay:    rgba($ciano-900, 0.3),      //Colore sfondo overlay
 
       button:     white,      //colore bottone
       button-bg:  $verde,       //bg bottone
@@ -74,7 +76,7 @@ $verde: #4CAF50;
       bg-alt:     $quasi-bianco,      //sfondo alt - il bg di un form o di un box
       accent-alt: $rosa-shock,      //accento alt - il di un link nel form
 
-      overlay:    rgba($polvere, 0.3),      //Colore sfondo overlay
+      overlay:    rgba($rosa-900, 0.3),      //Colore sfondo overlay
 
       button:     white,      //colore bottone
       button-bg:  $verde       //bg bottone

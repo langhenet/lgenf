@@ -47,12 +47,12 @@ $weights: (
 
   ffh: (
     family: $font-family-heading,
-    u-thin: 400,
-    thin: 400,
-    light: 300,
-    normal: 400,
-    bold: 500,
-    u-bold: 900,
+    u-thin: 600,
+    thin: 600,
+    light: 500,
+    normal: 500,
+    bold: 700,
+    u-bold: 700,
   ),
 
   ffs: (
@@ -84,7 +84,7 @@ $weights: (
       mt: 0.39189189189189194em,
       mb: 0.39189189189189194em,
       fm: family(ffh, family),
-      wt: family(ffh, bold),
+      wt: family(ffh, light),
     ),
 
     h2: (
@@ -93,7 +93,7 @@ $weights: (
       mt: 0.6304347826086957em,
       mb: 0.6304347826086957em,
       fm: family(ffh, family),
-      wt: family(ffh, bold),
+      wt: family(ffh, light),
     ),
 
     h3: (
@@ -102,7 +102,7 @@ $weights: (
       mt: 1em,
       mb: 1em,
       fm: family(ffh, family),
-      wt: family(ffh, bold),
+      wt: family(ffh, light),
     ),
 
     h4: (
@@ -111,7 +111,7 @@ $weights: (
       mt: 1.6111111111111112em,
       mb: 0em,
       fm: family(ffh, family),
-      wt: family(ffh, normal),
+      wt: family(ffh, bold),
     ),
 
     h5: (
