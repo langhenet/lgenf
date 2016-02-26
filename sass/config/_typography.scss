@@ -23,8 +23,11 @@
 ///
 // Families
 ///
-  $font-family: 'Lato', sans-serif; //TODO
-  $font-family-heading: 'Lato', sans-serif; //TODO
+  $font-family: 'Open Sans', sans-serif; //TODO
+  //$font-family-heading: 'Roboto Slab', serif; //TODO
+  //$font-family-heading: 'Oxygen', sans-serif; //TODO
+  //$font-family-heading: 'Hind', sans-serif; //TODO
+  $font-family-heading: 'Dosis', sans-serif; //TODO
   $font-family-special: 'Lato', sans-serif; //TODO
   $font-family-button: $font-family;
 
@@ -48,7 +51,7 @@ $weights: (
     thin: 400,
     light: 300,
     normal: 400,
-    bold: 700,
+    bold: 500,
     u-bold: 900,
   ),
 
@@ -76,28 +79,28 @@ $weights: (
     ),
 
     h1: (
-      fs: 3.388888888888889em,
-      lh: 1.4262295081967213em,
-      mt: 0.4754098360655738em,
-      mb: 0em,
+      fs: 4.111111111111111em,
+      lh: 1.1756756756756759em,
+      mt: 0.39189189189189194em,
+      mb: 0.39189189189189194em,
       fm: family(ffh, family),
       wt: family(ffh, bold),
     ),
 
     h2: (
-      fs: 2.2777777777777777em,
-      lh: 1.4146341463414636em,
-      mt: 0.7073170731707318em,
-      mb: 0.7073170731707318em,
+      fs: 2.5555555555555554em,
+      lh: 1.2608695652173914em,
+      mt: 0.6304347826086957em,
+      mb: 0.6304347826086957em,
       fm: family(ffh, family),
-      wt: family(ffh, normal),
+      wt: family(ffh, bold),
     ),
 
     h3: (
       fs: 1.5em,
-      lh: 1.0740740740740742em,
-      mt: 1.0740740740740742em,
-      mb: 1.0740740740740742em,
+      lh: 1.6111111111111112em,
+      mt: 1em,
+      mb: 1em,
       fm: family(ffh, family),
       wt: family(ffh, bold),
     ),
