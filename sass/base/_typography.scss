@@ -43,7 +43,6 @@ ul ul, ol ol, ul ol, ol ul {
 */
 
 h1, h2, h3, h4, h5 {
-  text-transform: none;
 }
 
 h1 {
@@ -65,13 +64,6 @@ h2 {
   @include deco(h2);
   @include respond-to(step-2) { font-size: font(h2, fs) * 0.8; }
 }
-
-
-.template-page .entry-content-wrapper h1,
-.template-page .entry-content-wrapper h2 {
-  text-transform: uppercase;
-}
-
 
 h3 {
   @include size(h3);
