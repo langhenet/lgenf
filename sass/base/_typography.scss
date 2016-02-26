@@ -66,7 +66,8 @@ h2 {
 
 h3 {
   @include size(h3);
-  @include deco(h3);}
+  @include deco(h3);
+}
 
 h4 {
   @include size(h4);

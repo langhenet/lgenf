@@ -44,7 +44,7 @@
 
 .avia-button.avia-size-large {
   @extend %button;
-  @include button-lh(h3, 4)
+  @include button(h3, 4)
 
   font-weight: inherit; //TODO
   text-transform: uppercase;
