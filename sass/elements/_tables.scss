@@ -74,6 +74,6 @@ tr td:first-child {
   &:nth-child(odd),
   &:nth-child(even), {
     background: $tortora;
-    font-weight: family(ff, bold);
+    font-weight: family(ff, normal);
   }
 }
