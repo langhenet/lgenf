@@ -214,3 +214,57 @@
 #header_main_alternate {
     box-shadow: -4px 3px 10px palette(header, bg);
 }
+
+/******************************************************************************/
+/*                    SOTTO MENU
+/******************************************************************************/
+
+/*
+ * Padding (per allineare verticalmente) e BG del sottomenu
+ */
+ul.sub-menu {
+  padding-top: 1em;
+  margin-left: -2em;
+  li {
+    background:#fff;
+  }
+}
+
+.header-scrolled ul.sub-menu {
+  padding-top: 0.5em;
+}
+
+
+/*
+ * BG e Colore dei <li> del sottomenu
+ */
+.header_color .main_menu .menu ul.sub-menu li a,
+.header_color .main_menu ul:first-child .sub-menu > li.current-menu-item > a, .header_color .main_menu ul:first-child .sub-menu > li.current_page_item > a, .header_color .main_menu ul:first-child .sub-menu > li.active-parent-item > a,
+ #top .header_color .main_menu .menu ul.sub-menu .current_page_item > a,
+ #top .header_color .main_menu .menu ul.sub-menu .current-menu-item > a {
+  background: palette(header, body);
+  color: palette(header, bg);
+}
+
+
+/*
+ *  BG e Colore dei <li> del sottomenu - in HOVER
+ */
+#top .header_color .main_menu .menu ul li>a:hover {
+  background: palette(header, body);
+  color: palette(header, bg);
+}
+
+
+/*
+ *  Tipografia degli <a> del sottomenu
+ */
+#top .header_color .main_menu .menu ul.sub-menu li a {
+  @include size(h5);
+  @include deco(h5);
+
+  text-align: center;
+  padding: 0;
+  font-weight: family(ffh, bold);
+  margin-top:0;
+}

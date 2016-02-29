@@ -31,14 +31,15 @@
  */
 .avia-section-small .content,
 .avia-section-small .sidebar {
-  padding-top: $line-height;
-  padding-bottom: $line-height;
+  padding-top: $line-height * 2;
+  padding-bottom: $line-height * 1;
 }
 
 /*
  * SMALL padding: resetta i margini bottom degli ultimi elementi della sezione
  */
 .avia-section-small p:last-of-type,
+.avia-section-small ul:last-of-type,
 .avia-section-small .avia-button.avia-size-medium:last-of-type {
   margin-bottom: 0;
 }
@@ -49,8 +50,18 @@
 */
 .avia-section-default .content,
 .avia-section-default .sidebar {
- padding-top: $line-height * 3;
+ padding-top: $line-height * 6;
  padding-bottom: $line-height * 3;
+}
+
+
+/*
+ * NORMAL padding: resetta i margini bottom degli ultimi elementi della sezione
+ */
+.avia-section-default p:last-child,
+.avia-section-default ul:last-child,
+.avia-section-default .avia-button.avia-size-medium:last-child {
+  margin-bottom: 0;
 }
 
 
@@ -59,8 +70,8 @@
 */
 .avia-section-large .content,
 .avia-section-large .sidebar {
-  padding-top: $line-height * 4;
-  padding-bottom: $line-height * 4;
+  padding-top: $line-height * 5;
+  padding-bottom: $line-height * 5;
 }
 
 
@@ -79,6 +90,11 @@
 //****************************************************************************//
 //                               FLEX CELLS
 //****************************************************************************//
+
+.av-layout-grid-container {
+  padding: $line-height * 2 0 $line-height * 6 0;
+}
+
 .flex_cell {
   padding-top: $line-height * 2 !important;
   padding-bottom: $line-height * 2 !important;
@@ -181,4 +197,19 @@
     @include respond-to(step-p0) {
 //      float:right;
     }
+}
+
+
+//resetta i margini bottom degli ultimi elementi della sezione
+.flex_cell p:last-child,
+.flex_cell ul:last-child,
+.flex_cell .avia-button.avia-size-medium:last-child {
+  margin-bottom: 0;
+}
+
+/******************************************************************************/
+/**                           SEZIONE FW INTRO                                  /******************************************************************************/
+#intro p {
+  @include size(h3);
+  @include deco(h3);
 }
