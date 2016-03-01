@@ -25,13 +25,19 @@
    margin-bottom: 0;
  }
 
+/*
+ * Sezioni Socket
+ */
+.avia-section-small.socket_color {
+  margin-bottom: $line-height * 5;
+}
 
 /*
  * SMALL padding
  */
 .avia-section-small .content,
 .avia-section-small .sidebar {
-  padding-top: $line-height * 2;
+  padding-top: $line-height * 1;
   padding-bottom: $line-height * 1;
 }
 
@@ -50,8 +56,8 @@
 */
 .avia-section-default .content,
 .avia-section-default .sidebar {
- padding-top: $line-height * 6;
- padding-bottom: $line-height * 3;
+ padding-top: $line-height * 5;
+ padding-bottom: $line-height * 5;
 }
 
 
@@ -92,7 +98,7 @@
 //****************************************************************************//
 
 .av-layout-grid-container {
-  padding: $line-height * 2 0 $line-height * 6 0;
+  padding: $line-height * 3 0 $line-height * 6 0;
 }
 
 .flex_cell {

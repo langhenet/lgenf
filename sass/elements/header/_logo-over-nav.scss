@@ -89,9 +89,13 @@
  * Altezza Header
  */
 .av_minimal_header #header_main .container.av-logo-container {
- line-height: ($line-height * 2) + 0.1;
- height: ($line-height * 2) + 0.05; //TODO
- border-bottom: 1px solid;
+  line-height: ($line-height * 2) + 0.1;
+  height: ($line-height * 2) + 0.05; //TODO
+  border-bottom: 1px solid;
+
+  @include respond-to(step-2) {
+    border-bottom: 0;
+  }
 }
 
 
@@ -134,8 +138,13 @@
   bottom: 0;
   left: 0;
   right: 0;
-    @include respond-to(step-2) {
+  height: $line-height * 4;
+  line-height: $line-height * 4;
+background: palette(header, bg);
+    @include respond-to(step-1) {
       position: relative;
+      height: $line-height * 3;
+      line-height: $line-height * 3;
     }
 }
 
@@ -145,6 +154,11 @@
  */
 .html_header_top.html_bottom_nav_header .header-scrolled #header_main {
   position: relative;
+  height: 2em;
+  line-height: 2em;
+  @include respond-to(step-1) {
+    height: 0;
+  }
 }
 
 
