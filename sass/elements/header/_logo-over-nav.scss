@@ -18,10 +18,13 @@
   line-height:$line-height; //TODO
   margin-bottom:0;
 
+
   a {
     color: palette(header, body); //TODO
   }
 }
+
+
 
 
 ///*
@@ -104,6 +107,26 @@
  */
 .html_header_top.html_bottom_nav_header .header-scrolled .av-logo-container {
   display: none;
+  line-height:0 !important;
+  height: 0!important;
+
+///@include respond-to(step-1) {
+//////display:none !important;
+//////line-height:0 !important;
+//////height: 0!important;
+///}
+
+///@include respond-to(step-2) {
+//////display:none !important;
+//////line-height:0 !important;
+//////height: 0!important;
+///}
+
+///@include respond-to(step-0) {
+//////display:none !important;
+//////line-height:0 !important;
+//////height: 0!important;
+///}
 }
 
 /*
@@ -141,7 +164,7 @@
   height: $line-height * 4;
   line-height: $line-height * 4;
 background: palette(header, bg);
-    @include respond-to(step-1) {
+    @include respond-to(step-2) {
       position: relative;
       height: $line-height * 3;
       line-height: $line-height * 3;
@@ -157,7 +180,9 @@ background: palette(header, bg);
   height: 2em;
   line-height: 2em;
   @include respond-to(step-1) {
-    height: 0;
+    height: 0em;
+    line-height: 0em;
+    position: relative;
   }
 }
 

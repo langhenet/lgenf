@@ -65,7 +65,7 @@
 ///
 %button {
   display:inline-block;
-  font-family: inherit; //TODO
+  font-family: font(h1, fm); //TODO
   white-space: normal;
   border-style: solid;
   box-shadow: $button-shadow;
@@ -91,6 +91,7 @@
 
   border-bottom-width: $bw * 1px;
   border-top-width: $bw * 1px;
+  font-weight: font($size, wt);
 }
 
 ///
@@ -165,8 +166,9 @@
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 0;
-  font-weight: form(label, weight);
-  text-transform: none; //TODO //TOCR
+  font-weight: form(label, wt);
+  font-family: form(label, fm);
+  text-transform: uppercase; //TODO //TOCR
   letter-spacing: 0px;
 }
 
@@ -178,7 +180,8 @@
   line-height: font($size, lh);
   font-style: none;
   margin:0;
-  font-weight: form(desc, weight);
+  font-weight: form(desc, wt);
+  font-family: form(desc, fm);
   text-transform: none; //TODO //TOCR
   letter-spacing: 0;
 }
@@ -223,12 +226,12 @@
 ///
 // Overlay di colore da mettere sui ::before //TOCR
 ///
-@mixin color-overlay($bg-color: palette(main, overlay)) {
+@mixin color-overlay($bg: main) {
   content: '';
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left:0;
-  background: $bg-color;
+  background: palette($bg, overlay);
 }

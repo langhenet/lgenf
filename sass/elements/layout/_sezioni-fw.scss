@@ -29,6 +29,7 @@
  * Sezioni Socket
  */
 .avia-section-small.socket_color {
+  margin-top: $line-height * 5;
   margin-bottom: $line-height * 5;
 }
 
@@ -97,9 +98,9 @@
 //                               FLEX CELLS
 //****************************************************************************//
 
-.av-layout-grid-container {
-  padding: $line-height * 3 0 $line-height * 6 0;
-}
+//.av-layout-grid-container {
+//  padding: $line-height * 3 0 $line-height * 6 0;
+//}
 
 .flex_cell {
   padding-top: $line-height * 2 !important;
@@ -215,7 +216,22 @@
 
 /******************************************************************************/
 /**                           SEZIONE FW INTRO                                  /******************************************************************************/
-#intro p {
-  @include size(h3);
-  @include deco(h3);
+#intro {
+
+  position: relative;
+
+  &::before {
+    @include color-overlay(header);
+  }
+
+  p {
+    @include size(h3);
+    @include deco(h3);
+  }
+}
+
+@include respond-to(step-2){
+  .container {
+   padding: 0 1em;
+  }
 }

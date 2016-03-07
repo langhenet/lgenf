@@ -30,7 +30,6 @@
   @extend %button;
   @include button(h5, 1);
 
-  font-weight: button-deco(small, weight);
   text-transform: uppercase;
 }
 
@@ -38,7 +37,7 @@
   @extend %button;
   @include button(p, 2);
 
-  font-weight: inherit; //TODO
+  font-weight: family(ffh, bold);
   text-transform: uppercase;
 }
 
@@ -46,7 +45,6 @@
   @extend %button;
   @include button-lh(h3, 4)
 
-  font-weight: inherit; //TODO
   text-transform: uppercase;
 }
 
@@ -54,7 +52,6 @@
   @extend %button;
   @include button(h2, 6, half);
 
-  font-weight: inherit; //TODO
   text-transform: uppercase;
 }
 

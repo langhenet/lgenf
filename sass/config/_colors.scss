@@ -40,7 +40,7 @@ $nero: #010101;
       bg-alt:     $grigio-chiaro,      //Colore sfondo alternativo
       accent-alt: null,      //accento alt - il di un link nel form
 
-      overlay:    rgba($nero, 0.15),      //Colore sfondo overlay
+      overlay:    rgba($nero, 0.35),      //Colore sfondo overlay
 
       button:     $nero,      //colore bottone
       button-bg:  $tortora-leggero       //bg bottone
@@ -52,18 +52,18 @@ $nero: #010101;
       heading:    $nero,      //colore titoli
       link:       $nero,      //Colore link
       bg:         $bianco,      //Colore sfondo principale
-      border:     $nero,      //Colore Bordi
+      border:     $tortora,      //Colore Bordi
 
       accent:     $nero,      //Colore accento - p.es icone / sfondo icone
 
       body-alt:   $nero,      //colore body alternativo
-      bg-alt:     $tortora-leggero,      //Colore sfondo alternativo
+      bg-alt:     $tortora,      //Colore sfondo alternativo
       accent-alt: null,      //accento alt - il di un link nel form
 
       overlay:    rgba($bianco, 0.7),  //Colore sfondo overlay
 
-      button:     $tortora, //colore bottone
-      button-bg:  $grigio-scuro,  //bg bottone
+      button:     $tortora-leggero, //colore bottone
+      button-bg:  $grigio-chiaro,  //bg bottone
     ),
 
     alternate: (
@@ -92,18 +92,18 @@ $nero: #010101;
       heading:    $nero,
       link:       $nero,
       bg:         $tortora,
-      border:     $nero,
+      border:     $tortora,
 
       accent:     $nero,
 
       body-alt:   $nero, // colore form e box
-      bg-alt:     $tortora,
+      bg-alt:     $tortora-leggero,
       accent-alt: null,      //accento alt - il di un link nel form
 
       overlay:    rgba($tortora, 0.35),
 
-      button:     $nero,
-      button-bg:  $tortora-leggero,
+      button:     $bianco,
+      button-bg:  $grigio-chiaro,
     ),
 
     footer: (
@@ -134,7 +134,7 @@ $nero: #010101;
 ///
 // Ombra
 ///
-$button-shadow: 0 0.07em 0.085em 0 rgba(0, 0, 0, 0.26);
+$button-shadow: 0 0.14em 0.4em 0 rgba(0, 0, 0, 0.26);
 
 
 ///

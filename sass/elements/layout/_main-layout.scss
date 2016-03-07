@@ -86,7 +86,17 @@ body .column-top-margin {
     @include deco(h1);
     display: block;
     text-align: center;
-    
+    @include respond-to(step-2) {
+      font-size: font(h1, fs) * 0.8;
+      line-height: font(h1, lh) * 0.8;
+      margin-bottom: font(h1, mt) * 1;
+    }
+
+    @include respond-to(step-3) {
+      font-size: font(h1, fs) * 0.7;
+      line-height: font(h1, lh) * 0.7;
+    }
+
   }
 
  .breadcrumb {

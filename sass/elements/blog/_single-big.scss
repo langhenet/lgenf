@@ -34,8 +34,8 @@
 
   @include deco(h1);
 
-  @include respond-to(step-3) {
-    font-size: 5.5em;
+  @include respond-to(step-1) {
+    font-size: 5em;
   }
 }
 

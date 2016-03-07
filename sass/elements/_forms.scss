@@ -199,12 +199,12 @@
 
 #top .gform_wrapper .gform_footer input.button {
   @extend %button;
-  @include button-lh(h3, 4); //TODO
+  @include button(h3, 4, quarter); //TODO
 
   width: 100%;
   border-right-width: 0;
   border-left-width: 0;
-  text-transform: uppercase; //TODO
+  text-transform: none; //TODO
   font-weight: inherit; //TODO
 }
 

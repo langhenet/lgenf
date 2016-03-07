@@ -51,7 +51,7 @@
     }
 
     .iconbox_content {
-      background: palette($palette, bg-alt);
+      background: lighten(palette($palette, bg-alt), 9.2%);
       border-color: palette($palette, border);
       text-align:left;
 
