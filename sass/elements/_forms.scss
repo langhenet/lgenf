@@ -123,6 +123,7 @@
   ///
   select {
     height: $line-height;
+    padding: 0 1em;
 
       option {
         font-size: font-size(h5, fs); //TODO
@@ -243,7 +244,7 @@
 #top .main_color select,
 #top .main_color .select2-container .select2-choice {
   border-color: palette(main, border);
-  background: palette(main, bg);
+  background-color: palette(main, bg);
   color: palette(main, body-alt);
 }
 
@@ -263,7 +264,7 @@
  * SOCKET COLOR - - bg del form e dei link
  */
 .socket_color .gform_wrapper {
-  background: palette(socket, bg-alt);
+  background-color: palette(socket, bg-alt);
 
   a {
     color: palette(socket, body-alt);
@@ -278,6 +279,29 @@
 #top .socket_color label,
 #top .socket_color .gfield_description {
   color: palette(socket, body-alt);
+}
+
+
+
+/*
+ * SOCKET COLOR - - bg del form e dei link
+ */
+.alternate_color .gform_wrapper {
+  background-color: palette(alternate, bg-alt);
+
+  a {
+    color: palette(alternate, body-alt);
+    text-decoration: underline;
+  }
+}
+
+
+/*
+ * SOCKET COLOR - label e descrizioni
+ */
+#top .alternate_color label,
+#top .alternate_color .gfield_description {
+  color: palette(alternate, body-alt);
 }
 
 

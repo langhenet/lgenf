@@ -56,16 +56,64 @@ body .column-top-margin {
   background: #fff;
 }
 
+
+
 /******************************************************************************/
-/* FEAT HEADER
+/* FEAT HEADER - categorie
 /******************************************************************************/
-#top .title_container {
+
+.title_container {
+  background: palette(main, bg-alt);
+
+  .main-title {
+    @include size(p);
+    @include deco(h3);
+    line-height: $line-height * 2;
+    font-weight: family(ffh, bold);
+  }
+
+   .breadcrumb {
+     @include size(h5);
+     @include deco(h5);
+     color: palette(main, body-alt);
+     font-weight: family(ffh,bold);
+     top: -25%;
+   }
+
+}
+
+#top .title_container .container {
+  padding-top: $line-height * 0;
+  padding-bottom: $line-height * 0;
+  min-height: auto;
+  line-height: $line-height;
+}
+
+.alternate_color .breadcrumb,
+.alternate_color .breadcrumb a,
+#top .alternate_color.title_container .main-title,
+#top .alternate_color.title_container .main-title a {
+  color: palette(main, body-alt);
+}
+
+/******************************************************************************/
+/* FEAT HEADER - categorie
+/******************************************************************************/
+#top.category .title_container {
   .container {
     padding: $line-height * 2 3em;
   }
 }
 
-.title_container {
+.category .alternate_color .breadcrumb,
+.category .alternate_color .breadcrumb a,
+#top.category .alternate_color.title_container .main-title,
+#top.category .alternate_color.title_container .main-title a {
+  color: palette(alternate, body);
+}
+
+
+.category .title_container {
 
   background: url('http://matteomorra.it/files/2016/02/location-1.jpg');
   background-size: cover;
@@ -93,8 +141,8 @@ body .column-top-margin {
     }
 
     @include respond-to(step-3) {
-      font-size: font(h1, fs) * 0.7;
-      line-height: font(h1, lh) * 0.7;
+      font-size: font(h1, fs) * 0.5;
+      line-height: font(h1, lh) * 0.75;
     }
 
   }
