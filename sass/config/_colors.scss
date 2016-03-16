@@ -18,108 +18,113 @@
 // SEZIONI COLORI - //TODO
 // Usare qui le variabili semantiche segnate sopra
 ///
-
+$bianco: #f0f0f0;
+$rosso: #b02e30;
+$beige: #e6dfd5;
+$grigio: #5e5b56;
+$azzurro: #558a98;
+$nero: #000000;
 
 
   $colors: (
     header: (
-      body:       null,      //Corpo - testo
-      body-sec:   null,      //Secondario - blockquote o blog meta
-      heading:    null,      //Titoli
-      link:       blue,      //Link
-      bg:         null,      //Sfondo principale
-      border:     null,      //Bordi
+      body:       $bianco,      //Corpo - testo
+      body-sec:   $bianco,      //Secondario - blockquote o blog meta
+      heading:    $bianco,      //Titoli
+      link:       $bianco,      //Link
+      bg:         $nero,      //Sfondo principale
+      border:     $bianco,      //Bordi
 
-      accent:     null,      //Accento - sfondo lista icone / grassetti / icone
+      accent:     $bianco,      //Accento - sfondo lista icone / grassetti / icone
 
-      body-alt:   null,      //body alternativo - testo in un form o in un box
-      bg-alt:     null,      //sfondo alt - il bg di un form o di un box
-      accent-alt: null,      //accento alt - il di un link nel form
+      body-alt:   $nero,      //body alternativo - testo in un form o in un box
+      bg-alt:     $bianco,      //sfondo alt - il bg di un form o di un box
+      accent-alt: $nero,      //accento alt - il di un link nel form
 
-      overlay:    null,      //Colore sfondo overlay
+      overlay:    rgba($bianco, 0.35),      //Colore sfondo overlay
 
-      button:     null,      //colore bottone
+      button:     $bianco,      //colore bottone
       button-bg:  green      //bg bottone
     ),
 
     main: (
-      body:       null,      //Corpo - testo
-      body-sec:   null,      //Secondario - blockquote o blog meta
-      heading:    null,      //Titoli
-      link:       blue,      //Link
-      bg:         null,      //Sfondo principale
-      border:     null,      //Bordi
+      body:       $grigio,      //Corpo - testo
+      body-sec:   $nero,      //Secondario - blockquote o blog meta
+      heading:    $grigio,      //Titoli
+      link:       $azzurro,      //Link
+      bg:         $bianco,      //Sfondo principale
+      border:     $azzurro,      //Bordi
 
-      accent:     null,      //Accento - sfondo lista icone / grassetti / icone
+      accent:     $azzurro,      //Accento - sfondo lista icone / grassetti / icone
 
-      body-alt:   null,      //body alternativo - testo in un form o in un box
-      bg-alt:     null,      //sfondo alt - il bg di un form o di un box
-      accent-alt: null,      //accento alt - il di un link nel form
+      body-alt:   $grigio,      //body alternativo - testo in un form o in un box
+      bg-alt:     $beige,      //sfondo alt - il bg di un form o di un box
+      accent-alt: $azzurro,      //accento alt - il di un link nel form
 
-      overlay:    null,      //Colore sfondo overlay
+      overlay:    rgba($nero, 0.5),      //Colore sfondo overlay
 
-      button:     null,      //colore bottone
-      button-bg:  green      //bg bottone
+      button:     $grigio,      //colore bottone
+      button-bg:  $beige      //bg bottone
     ),
 
     alternate: (
-      body:       null,      //Corpo - testo
-      body-sec:   null,      //Secondario - blockquote o blog meta
-      heading:    null,      //Titoli
-      link:       blue,      //Link
-      bg:         null,      //Sfondo principale
-      border:     null,      //Bordi
+      body:       $bianco,      //Corpo - testo
+      body-sec:   $bianco,      //Secondario - blockquote o blog meta
+      heading:    $bianco,      //Titoli
+      link:       $bianco,      //Link
+      bg:         $rosso,      //Sfondo principale
+      border:     $bianco,      //Bordi
 
-      accent:     null,      //Accento - sfondo lista icone / grassetti / icone
+      accent:     $bianco,      //Accento - sfondo lista icone / grassetti / icone
 
-      body-alt:   null,      //body alternativo - testo in un form o in un box
-      bg-alt:     null,      //sfondo alt - il bg di un form o di un box
-      accent-alt: null,      //accento alt - il di un link nel form
+      body-alt:   $bianco,      //body alternativo - testo in un form o in un box
+      bg-alt:     $nero,      //sfondo alt - il bg di un form o di un box
+      accent-alt: $bianco,      //accento alt - il di un link nel form
 
-      overlay:    null,      //Colore sfondo overlay
+      overlay:    rgba($nero, 0.5),      //Colore sfondo overlay
 
-      button:     null,      //colore bottone
-      button-bg:  green      //bg bottone
+      button:     $bianco,      //colore bottone
+      button-bg:  $rosso      //bg bottone
     ),
 
     socket: (
-      body:       null,      //Corpo - testo
-      body-sec:   null,      //Secondario - blockquote o blog meta
-      heading:    null,      //Titoli
-      link:       blue,      //Link
-      bg:         null,      //Sfondo principale
-      border:     null,      //Bordi
+      body:       $grigio,      //Corpo - testo
+      body-sec:   $grigio,      //Secondario - blockquote o blog meta
+      heading:    $grigio,      //Titoli
+      link:       $grigio,      //Link
+      bg:         $beige,      //Sfondo principale
+      border:     $grigio,      //Bordi
 
-      accent:     null,      //Accento - sfondo lista icone / grassetti / icone
+      accent:     $grigio,      //Accento - sfondo lista icone / grassetti / icone
 
-      body-alt:   null,      //body alternativo - testo in un form o in un box
-      bg-alt:     null,      //sfondo alt - il bg di un form o di un box
-      accent-alt: null,      //accento alt - il di un link nel form
+      body-alt:   $grigio,      //body alternativo - testo in un form o in un box
+      bg-alt:     $beige,      //sfondo alt - il bg di un form o di un box
+      accent-alt: $grigio,      //accento alt - il di un link nel form
 
-      overlay:    null,      //Colore sfondo overlay
+      overlay:    rgba($grigio, 0.2),      //Colore sfondo overlay
 
-      button:     null,      //colore bottone
-      button-bg:  green      //bg bottone
+      button:     $beige,      //colore bottone
+      button-bg:  $grigio      //bg bottone
     ),
 
     footer: (
-      body:       null,      //Corpo - testo
-      body-sec:   null,      //Secondario - blockquote o blog meta
-      heading:    null,      //Titoli
-      link:       blue,      //Link
-      bg:         null,      //Sfondo principale
-      border:     null,      //Bordi
+      body:       $bianco,      //Corpo - testo
+      body-sec:   $bianco,      //Secondario - blockquote o blog meta
+      heading:    $bianco,      //Titoli
+      link:       $bianco,      //Link
+      bg:         $grigio,      //Sfondo principale
+      border:     $bianco,      //Bordi
 
-      accent:     null,      //Accento - sfondo lista icone / grassetti / icone
+      accent:     $bianco,      //Accento - sfondo lista icone / grassetti / icone
 
-      body-alt:   null,      //body alternativo - testo in un form o in un box
-      bg-alt:     null,      //sfondo alt - il bg di un form o di un box
-      accent-alt: null,      //accento alt - il di un link nel form
+      body-alt:   $bianco,      //body alternativo - testo in un form o in un box
+      bg-alt:     $bianco,      //sfondo alt - il bg di un form o di un box
+      accent-alt: $bianco,      //accento alt - il di un link nel form
 
-      overlay:    null,      //Colore sfondo overlay
+      overlay:    rgba($bianco, 0.35),      //Colore sfondo overlay
 
-      button:     null,      //colore bottone
-      button-bg:  green      //bg bottone
+      button:     $bianco,      //colore bottone
+      button-bg:  $grigio      //bg bottone
     )
   );
 

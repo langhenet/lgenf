@@ -9,22 +9,22 @@
 // BASE DEL BODY
 ///
   $base: 16;
-  $font-size: 1.125em; //TODO
-  $line-height: 1.7777777777777777em; //TODO
+  $font-size: 1em; //TODO
+  $line-height: 1.6875em; //TODO
 
 
 ///
 // p and other standard elements
 ///
   $margin-top: 0em; //TODO
-  $margin-bottom: 1.7777777777777777em; //TODO
+  $margin-bottom: 1.6875em; //TODO
 
 
 ///
 // Families
 ///
-  $font-family: 'Muli', sans-serif; //TODO
-  $font-family-heading: $font-family; //TODO
+  $font-family: 'Lora', serif; //TODO
+  $font-family-heading: 'Arvo', serif; //TODO
   $font-family-special: 'Lora', serif; //TODO
   $font-family-button: $font-family;
 
@@ -75,55 +75,55 @@ $weights: (
     ),
 
     h1: (
-      fs: 6.333333333333333em,
-      lh: 1.1228070175438596em,
-      mt: 0.2807017543859649em,
-      mb: 0em,
+      fs: 8em,
+      lh: 1.0546875em,
+      mt: 0.421875em,
+      mb: 0.2109375em,
       fm: family(ffh, family),
       wt: family(ffh, thin),
     ),
 
     h2: (
-      fs: 3.4444444444444446em,
-      lh: 1.032258064516129em,
-      mt: 0.5161290322580645em,
-      mb: 0.5161290322580645em,
+      fs: 4em,
+      lh: 1.265625em,
+      mt: 0.84375em,
+      mb: 0.421875em,
       fm: family(ffh, family),
       wt: family(ffh, thin),
     ),
 
     h3: (
-      fs: 1.8333333333333333em,
-      lh: 1.9393939393939394em,
-      mt: 0.9696969696969697em,
-      mb: 0em,
+      fs: 2em,
+      lh: 1.6875em,
+      mt: 0.84375em,
+      mb: 0.84375em,
       fm: family(ffh, family),
       wt: family(ffh, light),
     ),
 
     h4: (
       fs: 1em,
-      lh: 1.7777777777777777em,
-      mt: 1.7777777777777777em,
-      mb: 0em,
+      lh: 1.6875em,
+      mt: 1.6875em,
+      mb: 1.6875em,
       fm: family(ffh, family),
       wt: family(ffh, normal),
     ),
 
     h5: (
-      fs: 0.7777777777778em,
-      lh: 1.142857142857em,
-      mt: 1.9285714em,
-      mb: 0em,
+      fs: 0.75em,
+      lh: 1.125em,
+      mt: 2.25em,
+      mb: 2.25em,
       fm: family(ffh, family),
       wt: family(ffh, normal),
     ),
 
     blockquote: (
-      fs: 2em,
-      lh: 2em,
-      mt: 2em,
-      mb: 0em,
+      fs: 1.6875em,
+      lh: 1em,
+      mt: 1em,
+      mb: 1em,
       fm: family(ffh, family),
       wt: family(ffh, light),
   ),
