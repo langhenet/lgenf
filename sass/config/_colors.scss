@@ -78,7 +78,7 @@ $nero: #000000;
       accent:     $bianco,      //Accento - sfondo lista icone / grassetti / icone
 
       body-alt:   $bianco,      //body alternativo - testo in un form o in un box
-      bg-alt:     $nero,      //sfondo alt - il bg di un form o di un box
+      bg-alt:     lighten($rosso, 30%),      //sfondo alt - il bg di un form o di un box
       accent-alt: $bianco,      //accento alt - il di un link nel form
 
       overlay:    rgba($nero, 0.5),      //Colore sfondo overlay
