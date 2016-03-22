@@ -8,11 +8,11 @@
  * Altezza Header
  */
 .av_minimal_header #header_main .container.av-logo-container {
-  line-height: $line-height * 8; //TODO
-  height: $line-height * 8; //TODO
+  line-height: $line-height * 4; //TODO
+  height: $line-height * 4; //TODO
 }
 
-#header, .logo {
-  height: 4em;
-line-height: 6em;
-}
+//#header {
+//  height: 4em;
+//line-height: 4em;
+//}
