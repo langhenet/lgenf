@@ -15,10 +15,10 @@
 
     &> a {
       font-weight: 400; //TODO
-      padding: 0 35px; // TODO
+      padding: 0 15px; // TODO
 
       @include respond-to(step-1) {
-        padding: 0 20px;
+        padding: 0 10px;
       }
     }
   }
@@ -29,13 +29,17 @@
  */
 .av-main-nav > li {
   // il font family della navigazione
-  //font-family: inherit;
+  font-family: font(h1, fm);
   //text-transform: uppercase;
 
   &:hover {
 
     &>a>span {
-    font-weight: 600;
+    //font-weight: 600;
+    border-bottom: 3px solid palette(header, accent);
+    padding: $line-height / 4 0;
+    background: white;
+    color: palette(header, accent);
     }
 
     &::after { // aggiunge un elemento grafico agli elementi in hove
@@ -54,7 +58,9 @@
 
   &.current-menu-item {
     &>a>span {
-      font-weight: 600;
+    //  font-weight: 600;
+      border-bottom: 3px solid palette(header, accent);
+    padding-bottom: $line-height / 4;
     }
     &::after {
     //  @extend :hover::after; //estende l'elemento "corrente" con l'elemento grafico degli elementi ::hover

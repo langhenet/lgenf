@@ -11,3 +11,18 @@
   line-height: $line-height * 4; //TODO
   height: $line-height * 4; //TODO
 }
+
+.header_color .header_bg,
+.header_color .site-background {
+  background-color: transparent;
+}
+
+#header, .header_color .header_bg {
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(255,255,255,0) 59%);
+}
+
+
+//QUESTA COSA é IL BG DELLA PAGINA PADDATA - influenza il colore dell'header
+#main, .avia-msie-8 .av_header_sticky_disabled#header {
+  background-color: red;
+}
