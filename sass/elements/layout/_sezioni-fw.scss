@@ -31,6 +31,11 @@
 .avia-section-small.socket_color {
   margin-top: $line-height * 5;
   margin-bottom: $line-height * 5;
+  .content,
+  .sidebar {
+    padding-top: $line-height * 1;
+    padding-bottom: $line-height * 1;
+  }
 }
 
 /*
@@ -38,8 +43,8 @@
  */
 .avia-section-small .content,
 .avia-section-small .sidebar {
-  padding-top: $line-height * 1;
-  padding-bottom: $line-height * 1;
+  padding-top: $line-height * 2;
+  padding-bottom: $line-height * 2;
 }
 
 /*
@@ -59,7 +64,24 @@
 .avia-section-default .sidebar {
  padding-top: $line-height * 5;
  padding-bottom: $line-height * 5;
+
+ @include respond-to(step-3) {
+   padding-top: $line-height * 3;
+   padding-bottom: $line-height * 3;
+ }
+
 }
+
+.avia-section-default.main_color .content,
+.avia-section-default.main_color .sidebar {
+ padding-top: $line-height * 5;
+ padding-bottom: $line-height * 4;
+
+ @include respond-to(step-3) {
+   padding-top: $line-height * 3;
+   padding-bottom: $line-height * 3;
+ }
+ }
 
 
 /*
@@ -98,37 +120,25 @@
 //                               FLEX CELLS
 //****************************************************************************//
 
-//.av-layout-grid-container {
-//  padding: $line-height * 3 0 $line-height * 6 0;
-//}
+.av-layout-grid-container {
+  padding-top: 6em;
+}
 
 .flex_cell {
   padding-top: $line-height * 2 !important;
   padding-bottom: $line-height * 2 !important;
-//  position: relative; // se voglio overlay automatico
+}
 
-/*
- * Overlay
- */
-//  &::before {
-//    @include color-overlay(palette(socket, overlay));
-//  }
+div.av-flex-cells > div:nth-child(even) {
+  @include respond-to(step-3) {
+    padding-bottom: 0 !important;
+  }
+}
 
-
-///
-// Bordi delle Flex Cells
-///
-//  &.el_before_av_cell_one_half {
-//    border-right:8px solid;
-
-//    @include respond-to(step-3) { border-right: 0;  border-bottom: 8px solid;}
-//  }
-//
-//  &.el_after_av_cell_one_half {
-//    border-left:8px solid;
-//
-//    @include respond-to(step-3) { border-left: 0;} //TODO
-//  }
+div.av-flex-cells > div:nth-child(odd) {
+  @include respond-to(step-3) {
+    padding-top: 0 !important;
+  }
 }
 
 /*
@@ -234,4 +244,47 @@
   .container {
    padding: 0 1em;
   }
+}
+
+
+/*
+ * INTRO - scroll down
+ */
+#top #intro .scroll-down-link {
+  width: $line-height / 2.5;
+  height: $line-height / 2.5;
+  font-size: 8em;
+  border: 8px solid #fff;
+  padding-top: 0.15em;
+  border-radius: 100%;
+  animation: none;
+  margin-bottom: 0.2em;
+
+  @include respond-to(step-4) {
+    padding-top: 0.05em;
+  }
+}
+
+
+
+
+/******************************************************************************/
+/**                           Colori frecce scroll                                 /******************************************************************************/
+
+#top .main_color .scroll-down-link {
+  color: palette(main, bg-alt);
+  animation: avia_fade_move_down 2.5s ease-in-out infinite;
+  border-color: palette(main, bg-alt);
+}
+
+#top .socket_color .scroll-down-link {
+  color: palette(socket, bg-alt);
+  animation: avia_fade_move_down 2.5s ease-in-out infinite;
+  border-color: palette(main, bg-alt);
+}
+
+#top .header_color .scroll-down-link {
+  color: palette(header, body);
+  animation: avia_fade_move_down 2.5s ease-in-out infinite;
+  border-color: palette(main, bg-alt);
 }

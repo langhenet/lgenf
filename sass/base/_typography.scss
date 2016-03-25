@@ -120,6 +120,8 @@ blockquote {
 
   border-left-width: 0;
   padding: 0;
+  margin-right: 0;
+  //position: relative;
 
   &:before {
     content: "\201C";
@@ -127,35 +129,62 @@ blockquote {
     float:left;
     font-family: font(blockquote, fm);
     position: relative;
-    left: 0px;
-    top: 400px;
-    opacity: 0.3;
+    left: -0.05em;
+    top: 320px;
+    right:0;
+    bottom: 0;
+    opacity: 0.2;
+    //color: #111;
+
+    @include respond-to(step-3) {
+      top: 300px;
+    }
+
+    @include respond-to(step-4) {
+      top: 240px;
+    }
   }
 
-    &:after {
-      content: "";
-    }
+    //&:after {
+      //content: "";
+    //}
 
   p {
     @include deco(blockquote);
 
     display: inline-block;
-    padding-left: 3em;
+    padding-left: 2em;
   }
 }
 
 
+.avia-section.main_color .avia_textblock blockquote p:first-of-type:first-letter {
+  font-size: 1em;
+  line-height: inherit;
+  float: inherit;
+  margin-top: inherit;
+}
 
 /*
  * Capolettera
  */
-.avia-section.main_color .avia_textblock p:first-child:first-letter,
-.av-layout-grid-container.main_color .avia_textblock p:first-child:first-letter {
+.avia-section.main_color .avia_textblock p:first-of-type:first-letter,
+.av-layout-grid-container.main_color .avia_textblock p:first-of-type:first-letter,
+.single-post .entry-content p:first-child:first-letter {
   font-size: $line-height * 3.1;
   line-height: 0.4em;
   float: left;
   margin-top: 0.3em;
   //padding-right: 0.055em;
+
+  @include respond-to(step-2) {
+    font-size: $line-height * 3.4;
+      margin-top: 0.3em;
+  }
+
+  @include respond-to(step-3) {
+    font-size: $line-height * 2.1;
+  }
  }
 
 

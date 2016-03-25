@@ -24,8 +24,17 @@
   }
 }
 
+.responsive .logo img {
 
+  @include respond-to(step-3) {
+    width: 60%;
+  }
 
+  @include respond-to(step-5) {
+    width: 70%;
+  }
+
+}
 
 ///*
 // * Layout Elementi Top Bar

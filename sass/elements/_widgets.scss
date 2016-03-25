@@ -11,3 +11,37 @@
 .content .widget .widgettitle {
   margin-top: $line-height;
 }
+
+
+.sidebar .widget:first-child,
+.content .sidebar .widget:first-child {
+  padding-top: $line-height;
+}
+
+.widget {
+  padding-top: 0;
+  margin-bottom: $line-height * 3;
+}
+
+.widget_recent_entries {
+  padding: $line-height 2em;
+  background: palette(main, button);
+}
+
+.recentcomments,
+.widget_recent_entries li {
+  @include size(p);
+  margin-bottom:0;
+  padding: $line-height / 2 0 ;
+  @include deco(p);
+  border-top-width: 1px;
+
+  a {
+    font-style: normal;
+  }
+}
+
+.sidebar .widgettitle {
+  @include size(h3);
+  text-transform: none;
+}

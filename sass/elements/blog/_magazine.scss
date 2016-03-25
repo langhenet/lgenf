@@ -1,0 +1,32 @@
+//*==========================================================================*//
+//*                                                                          *//
+//*                         LISTATI - MAGAZINE
+//*                          DIMENSIONI & FACE
+//*                                                                          *//
+//*==========================================================================*//
+
+.av-magazine-entry {
+  margin-bottom: $line-height;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+}
+
+.av-magazine .av-magazine-content-wrap .av-magazine-title {
+  //@include deco(p);
+  font-size: font(h3,fs) / 1.5;
+  line-height: font(h3,lh) / 1.5;
+  //display: table-cell;
+  //vertical-align: middle;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+time.av-magazine-time.updated {
+  display:none;
+}
+
+.av-magazine-thumbnail {
+  min-height: 100px;
+min-width: 100px;
+}

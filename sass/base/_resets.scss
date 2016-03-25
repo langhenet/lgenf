@@ -176,3 +176,7 @@ div .avia_message_box .avia_message_box_title,
 body#top .gform_wrapper label.gfield_label+div.ginput_container {
   margin-top: 0 !important;
 }
+
+p + h1, p + h2, p + h3, p + h4, p + h5, p + h6 {
+  margin-top: inherit;
+}

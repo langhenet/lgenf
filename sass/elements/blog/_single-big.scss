@@ -58,7 +58,7 @@
 }
 
 .content .minor-meta a {
-  font-weight: family(ffh, normal);
+  font-weight: family(ffh, bold);
 }
 
 .single-post h2 {
@@ -74,7 +74,7 @@
   display: inline-block;
   width: 100%;
   padding: $line-height;
-  background: palette(main, bg-alt);
+  background: lighten(palette(main, bg-alt), 9.2%);
   margin-bottom: $line-height * 2;
 
   h3 {

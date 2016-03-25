@@ -12,8 +12,12 @@
  * Layout top-iconbox - contenitore
  */
 #top .iconbox_top {
-  margin-top: $line-height;
+  margin-top: $line-height * 2;
   box-shadow: 4px 4px 10px 0px rgba(palette(main, body), 0.1);
+}
+
+#top .flex_column article.iconbox_top:first-child {
+margin-top: 0;
 }
 
 /*
