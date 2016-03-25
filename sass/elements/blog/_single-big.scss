@@ -72,7 +72,7 @@
 
 .author-box {
   display: inline-block;
-  width: 100%;
+  width: 94.2%;
   padding: $line-height;
   background: lighten(palette(main, bg-alt), 9.2%);
   margin-bottom: $line-height * 2;
@@ -80,4 +80,30 @@
   h3 {
     margin-top: 0;
   }
+}
+
+.related_posts.av-related-style-full a {
+  border: 0;
+
+  &:hover {
+    border: 0;
+  }
+}
+
+.main_color .related_posts.av-related-style-full a {
+
+  background: palette(main, bg);
+  font-family: font(h3, fm);
+  font-size: font(p, fs);
+  margin-top: 0;
+  margin-bottom: 0;
+
+  &:hover{
+    background: lighten(palette(main,bg-alt), 10%);
+  }
+}
+
+.related_title {
+  @include size(h3);
+  @include deco(h3);
 }

@@ -14,7 +14,7 @@
 td {
   font-size: font(h5, fs);
   line-height: font(h5, lh) / 2;
-  padding: (font(h5, lh) / 4) 2em;
+  padding: (font(h5, lh) / 4) 1em;
   border: 0;
 }
 
@@ -55,7 +55,8 @@ tr td:first-child {
 
   //BG e colore delle celle dispari
   .#{$palette}_color tr:nth-child(even) {
-    background: palette($palette, bg-alt);
+    //background: palette($palette, bg-alt);
+    background: lighten(palette($palette, bg-alt), 9%);
     color: palette($palette, body-alt);
   }
 }
@@ -69,11 +70,35 @@ tr td:first-child {
   th {
     font-size: font(p, fs);
     line-height: font(p, lh);
+    padding: 0 1em;
+    border: 0;
+    text-transform: none;
   }
 
   &:nth-child(odd),
   &:nth-child(even), {
-    background: $tortora;
+    background: palette(main, bg-alt);
     font-weight: family(ff, normal);
+  }
+}
+
+/*
+ * Tabella Vini - Larghezza colonne
+ */
+
+table.vini {
+  width: 100%;
+  
+  td:nth-child(1) {
+    width: 35%;
+  }
+  td:nth-child(2) {
+    width: 35%;
+  }
+  td:nth-child(3) {
+    width: 15%;
+  }
+  td:nth-child(4) {
+    width: 15%;
   }
 }

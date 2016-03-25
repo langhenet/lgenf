@@ -177,7 +177,7 @@
 ///
 @mixin form-desc($size: h5) {
   font-size: font($size, fs);
-  line-height: font($size, lh);
+  line-height: font($size, lh) / 2;
   font-style: none;
   margin:0;
   font-family: form(desc, fm);

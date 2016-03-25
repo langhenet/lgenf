@@ -175,6 +175,12 @@
 background: palette(header, bg);
     @include respond-to(step-2) {
       position: relative;
+      height: $line-height * 2.5;
+      line-height: $line-height * 2.5;
+    }
+
+    @include respond-to(step-4) {
+      position: relative;
       height: $line-height * 3;
       line-height: $line-height * 3;
     }
@@ -218,7 +224,23 @@ background: palette(header, bg);
         padding: 0 20px;
       }
     }
+
+    &:first-child > a {
+      padding-left: 0;
+    }
+
+    &:last-child > a {
+      padding-right: 0;
+    }
+
+    &.lg-scrolled-only {
+      display:none;
+    }
   }
+}
+
+.header-scrolled #avia-menu.av-main-nav>li.lg-scrolled-only {
+  display:list-item;
 }
 
 /*
@@ -316,3 +338,34 @@ ul.sub-menu {
   font-weight: family(ffh, bold);
   margin-top:0;
 }
+
+
+/*
+ * Trick Bottoni
+ */
+ #header_meta a.prenota {
+   padding: 0.4em 0.5em;
+   border: 2px solid;
+   margin-left: 1em;
+ }
+
+ .header-scrolled-full #header_meta a.prenota {
+ display:none;
+ }
+
+ #top #header_meta {
+ padding: 0.5em 0;
+ }
+
+ #top .header-scrolled-full #header_meta {
+   //padding: 0;
+ }
+
+ #advanced_menu_toggle, #advanced_menu_hide {
+
+  margin-top: -18px;
+
+  @include respond-to(step-4) {
+    margin-top: -23px;
+  }
+ }
