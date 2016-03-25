@@ -76,6 +76,7 @@
   padding-bottom: $line-height * 4;
 //  position: relative; // se voglio overlay automatico
 
+
 /*
  * Overlay
  */
@@ -98,6 +99,21 @@
 //
 //    @include respond-to(step-3) { border-left: 0;} //TODO
 //  }
+}
+
+@include respond-to(step-p0) {
+  .av-flex-cells .flex_cell.av_one_half {
+    .flex_cell_inner {
+      width: 700px;
+      //background: #111;  //- control
+    }
+    &:first-child .flex_cell_inner {
+      float:right;
+    }
+    &:last-child .flex_cell_inner {
+      float:left;
+    }
+  }
 }
 
 //****************************************************************************//

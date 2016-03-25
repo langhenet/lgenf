@@ -6,5 +6,18 @@
 //***************************************************************************//
 
 .single-portfolio {
-  
+  #av_section_2.main_color .entry-content-wrapper > div:last-of-type {
+    background: palette(main, bg-alt);
+    color: palette(main, body-alt);
+    padding: $line-height;
+
+    h3 {
+      color: palette(main, body-alt);
+    }
+
+    a {
+      color: palette(main, accent-alt);
+      text-decoration: underline;
+    }
+  }
 }
