@@ -161,14 +161,14 @@
 ///
 .gform_wrapper .top_label .gfield_description {
   @include form-desc(); //TODO - selezionare la corrispondenza di dimensione
-  padding: (font-size(h5, lh) / 2) 0 !important;
+  padding: (size(h5, lh) / 2) 0 !important;
 }
 ///
 // Sotto-etichette dei campi complessi (p.es nome)
 ///
 #top .ginput_complex label {
   @include form-desc(); //TODO - selezionare la corrispondenza di dimensione
-  padding: (font-size(h5, lh) / 2) 0!important;
+  padding: (size(h5, lh) / 2) 0!important;
 }
 
 
@@ -244,7 +244,7 @@
 #top .main_color .select2-container .select2-choice {
   border-color: palette(main, border);
   background: palette(main, bg);
-  color: palette(main, body-alt);
+  color: palette(main, body);
 }
 
 
@@ -253,7 +253,7 @@
  */
 #top .main_color label,
 #top .main_color .gfield_description {
-  color: palette(main, body);
+  color: palette(main, body-alt);
 }
 
 

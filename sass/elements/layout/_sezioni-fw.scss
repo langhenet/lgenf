@@ -119,8 +119,33 @@
 //****************************************************************************//
 //                               FRECCETTE CHE SCROLLANO
 //****************************************************************************//
+
 @each $palette, $bg in $colors {
   #top .#{$palette}_color .scroll-down-link {
-    color: palette($palette, accent);
+    color: palette($palette, body);
   }
+}
+
+//****************************************************************************//
+//                            SEZIONE INTRO
+//****************************************************************************//
+
+#intro p {
+  @include size(h3);
+  @include deco(h3);
+}
+
+#intro.avia-section-default .content {
+  padding-bottom: $line-height * 6;
+}
+
+#top #intro .scroll-down-link {
+  height: 108px;
+  width: 108px;
+  font-size: 8em;
+  border-radius: 100%;
+  padding-top: 0.15em;
+  border: 8px solid #fff;
+  animation: none;
+  margin-bottom: 0.2em;
 }

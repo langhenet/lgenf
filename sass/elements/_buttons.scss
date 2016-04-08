@@ -26,7 +26,8 @@
 //                              BOTTONI ENFOLD - Dimensioni
 //***********************************************************************//
 
-.avia-button.avia-size-small {
+.avia-button.avia-size-small,
+ #top .avia-button.avia-color-light.avia-size-small {
   @extend %button;
   @include button(h5, 1);
 
@@ -34,15 +35,17 @@
   text-transform: uppercase;
 }
 
-.avia-button.avia-size-medium {
+.avia-button.avia-size-medium,
+ #top .avia-button.avia-color-light.avia-size-medium {
   @extend %button;
-  @include button(p, 2);
+  @include button(p, 3);
 
   font-weight: inherit; //TODO
   text-transform: uppercase;
 }
 
-.avia-button.avia-size-large {
+.avia-button.avia-size-large,
+#top .avia-button.avia-color-light.avia-size-large {
   @extend %button;
   @include button-lh(h3, 4)
 
@@ -50,7 +53,8 @@
   text-transform: uppercase;
 }
 
-.avia-button.avia-size-x-large {
+.avia-button.avia-size-x-large,
+#top .avia-button.avia-color-light.avia-size-x-large {
   @extend %button;
   @include button(h2, 6, half);
 
@@ -70,6 +74,23 @@
 
     &:hover {
       @include button-color(hover);
+    }
+  }
+}
+
+//****************************************************************************//
+//                         BOTTONI SCHELETRICI ENFOLD - COLORI
+//                  include anche i colori dei bottoni di gravity pare
+//                  ho cambiato la dichiarazione nel mixin dei bottoni per fare i bordi -
+//****************************************************************************//
+@each $palette, $bg in $colors {
+  #top .#{$palette}_color .avia-button.avia-color-light {
+    border-color: palette($palette, border);
+    color: palette($palette, border);
+
+    &:hover {
+      border-color: darken(palette($palette, border), 10%);
+      color: darken(palette($palette, border), 10%);
     }
   }
 }
