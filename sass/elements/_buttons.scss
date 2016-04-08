@@ -85,12 +85,15 @@
 //****************************************************************************//
 @each $palette, $bg in $colors {
   #top .#{$palette}_color .avia-button.avia-color-light {
-    border-color: palette($palette, border);
-    color: palette($palette, border);
+    border-color: white;
+    color: white;
+    background: transparent;
 
     &:hover {
-      border-color: darken(palette($palette, border), 10%);
-      color: darken(palette($palette, border), 10%);
+      border-color: palette($palette, body-alt);
+      color: palette($palette, bg-alt);
+      background: palette($palette, body-alt);
+      opacity: 1;
     }
   }
 }

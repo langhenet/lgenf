@@ -136,16 +136,16 @@
 }
 
 #intro.avia-section-default .content {
-  padding-bottom: $line-height * 6;
+  padding-bottom: $line-height * 8;
 }
 
 #top #intro .scroll-down-link {
-  height: 108px;
-  width: 108px;
-  font-size: 8em;
+  height: 1em;
+  width: 1em;
+  font-size: 6.75em;
   border-radius: 100%;
-  padding-top: 0.15em;
+  padding-top: 0.185em;
   border: 8px solid #fff;
   animation: none;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.5em;
 }

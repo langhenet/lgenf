@@ -26,7 +26,7 @@
   $font-family: 'Lora', serif; //TODO
   $font-family-heading: 'Arvo', serif; //TODO
   $font-family-special: $font-family; //TODO
-  $font-family-button: $font-family;
+  $font-family-button: $font-family-heading;
 
 
 ///
@@ -145,17 +145,17 @@ $weights: (
 
 $forms: (
   field: (
-    fm: family(ffh, family),
-    wt: family(ffh, normal),
+    fm: family(ff, family),
+    wt: family(ff, normal),
   ),
 
   label: (
-    fm: family(ffh, family),
-    wt: family(ffh, normal),
+    fm: family(ff, family),
+    wt: family(ff, normal),
   ),
 
   desc: (
-    fm: family(ffh, family),
-    wt: family(ffh, normal),
+    fm: family(ff, family),
+    wt: family(ff, normal),
   ),
 );

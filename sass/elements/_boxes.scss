@@ -50,6 +50,11 @@
 
       p {
         color: palette($palette, body-alt);
+
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        color: palette($palette, body-alt);
       }
 
       blockquote {
@@ -58,6 +63,10 @@
       }
 
       a {
+        color: palette($palette, accent-alt);
+      }
+
+      strong {
         color: palette($palette, accent-alt);
       }
     }
