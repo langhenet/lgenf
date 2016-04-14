@@ -23,9 +23,9 @@
 ///
 // Families
 ///
-  $font-family: 'Muli', sans-serif; //TODO
-  $font-family-heading: $font-family; //TODO
-  $font-family-special: 'Lora', serif; //TODO
+  $font-family: 'Droid Sans', sans-serif; //TODO
+  $font-family-heading: 'Cardo', serif; //TODO
+  $font-family-special: $font-family-heading; //TODO
   $font-family-button: $font-family;
 
 
@@ -35,18 +35,18 @@
 $weights: (
   ff: (
     family: $font-family,
-    u-thin: 100,
-    thin: 100,
-    light: 200,
+    u-thin: 400,
+    thin: 400,
+    light: 400,
     normal: 400,
     bold: 700,
   ),
 
   ffh: (
     family: $font-family-heading,
-    u-thin: 100,
-    thin: 200,
-    light: 300,
+    u-thin: 400,
+    thin: 400,
+    light: 400,
     normal: 400,
     bold: 400,
   ),
@@ -145,17 +145,17 @@ $weights: (
 
 $forms: (
   field: (
-    fm: family(ffh, family),
-    wt: family(ffh, normal),
+    fm: family(ff, family),
+    wt: family(ff, normal),
   ),
 
   label: (
-    fm: family(ffh, family),
-    wt: family(ffh, normal),
+    fm: family(ff, family),
+    wt: family(ff, normal),
   ),
 
   desc: (
-    fm: family(ffh, family),
-    wt: family(ffh, normal),
+    fm: family(ff, family),
+    wt: family(ff, normal),
   ),
 );
