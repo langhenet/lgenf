@@ -258,14 +258,17 @@ div.av-flex-cells > div:nth-child(odd) {
   padding-top: 0.15em;
   border-radius: 100%;
   animation: none;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.5em;
 
   @include respond-to(step-4) {
     padding-top: 0.05em;
   }
 }
 
-
+#intro.avia-section-default .content,
+#intro.avia-section-default .sidebar {
+  padding-bottom: 13em;
+}
 
 
 /******************************************************************************/
