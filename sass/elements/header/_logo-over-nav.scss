@@ -13,15 +13,15 @@
 //*
 // * Colori e altezza
 // */
-//#top #header_meta {
-//  background-color: palette(header, bg-alt); //TODO
-//  line-height:$line-height; //TODO
-//  margin-bottom:0;
+#top #header_meta {
+  background-color: transparent ; //TODO
+  line-height:$line-height; //TODO
+  margin-bottom:0;
 
-//  a {
-//    color: palette(header, body); //TODO
-//  }
-// }
+  a {
+    color: palette(header, body); //TODO
+  }
+}
 
 
 ///*
@@ -92,27 +92,27 @@
 }
 
 
-///*
-// * Sezione logo - scrollato
-// */
-//.html_header_top.html_bottom_nav_header .header-scrolled .av-logo-container {
-//
-//}
+/*
+ * Sezione logo - scrollato
+ */
+.html_header_top.html_bottom_nav_header .header-scrolled .av-logo-container {
 
-///*
-// * Main Nav
-// */
-//.html_header_top.html_bottom_nav_header .main_menu {
-//  line-height:$line-height * 3;
-//}
+}
 
-///*
-// * Main Nav- Scrollato
-// */
-//.html_header_top.html_bottom_nav_header .header-scrolled .main_menu {
-//  line-height: $line-height * 2; //TODO
-//  height: $line-height * 1.5; //TODO
-//}
+/*
+ * Main Nav
+ */
+.html_header_top.html_bottom_nav_header .main_menu {
+  line-height:$line-height * 3;
+}
+
+/*
+ * Main Nav- Scrollato
+ */
+.html_header_top.html_bottom_nav_header .header-scrolled .main_menu {
+  line-height: $line-height * 2; //TODO
+  height: $line-height * 1.5; //TODO
+}
 
 
 //****************************************************************************//
@@ -124,22 +124,31 @@
 ///*
 // * Contenitore LOGO + NAV
 // */
-//.html_header_top.html_bottom_nav_header #header_main {
-//  z-index: 3;
-//  position: absolute;
-//  top: 0;
-//  bottom: 0;
-//  left: 0;
-//  right: 0;
-//    @include respond-to(step-2) {
-//      position: relative;
-//    }
-//}
+.html_header_top.html_bottom_nav_header #header_main {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 2s;
+  background: palette(header, bg);
+
+    @include respond-to(step-2) {
+      position: relative;
+    }
+}
 
 
-///*
-// * Corregge il logo sovrapposto quando l'header scrolla - il bg della topbar deve essere trasparente
-// */
-//.html_header_top.html_bottom_nav_header .header-scrolled #header_main {
-//  position: relative;
-//}
+/*
+ * Corregge il logo sovrapposto quando l'header scrolla - il bg della topbar deve essere trasparente
+ */
+.html_header_top.html_bottom_nav_header .header-scrolled #header_main {
+  position: fixed;
+  transition: all 2s;
+  top: 0em;
+/* bottom: 52em; */
+  left: 0;
+  right: 0;
+  height: 6em;
+}
