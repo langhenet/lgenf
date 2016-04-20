@@ -22,6 +22,7 @@ $bianco: #f0f0f0;
 $rosso: #b02e30;
 $beige: #e6dfd5;
 $grigio: #5e5b56;
+$grigio-chiaro: #f9f7f4;
 $azzurro: #558a98;
 $nero: #000000;
 
@@ -61,7 +62,7 @@ $nero: #000000;
       bg-alt:     $azzurro,      //sfondo alt - il bg di un form o di un box
       accent-alt: $bianco,      //accento alt - il di un link nel form
 
-      overlay:    rgba($nero, 0.5),      //Colore sfondo overlay
+      overlay:    rgba($nero, 0.25),      //Colore sfondo overlay
 
       button:     $grigio,      //colore bottone
       button-bg:  $beige      //bg bottone
@@ -92,7 +93,7 @@ $nero: #000000;
       body-sec:   $grigio,      //Secondario - blockquote o blog meta
       heading:    $grigio,      //Titoli
       link:       $grigio,      //Link
-      bg:         $beige,      //Sfondo principale
+      bg:         $grigio-chiaro,      //Sfondo principale
       border:     $grigio,      //Bordi
 
       accent:     $grigio,      //Accento - sfondo lista icone / grassetti / icone

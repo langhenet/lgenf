@@ -32,7 +32,9 @@
   input[type='search'],
   select,
   .select2-container .select2-choice {
-    @include form-field;
+    @include form-field(h3);
+    font-size: font(p, fs);
+    line-height: bpad(1, font(p, lh)) * 3;
   }
 
 
@@ -55,6 +57,7 @@
   #commentform .comment-form-rating label,
   .logged-in div #commentform .comment-form-comment label {
     @include form-label;
+    text-transform: uppercase;
   }
 
 
@@ -123,12 +126,13 @@
   // e delle sue opzioni
   ///
   select {
-    height: $line-height;
+    height: $line-height * 1.5;
+    padding: 0 .5em;
 
       option {
         font-size: font-size(h5, fs); //TODO
         line-height: $line-height;
-        padding: ($line-height / 2) .125em;
+        padding: ($line-height / 2) .5em;
       }
   }
 
@@ -200,7 +204,7 @@
 
 #top .gform_wrapper .gform_footer input.button {
   @extend %button;
-  @include button-lh(h3, 4); //TODO
+  @include button(h3, 4, half); //TODO
 
   width: 100%;
   border-right-width: 0;
