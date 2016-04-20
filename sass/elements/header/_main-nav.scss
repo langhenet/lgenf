@@ -8,7 +8,7 @@
  * Impostazione navigazione
  */
 #avia-menu.av-main-nav {
-  vertical-align: top; //TODO - può essere middle o bottom anche!
+  vertical-align: middle; //TODO - può essere middle o bottom anche!
 
   &> li {
     line-height: $line-height;
@@ -16,6 +16,7 @@
     &> a {
       font-weight: 400; //TODO
       padding: 0 35px; // TODO
+      text-transform: uppercase;
 
       @include respond-to(step-1) {
         padding: 0 20px;
@@ -23,6 +24,11 @@
     }
   }
 }
+
+.header-scrolled-full #avia-menu.av-main-nav > li {
+  margin-top: $line-height / 2;
+}
+
 
 /*
  * Decorazione degli elementi di navigazione - hover - current
@@ -35,7 +41,8 @@
   &:hover {
 
     &>a>span {
-    font-weight: 600;
+    //font-weight: 600;
+    color: palette(header, heading);
     }
 
     &::after { // aggiunge un elemento grafico agli elementi in hove
@@ -54,10 +61,32 @@
 
   &.current-menu-item {
     &>a>span {
-      font-weight: 600;
+    //  font-weight: 600;
+    color: palette(header, heading);
     }
     &::after {
     //  @extend :hover::after; //estende l'elemento "corrente" con l'elemento grafico degli elementi ::hover
     }
   }
+}
+
+
+
+//****************************************************************************//                         //                                 SUBMENU
+//****************************************************************************//
+
+.main_menu .sub-menu {
+  padding-top: $line-height;
+  padding-bottom: $line-height;
+}
+
+
+.header_color .main_menu .menu ul li a {
+  border: 0;
+}
+
+
+.header_color .main_menu .menu ul li a:hover,
+.header_color .av-subnav-menu ul a:hover {
+  background-color: palette(header, bg);
 }
