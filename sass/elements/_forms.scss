@@ -32,7 +32,10 @@
   input[type='search'],
   select,
   .select2-container .select2-choice {
-    @include form-field;
+    @include form-field(p, 0);
+    font-size: font(p, fs);
+    line-height: $line-height * 1.5;
+    border: 0;
   }
 
 
@@ -43,8 +46,9 @@
     @include form-field;
     line-height: $line-height;
     min-height: $line-height * 6;
-    padding: bpad(1);
+    padding: bpad(0);
     margin-bottom: 0;
+    border: 0;
   }
 
 
@@ -55,6 +59,7 @@
   #commentform .comment-form-rating label,
   .logged-in div #commentform .comment-form-comment label {
     @include form-label;
+    text-transform: uppercase;
   }
 
 
@@ -104,7 +109,7 @@
   // Il Padding e i Margini dei campi standard
   ///
   ul li.gfield {
-    margin-bottom: $line-height !important;
+    margin-bottom: $line-height * 1 !important;
     padding:0;
 
     ///
@@ -123,12 +128,13 @@
   // e delle sue opzioni
   ///
   select {
-    height: $line-height;
+    height: $line-height * 1.5;
+    padding: 0 0.5em;
 
       option {
         font-size: font-size(h5, fs); //TODO
-        line-height: $line-height;
-        padding: ($line-height / 2) .125em;
+        line-height: $line-height * 1.5;
+        padding: ($line-height / 2) .5em;
       }
   }
 
@@ -162,14 +168,14 @@
 ///
 .gform_wrapper .top_label .gfield_description {
   @include form-desc(); //TODO - selezionare la corrispondenza di dimensione
-  padding: (font(h5, lh) / 2) 0 !important;
+  padding: font(h5, lh) 0 font(h5, lh) 0 !important;
 }
 ///
 // Sotto-etichette dei campi complessi (p.es nome)
 ///
 #top .ginput_complex label {
   @include form-desc(); //TODO - selezionare la corrispondenza di dimensione
-  padding: (font(h5, lh) / 2) 0!important;
+  padding: font(h5, lh) 0 font(h5, lh) 0 !important;
 }
 
 
@@ -200,7 +206,7 @@
 
 #top .gform_wrapper .gform_footer input.button {
   @extend %button;
-  @include button-lh(h3, 4); //TODO
+  @include button(h3, 4, half); //TODO
 
   width: 100%;
   border-right-width: 0;
@@ -244,7 +250,7 @@
 #top .main_color select,
 #top .main_color .select2-container .select2-choice {
   border-color: palette(main, border);
-  background: palette(main, bg);
+  background-color: palette(main, bg);
   color: palette(main, body-alt);
 }
 
