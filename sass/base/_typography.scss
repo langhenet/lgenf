@@ -106,8 +106,19 @@ sub { bottom: $sub-bottom; }
  * Blockquote - citazione //TOCHK
  */
 
+blockquote {
+  border-left: 0;
+  padding-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: $line-height;
 
-
+  p {
+    @include size(blockquote);
+    margin-top: 0;
+    font-style: italic;
+  }
+}
 
 
 //****************************************************************************//

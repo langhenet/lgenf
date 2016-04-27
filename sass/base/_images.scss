@@ -10,3 +10,8 @@
 .avia_transform a .image-overlay {
   display: none !important;
 }
+
+#top div .avia-gallery img {
+  border-width: 0;
+  padding: $line-height / 4;
+}

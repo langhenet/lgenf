@@ -73,3 +73,20 @@
     }
   }
 }
+
+
+
+
+//****************************************************************************//
+//                         BOTTONI ENFOLD SUBTLE - COLORI
+//****************************************************************************//
+
+@each $palette, $bg in $colors {
+  #top .#{$palette}_color .avia-color-theme-color-subtle {
+    @include button-subtle-color;
+
+    &:hover {
+      @include button-subtle-color(hover);
+    }
+  }
+}

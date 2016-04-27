@@ -46,10 +46,13 @@ $nero: #282828;
       bg-alt:     $giallo,      //sfondo alt - il bg di un form o di un box
       accent-alt: $bianco,      //accento alt - il di un link nel form
 
-      overlay:    rgba($nero, 0.2),      //Colore sfondo overlay
+      overlay:    rgba($nero, 0.4),      //Colore sfondo overlay
 
       button:     $bianco,      //colore bottone
-      button-bg:  $verde      //bg bottone
+      button-bg:  $verde,      //bg bottone
+
+      button-subtle: $verde-scuro,
+      button-subtle-bg: $verde-chiarissimo
     ),
 
     main: (
@@ -66,10 +69,13 @@ $nero: #282828;
       bg-alt:     $verde-chiarissimo,      //sfondo alt - il bg di un form o di un box
       accent-alt: $verde,      //accento alt - il di un link nel form
 
-      overlay:     rgba($nero, 0.2),      //Colore sfondo overlay
+      overlay:     rgba($nero, 0.4),      //Colore sfondo overlay
 
       button:     $bianco,      //colore bottone
-      button-bg:  $verde      //bg bottone
+      button-bg:  $verde,      //bg bottone
+
+      button-subtle: $verde-scuro,
+      button-subtle-bg: $verde-chiarissimo
     ),
 
     alternate: (
@@ -86,10 +92,14 @@ $nero: #282828;
       bg-alt:     lighten($arancio, 25%),      //sfondo alt - il bg di un form o di un box
       accent-alt: $arancio,      //accento alt - il di un link nel form
 
-      overlay:    rgba($nero, 0.2),      //Colore sfondo overlay
+      overlay:    rgba($nero, 0.4),      //Colore sfondo overlay
 
       button:     $bianco,      //colore bottone
-      button-bg:  $verde      //bg bottone
+      button-bg:  $verde,      //bg bottone
+
+
+      button-subtle: $verde-scuro,
+      button-subtle-bg: $verde-chiarissimo
     ),
 
     socket: (
@@ -109,7 +119,11 @@ $nero: #282828;
       overlay:    rgba($nero, 0.2),      //Colore sfondo overlay
 
       button:     $bianco,      //colore bottone
-      button-bg:  $verde      //bg bottone
+      button-bg:  $verde,      //bg bottone
+
+
+      button-subtle: $verde-scuro,
+      button-subtle-bg: $verde-chiarissimo
     ),
 
     footer: (
@@ -129,7 +143,11 @@ $nero: #282828;
       overlay:    rgba($nero, 0.2),      //Colore sfondo overlay
 
       button:     $bianco,      //colore bottone
-      button-bg:  $verde      //bg bottone
+      button-bg:  $verde,      //bg bottone
+
+
+      button-subtle: $verde-scuro,
+      button-subtle-bg: $verde-chiarissimo
     )
   );
 

@@ -19,7 +19,7 @@
  * Layout top-iconbox - contenuto
  */
 .iconbox_top .iconbox_content {
-  padding: bpad(0) 2em;
+  padding: 2em 2em 2em 2em;
   border: 0px solid;
 }
 
@@ -31,6 +31,10 @@
 
 .iconbox_top .iconbox_content .iconbox_content_title {
   @include size(h3);
+
+  padding-top:0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /*
@@ -42,6 +46,7 @@
     .iconbox_icon {
       background-color: palette($palette, accent-alt);
       color: white;
+    display: none;
     }
 
     .iconbox_content {

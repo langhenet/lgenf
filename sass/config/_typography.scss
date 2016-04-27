@@ -9,15 +9,15 @@
 // BASE DEL BODY
 ///
   $base: 16;
-  $font-size: 1.0625em; //TODO
-  $line-height: 1.6470588235294117em; //TODO
+  $font-size: 1.125em; //TODO
+  $line-height: 2em; //TODO
 
 
 ///
 // p and other standard elements
 ///
   $margin-top: 0em; //TODO
-  $margin-bottom: 1.6470588235294117em; //TODO
+  $margin-bottom: 2em; //TODO
 
 
 ///
@@ -75,27 +75,27 @@ $weights: (
     ),
 
     h1: (
-      fs: 6.352941176470588em,
-      lh: 1.037037037037037em,
-      mt: 0.25925925925925924em,
+      fs: 6em,
+      lh: 1em,
+      mt: 0.333333333333333em,
       mb: 0em,
       fm: family(ffh, family),
       wt: family(ffh, normal),
     ),
 
     h2: (
-      fs: 3.411764705882353em,
-      lh: 1.4482758620689655em,
-      mt: 0.4827586206896552em,
-      mb: 0.4827586206896552em,
+      fs: 3.222222222222222em,
+      lh: 1.241379310344828em,
+      mt: 0.6206896551724139em,
+      mb: 0.6206896551724139em,
       fm: family(ffh, family),
       wt: family(ffh, normal),
     ),
 
     h3: (
-      fs: 1.8235294117647058em,
-      lh: 1.8064516129032258em,
-      mt: 0.9032258064516129em,
+      fs: 1.7222222222222222em,
+      lh: 1.741935483870968em,
+      mt: 1.161290322580645em,
       mb: 0em,
       fm: family(ffh, family),
       wt: family(ffh, normal),
@@ -103,26 +103,26 @@ $weights: (
 
     h4: (
       fs: 1em,
-      lh: 1.6470588235294117em,
-      mt: 1.6470588235294117em,
-      mb: 0em,
+      lh: 1.5em,
+      mt: 1.5em,
+      mb: 0.5em,
       fm: family(ffh, family),
       wt: family(ffh, normal),
     ),
 
     h5: (
-      fs: 0.7777777777778em,
-      lh: 1.058825308950099em,
-      mt: 1.9285714em,
+      fs: 0.8333333333333333em,
+      lh: 1.2em,
+      mt: 1.2em,
       mb: 0em,
       fm: family(ffh, family),
       wt: family(ffh, normal),
     ),
 
     blockquote: (
-      fs: 2em,
-      lh: 2em,
-      mt: 2em,
+      fs: 1.7222222222222222em,
+      lh: 1.741935483870968em,
+      mt: 1.161290322580645em,
       mb: 0em,
       fm: family(ffh, family),
       wt: family(ffh, light),
