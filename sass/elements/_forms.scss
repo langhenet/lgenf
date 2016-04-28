@@ -36,6 +36,7 @@
     font-size: font(p, fs);
     line-height: $line-height * 1.5;
     border: 0;
+    background-color: #fff;
   }
 
 
@@ -250,7 +251,7 @@
 #top .main_color select,
 #top .main_color .select2-container .select2-choice {
   border-color: palette(main, border);
-  background-color: palette(main, bg);
+  background-color: #fff;
   color: palette(main, body-alt);
 }
 
@@ -287,6 +288,68 @@
   color: palette(socket, body-alt);
 }
 
+/*
+ * SOCKET COLOR - campi
+ */
+#top .socket_color .input-text,
+#top .socket_color input[type='text'],
+#top .socket_color input[type='input'],
+#top .socket_color input[type='password'],
+#top .socket_color input[type='email'],
+#top .socket_color input[type='number'],
+#top .socket_color input[type='url'],
+#top .socket_color input[type='tel'],
+#top .socket_color input[type='search'],
+#top .socket_color textarea,
+#top .socket_color select,
+#top .socket_color .select2-container .select2-choice {
+  border-color: palette(socket, border);
+  background-color: #fff;
+  color: palette(socket, body-alt);
+}
+
+
+
+/*
+ * ALTERNATE COLOR - - bg del form e dei link
+ */
+.alternate_color .gform_wrapper {
+  background: palette(alternate, bg-alt);
+
+  a {
+    color: palette(alternate, body-alt);
+    text-decoration: underline;
+  }
+}
+
+
+/*
+ * ALTERNATE COLOR - label e descrizioni
+ */
+#top .alternate_color label,
+#top .alternate_color .gfield_description {
+  color: palette(alternate, body-alt);
+}
+
+/*
+ * ALTERNATE COLOR - campi
+ */
+#top .alternate_color .input-text,
+#top .alternate_color input[type='text'],
+#top .alternate_color input[type='input'],
+#top .alternate_color input[type='password'],
+#top .alternate_color input[type='email'],
+#top .alternate_color input[type='number'],
+#top .alternate_color input[type='url'],
+#top .alternate_color input[type='tel'],
+#top .alternate_color input[type='search'],
+#top .alternate_color textarea,
+#top .alternate_color select,
+#top .alternate_color .select2-container .select2-choice {
+  border-color: palette(alternate, border);
+  background-color: #fff;
+  color: palette(alternate, body-alt);
+}
 
 ///
 // Quest cose erano presenti nel template... ma non sembrano necessarie. visto
