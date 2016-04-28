@@ -18,6 +18,11 @@
     a {
       color: palette(main, accent-alt);
       text-decoration: underline;
+
+      &.avia-button {
+        color: palette(main, button);
+        text-decoration: none;
+      }
     }
   }
 }

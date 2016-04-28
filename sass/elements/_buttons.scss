@@ -91,6 +91,21 @@
 
     &:hover {
       border-color: palette($palette, body-alt);
+      color: palette($palette, bg);
+      background: palette($palette, body-alt);
+      opacity: 1;
+    }
+  }
+}
+
+@each $palette, $bg in $colors {
+  #top .#{$palette}_color .avia-button.avia-color-dark {
+    border-color: palette($palette, border);
+    color: palette($palette, border);
+    background: transparent;
+
+    &:hover {
+      border-color: palette($palette, body-alt);
       color: palette($palette, bg-alt);
       background: palette($palette, body-alt);
       opacity: 1;

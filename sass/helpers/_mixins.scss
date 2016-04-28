@@ -164,8 +164,8 @@
 @mixin form-label($size: p) {
   font-size: font($size, fs);
   line-height: font($size, lh);
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: $line-height / 2;
+  margin-bottom: $line-height / 2;
   padding-top: 0;
   font-family: form(label, fm);
   font-weight: form(label, wt);
