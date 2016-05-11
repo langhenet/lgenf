@@ -119,6 +119,15 @@ $weights: (
       wt: family(ffh, normal),
     ),
 
+    mini-h3: (
+      fs: 1.5em,
+      lh: 1.125em,
+      mt: 1.125em,
+      mb: 1.125em,
+      fm: family(ffh, family),
+      wt: family(ffh, light),
+      ),
+
     blockquote: (
       fs: 1.6875em,
       lh: 1em,

@@ -10,6 +10,27 @@
 .av_minimal_header #header_main .container.av-logo-container {
   line-height: $line-height * 3; //TODO
   height: $line-height * 3; //TODO
+  transition: line-height 0.2s;
+  transition: height 0.2s;
+}
+
+.av_minimal_header.header-scrolled #header_main .container.av-logo-container { //scollato
+  line-height: $line-height * 2 !important; //TODO
+  height: $line-height * 2 !important; //TODO
+transition: all 0.1s;
+}
+
+#header {
+  box-shadow: 1px 1px 10px rgba(1,1,1,0.3);
+}
+
+/*#header.av_minimal_header.header-scrolled {
+  line-height: $line-height * 2 !important; //TODO
+  height: $line-height * 2 !important; //TODO
+}*/
+
+.av_minimal_header.header-scrolled #header_main .container.av-logo-container {
+  margin-top: $line-height / 4;
 }
 
 .header_color .header_bg,
@@ -18,16 +39,12 @@
 }
 
 #header {
-  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(255,255,255,0) 59%);
-//  background: #fff;
+//  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(255,255,255,0) 59%);
+  background: #fff;
 }
 
 
 //QUESTA COSA é IL BG DELLA PAGINA PADDATA - influenza il colore dell'header
 #main, .avia-msie-8 .av_header_sticky_disabled#header {
   background-color: red;
-}
-
-#header.header-scrolled-full {
-  background: rgba($azzurro, 0.8);
 }

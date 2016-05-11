@@ -30,7 +30,7 @@
  */
 
 .iconbox_top .iconbox_content .iconbox_content_title {
-  @include size(h3);
+  @include size(mini-h3);
   padding-top: 0;
   //margin-top: 0;
 }

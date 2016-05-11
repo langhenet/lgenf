@@ -33,7 +33,7 @@
   //text-transform: uppercase;
 
   &:hover {
-    color: palette(header, body);
+    color: palette(header, accent);
 
     &>a>span {
     //font-weight: 600;
@@ -58,6 +58,7 @@
   }
 
   &.current-menu-item {
+    color: palette(header, accent);
     &>a>span {
     //  font-weight: 600;
       border-bottom: 3px solid palette(header, accent);
@@ -76,12 +77,17 @@
 .header_color .main_menu ul ul {
   background-color: transparent;
 }
+
+.header_color .main_menu .menu ul li a:hover {
+  background: palette(header,bg);
+}
+
 .header_color .main_menu .menu ul li a {
-  background-color: rgba(palette(header, bg-alt), 0.2);
+  background-color: #fff;
   border:0;
 }
 
 .header_color.header-scrolled-full .main_menu .menu ul li a {
-  background-color: rgba($azzurro, 0.8);
+//  background-color: rgba($azzurro, 0.8);
   border:0;
 }

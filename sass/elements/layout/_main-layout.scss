@@ -29,7 +29,7 @@
  * SENZA TOPBAR - HEADER STICKY e NAV INLINE
  */
 .html_header_top.html_header_sticky #main {
-  padding-top: ($line-height * 4); //TODO
+  padding-top: ($line-height * 3); //TODO
 
   @include respond-to(step-2) {
     padding-top: ($line-height * 5); //TODO
@@ -76,6 +76,51 @@ body .column-top-margin {
 //****************************************************************************//
 //                    FEAT HEADER
 //****************************************************************************//
+
+#top .title_container .container {
+  padding: $line-height 0;
+}
+
+.title_container {
+
+  background-image: url('http://ostetricheoasi.it/files/2016/03/IMG_0757.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+
+  &::before {
+    @include color-overlay;
+  }
+
+  .main-title {
+    @include size(h1);
+
+    text-align: center;
+    display:block;
+
+    @include respond-to(step-2) { font-size: font(h1, fs) * 0.7; }
+  }
+
+  .breadcrumb {
+    position: static;
+    margin-top: 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 1.125em;
+
+    @include size(h5);
+    margin-top: 0;
+    margin-bottom: font(h5, lh);
+
+    .breadcrumb-trail {
+      display: inline-block;
+    }
+  }
+
+}
+
 
 .breadcrumb .sep {
   font-family: $font-family-heading;
