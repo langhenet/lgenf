@@ -83,7 +83,7 @@ body .column-top-margin {
 
 .title_container {
 
-  background-image: url('http://ostetricheoasi.it/files/2016/03/IMG_0757.jpg');
+  background-image: url('http://ostetricheoasi.it/files/2016/04/DSC_5088_b.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -93,13 +93,22 @@ body .column-top-margin {
     @include color-overlay;
   }
 
-  .main-title {
+  h1.main-title {
     @include size(h1);
 
     text-align: center;
     display:block;
 
     @include respond-to(step-2) { font-size: font(h1, fs) * 0.7; }
+  }
+
+  strong.main-title {
+    @include size(h3);
+
+    text-align: center;
+    display:block;
+
+    //@include respond-to(step-2) { font-size: font(h3, fs) * 0.7; }
   }
 
   .breadcrumb {

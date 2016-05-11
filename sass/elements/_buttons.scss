@@ -40,6 +40,7 @@
   @extend %button;
   @include button(p, 3);
 
+  margin-top: $line-height * 2;
   font-weight: inherit; //TODO
   text-transform: uppercase;
 }
