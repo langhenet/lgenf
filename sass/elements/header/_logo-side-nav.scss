@@ -48,3 +48,47 @@ transition: all 0.1s;
 #main, .avia-msie-8 .av_header_sticky_disabled#header {
   background-color: red;
 }
+
+
+/*
+ * Ricerca Header - Sfondo
+ */
+
+.header_color .avia-tt {
+  background: palette(header, bg);
+}
+
+#top .av_minimal_header #s,
+#top #s {
+  padding: bpad(2) $line-height * 2 bpad(2) $line-height;
+  border-width: 2px;
+  border-style: solid;
+  border-color: palette(header, border);
+  line-height: $line-height;
+}
+
+#top #searchsubmit, .ajax_load {
+//  @extend %button;
+  @include button(p, 2);
+
+  margin-top: 0;
+  margin-bottom: 0;
+  height: auto;
+  width: auto;
+
+  white-space: normal;
+  border-style: solid;
+//  box-shadow: $button-shadow;
+}
+
+.ajax_search_response h4 {
+  @include size(h3);
+}
+
+#top div .ajax_search_entry {
+  @include size(p);
+}
+
+.ajax_search_excerpt {
+  margin-top: 0;
+}

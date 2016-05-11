@@ -75,7 +75,17 @@
 // Mixin per i bottoni con padding
 ///
 @mixin button($size: p, $bw:2, $pw: null) {
-  @include size($size);
+  font-size: font($size, fs);
+  line-height: font($size, lh);
+  margin-bottom: font($size, mb);
+
+  @if $size == p {
+    margin-top: font($size, mb);
+  }
+
+  @else {
+    margin-top: font($size, mt);
+  }
 
   @if $pw == half {
     padding: bhpad($bw, font($size, fs), font($size, lh)) 1.5em;
@@ -89,7 +99,7 @@
     padding: bpad($bw, font($size, fs), font($size, lh)) 1.5em;
   }
 
-  border-width: $bw * 1px;
+  border-bottom-width: $bw * 1px;
   border-top-width: $bw * 1px;
 }
 
