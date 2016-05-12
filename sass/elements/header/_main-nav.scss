@@ -8,7 +8,7 @@
  * Impostazione navigazione
  */
 #avia-menu.av-main-nav {
-  vertical-align: top; //TODO - può essere middle o bottom anche!
+  vertical-align: middle; //TODO - può essere middle o bottom anche!
 
   &> li {
     line-height: $line-height;

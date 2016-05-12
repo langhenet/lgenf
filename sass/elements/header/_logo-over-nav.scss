@@ -95,8 +95,8 @@
  * Altezza Header
  */
 .av_minimal_header #header_main .container.av-logo-container {
-  line-height: $line-height * 6; //TODO
-  height: $line-height * 6; //TODO
+  line-height: $line-height * 4; //TODO
+  height: $line-height * 4; //TODO
   //padding: $line-height / 2;
 }
 
@@ -106,9 +106,9 @@
   margin-top: 30px;
 }
 
- .header-scrolled-full #header_main_alternate {
-background-color: darken(palette(header, bg), 8%);
-
+.html_header_top.html_bottom_nav_header .header_color.header-scrolled-full #header_main {
+//background-color: darken(palette(header, bg), 8%);
+box-shadow: 2px 4px 15px rgba(1,1,1, 0.2);
  }
 
 /*
@@ -162,7 +162,7 @@ transition: all 0.5s;
   right: 0;
   transition: all 0.5s;
   background: palette(header, bg);
-  height: $line-height * 6;
+  height: $line-height * 5;
 
 
     @include respond-to(step-2) {
@@ -190,3 +190,19 @@ transition: all 0.5s;
   right: 0;
   height: $line-height * 2;
 }
+
+/*
+ * MENU MOBILE
+ */
+@include respond-to(step-2) {
+.html_header_top.html_bottom_nav_header .header-scrolled #header_main {
+    position:relative;
+  }
+}
+
+/*
+ * LOGO
+ */
+ .logo a {
+   margin-top: $line-height / 2;
+ }

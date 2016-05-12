@@ -100,6 +100,54 @@
 //  }
 }
 
+@include respond-to(step-p0) {
+  .av-flex-cells .flex_cell.av_one_half {
+    .flex_cell_inner {
+      width: 700px;
+      //background: #111;  //- control
+    }
+    &:first-child .flex_cell_inner {
+      float:right;
+    }
+    &:last-child .flex_cell_inner {
+      float:left;
+    }
+  }
+}
+
+/*
+ * Ultimi elementi no margin-bottom
+ */
+.av_textblock_section p:last-child,
+.av_textblock_section h1:last-child,
+.av_textblock_section h2:last-child,
+.av_textblock_section h3:last-child,
+.av_textblock_section h4:last-child,
+.av_textblock_section h5:last-child,
+.av_textblock_section ul:last-child,
+.av_textblock_section ol:last-child {
+  margin-bottom: 0;
+}
+
+/*
+ * Primi elementi no margin-top
+ */
+.av_textblock_section p:first-child,
+.av_textblock_section h1:first-child,
+.av_textblock_section h2:first-child,
+.av_textblock_section h3:first-child,
+.av_textblock_section h4:first-child,
+.av_textblock_section h5:first-child,
+.av_textblock_section ul:first-child,
+.av_textblock_section ol:first-child {
+  margin-top: 0;
+}
+
+.avia_textblock {
+//  padding-top: $line-height;
+//  padding-bottom: $line-height;
+}
+
 //****************************************************************************//
 //                               FRECCETTE CHE SCROLLANO
 //****************************************************************************//
@@ -147,4 +195,14 @@
     background: palette(alternate, overlay);
     content: "";
   }
+
+  .av-parallax-inner.avia-full-stretch:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.4);
+}
 }

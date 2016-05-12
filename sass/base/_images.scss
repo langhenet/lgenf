@@ -15,3 +15,8 @@
   border-width: 0;
   padding: $line-height / 4;
 }
+
+body img.alignright,
+.entry-content-wrapper a:hover img.alignright {
+  margin: 0 0 0 $line-height;
+}
