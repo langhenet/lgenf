@@ -40,10 +40,14 @@
  * Margine Sopra Sidebar e contenuto
  */
 .content,
-.sidebar,
+.sidebar {
+  padding-top: $line-height * 3;
+  padding-bottom: $line-height * 3;
+}
+
 .html_header_top.html_header_topbar_active.html_header_sticky.html_bottom_nav_header #top #main {
   padding-top: $line-height * 6;
-  padding-bottom: $line-height * 6;
+  padding-bottom: 0;
 }
 
 
@@ -69,4 +73,90 @@ body .column-top-margin {
 
 #top div .no_margin.first {
   margin-left:0;
+}
+
+
+
+
+//****************************************************************************//
+//                    FEAT HEADER
+//****************************************************************************//
+
+#top .title_container .container {
+  padding: $line-height 0;
+}
+
+.title_container {
+
+  background-image: url('http://cascinagabutti.it/files/2016/03/PB040094.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+
+  &::before {
+    @include color-overlay;
+  }
+
+  h1.main-title {
+    @include size(h1);
+    @include deco(h1);
+
+    text-align: center;
+    display:block;
+
+    @include respond-to(step-2) { font-size: font(h1, fs) * 0.7; }
+  }
+
+  strong.main-title {
+    @include size(h2);
+    @include deco(h2);
+
+    text-align: center;
+    display:block;
+
+    //@include respond-to(step-2) { font-size: font(h3, fs) * 0.7; }
+  }
+
+  .breadcrumb {
+    position: static;
+    margin-top: 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 1.125em;
+
+    @include size(h5);
+    margin-top: 0;
+    margin-bottom: font(h5, lh);
+
+    .breadcrumb-trail {
+      display: inline-block;
+    }
+  }
+
+}
+
+
+.breadcrumb .sep {
+  font-family: $font-family-heading;
+}
+
+
+
+//****************************************************************************//
+//                    SIDEBAR
+//****************************************************************************//
+
+#top #main .sidebar {
+  border-left-width: 0;
+}
+
+.inner_sidebar {
+  margin-left: 0;
+}
+
+.content {
+  border-right: 0;
+  margin-right: 0;
 }

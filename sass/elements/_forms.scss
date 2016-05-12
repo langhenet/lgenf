@@ -21,39 +21,57 @@
   ///
   // Dimensioni dei Campi generici - anche gravity
   ///
-  .input-text,
-  input[type='text'],
-  input[type='input'],
-  input[type='password'],
-  input[type='email'],
-  input[type='number'],
-  input[type='url'],
-  input[type='tel'],
-  input[type='search'],
-  select,
-  .select2-container .select2-choice {
-    @include form-field(p, 0);
-    font-size: font(p, fs);
-    line-height: $line-height * 1.5;
-    border: 0;
-    background-color: #fff;
-    padding-left: $line-height / 2;
-    padding-right: $line-height / 2;
-  }
+.input-text,
+input[type='text'],
+input[type='input'],
+input[type='password'],
+input[type='email'],
+input[type='number'],
+input[type='url'],
+input[type='tel'],
+input[type='search'],
+select,
+.select2-container .select2-choice {
+  @include form-field(p, 0);
+  font-size: font(p, fs);
+  line-height: $line-height * 1.5;
+  border: 0;
+  background-color: #fff;
+  padding-left: $line-height / 2;
+  padding-right: $line-height / 2;
+}
 
 
   ///
   // Dimensioni text area generica - anche gravity
   ///
-  textarea {
-    @include form-field;
-    line-height: $line-height;
-    min-height: $line-height * 6;
-    padding: bpad(0);
-    margin-bottom: 0;
-    border: 0;
-  }
+textarea {
+  @include form-field;
+  line-height: $line-height;
+  min-height: $line-height * 6;
+  padding: bpad(0);
+  margin-bottom: 0;
+  border: 0;
+}
 
+/*
+ * Campi con i datepicker
+ */
+input.datepicker {
+  display: inline-block;
+}
+
+/*
+ * Checkbox e Toggles
+ */
+.gform_wrapper .gfield_checkbox li label,
+.gform_wrapper .gfield_radio li label {
+  text-transform: none;
+}
+
+.gform_wrapper .gfield_checkbox li input[type=checkbox]:checked + label {
+  font-weight: family(ff, bold);
+}
 
 ///
 // Etichette dei Moduli
@@ -354,20 +372,21 @@
 }
 
 ///
-// Quest cose erano presenti nel template... ma non sembrano necessarie. visto
-// che il margin bottom è già impostato a 0 in gravity mod
+// Date Picker
 ///
-//#top .gform_wrapper .input-text,
-//#top .gform_wrapper input[type='text'],
-//#top .gform_wrapper input[type='input'],
-//#top .gform_wrapper input[type='password'],
-//#top .gform_wrapper input[type='email'],
-//#top .gform_wrapper input[type='number'],
-//#top .gform_wrapper input[type='url'],
-//#top .gform_wrapper input[type='tel'],
-//#top .gform_wrapper input[type='search'],
-//#top .gform_wrapper textarea,
-//#top .gform_wrapper select,
-//#top .gform_wrapper .select2-container .select2-choice  {
-//    margin-bottom: 0!important;
-//}
+
+.ui-datepicker-header {
+  height: $line-height * 2.5 !important;
+  line-height: $line-height * 2 !important;
+}
+
+.ui-datepicker-next,
+.ui-datepicker-prev {
+  height: $line-height * 1 !important;
+  margin-top: $line-height / 2;
+//  line-height: $line-height * 1.5 !important;
+}
+
+#top .ui-datepicker-title select {
+  margin-top: $line-height / 2;
+}

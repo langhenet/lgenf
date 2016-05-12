@@ -132,7 +132,7 @@ blockquote {
  * Decorazione Link + HOVER
  */
 .content a {
-  //text-decoration: underline;
+  text-decoration: underline;
   //border-bottom: 1px dashed;
   //font-weight: family(ff, bold);
 
@@ -156,7 +156,7 @@ blockquote {
     color: palette($palette, link);
 
     &:hover {
-      color: lighten(palette($palette, link), 20%);
+      color: darken(palette($palette, link), 15%);
     }
   }
 }

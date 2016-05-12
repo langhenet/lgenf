@@ -4,11 +4,13 @@
 //*                          DIMENSIONI & FACE
 //*                                                                          *//
 //*==========================================================================*//
-
 /*
- * Immagine
+ * Feat Header categoria
  */
+.category .title_container {
 
+  background-image: url('http://cascinagabutti.it/files/2016/03/PB040094.jpg');
+}
 
 
 /*
@@ -16,6 +18,11 @@
  */
 .single-big h2.post-title {
   @include size(h2);
+  @include deco(h2);
+
+  letter-spacing: -4px;
+margin-bottom: 0;
+  margin-top: 0;
 }
 
 #top .flex_column .single-big .entry-content-wrapper h2.post-title {
@@ -25,6 +32,40 @@
 /*
  * Meta del listato - uno span
  */
-.single-big  .post-meta-infos {
-background: black;
+ .single-big  .post-meta-infos {
+   background: transparent;
+   display: block;
+   padding: bpad(0.5) 0;
+   border-bottom: 1px solid palette(main, border);
+   //margin-bottom: $line-height;
+   font-family: $font-family-heading;
+   font-weight: family(ffh, bold);
+ }
+
+.main_color .minor-meta {
+  color: palette(main, body);
+}
+
+
+
+.category .single-big,
+.blog .single-big {
+  p {
+    display: inline;
+  }
+
+  .read-more-link {
+    display: inline;
+
+    .more-link {
+      display: inline;
+    }
+  }
+ }
+
+.single-big .post_delimiter {
+  padding-top: bpad(1);
+  margin-bottom: $line-height * 2;
+  margin-top: $line-height;
+//  border-bottom: 2px solid lighten(palette(main, border), 40%);
 }

@@ -6,6 +6,36 @@
 //*                                                                     ******//
 //****************************************************************************//
 
+.widgettitle {
+  @include size(h3);
+  @include deco(h3);
+
+  text-transform: none;
+}
+
+.sidebar .widgettitle {
+//  padding-bottom: bhpad(0.5);
+  border-bottom: 1px solid palette(main, border);
+//  margin-bottom: font(h3, lh);
+}
+
+.recentcomments,
+.widget_recent_entries li {
+padding: 0;
+border-bottom: 0;
+border-top: 0;
+}
+
+.recentcomments a,
+.widget_recent_entries li a {
+  font-style: normal;
+  font-family: $font-family;
+
+  &::before {
+    content: "\203A \203A \00a0";
+    display: inline-block;
+  }
+}
 
 .flex_column .widget .widgettitle,
 .content .widget .widgettitle {

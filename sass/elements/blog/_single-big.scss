@@ -13,10 +13,21 @@
  * Contenitore Immagine
  */
 
-.big-preview.single-big {
+.single-post .big-preview.single-big {
   padding-bottom: 0;
   margin-bottom: $line-height * 2;
+  display: none;
 }
+
+
+/*
+ * Immagine
+ */
+
+ .single-post .big-preview.single-big {
+   padding-bottom: 0;
+   margin-bottom: 0;
+ }
 
 /*
  * TITOLO
@@ -24,14 +35,60 @@
 .entry-content-wrapper h1.post-title {
   font-size: font(h1, fs) * 0.7;
   line-height: font(h1, lh);
-  margin-top: font(h1, mt);
+  margin-top: 0;
   margin-bottom: font(h1, mt);
-  letter-spacing: -2px;
+  letter-spacing: -4px;
 }
 
 /*
  * Meta - contenitore // uno span
  */
 .single-post .single-big .post-meta-infos {
-  background: blue;
+  background: palette(main, bg);
+  display: block;
+  padding: bpad(0.5) 0;
+  border-bottom: 1px solid palette(main, border);
+  margin-bottom: $line-height;
+  font-family: $font-family-heading;
+  font-weight: family(ffh, bold);
+}
+
+.date-container {
+float: right;
+
+&::before {
+  content: "il ";
+}
+}
+
+.text-sep-date,
+.comment-container,
+.text-sep-comment {
+  display: none;
+}
+
+.blog-categories::before {
+  content: "scritto "
+}
+
+/*
+ * Author Box
+ */
+
+.author-box {
+display: inline-block;
+width: 94.1%;
+margin-bottom: $line-height * 2;
+background: palette(main, bg-alt);
+padding: $line-height * 2;
+}
+
+.main_color h3.author-title,
+.author-box p {
+  color: palette(main, body-alt);
+  margin-top:0;
+}
+
+.author-box .post-author-format-type {
+  margin-top: 0;
 }

@@ -157,7 +157,7 @@
   }
 }
 
-#top .scroll-down-link  {
+#top #intro .scroll-down-link  {
   font-size: font(h1, fs);
   animation: none;
   font-weight: family(ffh, u-thin);
@@ -168,7 +168,9 @@
   padding-top: font(h1, mt) * 2;
 }
 
-
+#top .scroll-down-link {
+  animation: none;
+}
 
 //****************************************************************************//
 //                               INTRO
