@@ -77,3 +77,22 @@ padding: $line-height * 2;
 .author-box .post-author-format-type {
   margin-top: $line-height / 2;
 }
+
+#top .main_color .comment-form label {
+  color: palette(main, body);
+}
+
+#submit,
+input[type='submit'] {
+  @extend %button;
+  @include button(p, 2);
+}
+
+.main_color #submit,
+.main_color input[type='submit'] {
+@include button-color();
+
+  &:hover{
+    @include button-color(hover, main);
+  }
+}

@@ -91,3 +91,20 @@
 //  background-color: rgba($azzurro, 0.8);
   border:0;
 }
+
+//****************************************************************************//
+//                               HAMBURGER
+//****************************************************************************//
+#advanced_menu_toggle,
+#advanced_menu_hide {
+  background: palette(header, bg);
+  color: palette(header, body);
+  border-color: palette(header, body)
+}
+
+#top #wrap_all .av_header_transparency,
+.av_header_transparency #advanced_menu_toggle {
+  background: palette(header, bg);
+  color: palette(header, body);
+  border-color: palette(header, body)
+}

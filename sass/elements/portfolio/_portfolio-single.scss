@@ -6,7 +6,7 @@
 //***************************************************************************//
 
 .single-portfolio {
-  #av_section_2.main_color .entry-content-wrapper > div:last-of-type {
+  #av_section_2.main_color .entry-content-wrapper > div:nth-child(2) {
     background: palette(main, bg-alt);
     color: palette(main, body-alt);
     padding: $line-height;

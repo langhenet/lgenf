@@ -71,10 +71,10 @@
 @each $palette, $bg in $colors {
   #top .#{$palette}_color .avia-color-theme-color,
   div .#{$palette}_color .button {
-    @include button-color;
+    @include button-color(none, $palette);
 
     &:hover {
-      @include button-color(hover);
+      @include button-color(hover, $palette);
     }
   }
 }

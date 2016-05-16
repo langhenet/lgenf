@@ -11,3 +11,34 @@
 .content .widget .widgettitle {
   margin-top: $line-height;
 }
+
+
+.widgettitle {
+  @include size(h3);
+  @include deco(h3);
+  text-transform: none;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  line-height: blh(1, font(h3, fs), font(h3, lh));
+}
+
+.widget {
+  padding: 0;
+  margin-bottom: $line-height * 2;
+}
+
+
+
+
+.recentcomments,
+.widget_recent_entries li {
+  padding: 0;
+  border-top: 0;
+  display: list-item;
+}
+
+.recentcomments a,
+.widget_recent_entries li a {
+  font-style: normal;
+  font-family: $font-family;
+}
