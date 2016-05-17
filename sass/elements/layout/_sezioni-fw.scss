@@ -66,14 +66,22 @@
 }
 
 
+//EQUAL HEIGHT margini - per spaziare meglio le cose
+.av-equal-height-column-flextable {
+  margin-top: $line-height * 2;
+}
+
+#top .flex_column_table {
+    display: inline-table;
+}
 
 
 //****************************************************************************//
 //                               FLEX CELLS
 //****************************************************************************//
 .flex_cell {
-  padding-top: $line-height * 2 !important;
-  padding-bottom: $line-height * 2 !important;
+  padding-top: $line-height * 2.5 !important;
+  padding-bottom: $line-height * 2.5 !important;
 //  position: relative; // se voglio overlay automatico
 
 
@@ -113,6 +121,12 @@
     &:last-child .flex_cell_inner {
       float:left;
     }
+  }
+}
+
+@include respond-to(step-3) {
+  .av-flex-cells .flex_cell.av_one_half {
+    min-height: 350px;
   }
 }
 
@@ -184,6 +198,10 @@ left: 0;
   background: palette(main, overlay);
 }
 
+//****************************************************************************//
+//                               LAYOUT SENZA MARGINI SOPRA E SOTTO
+//****************************************************************************//
+
 /*
  * Ultimi elementi no margin-bottom
  */
@@ -210,4 +228,25 @@ left: 0;
 .av_textblock_section ul:first-child,
 .av_textblock_section ol:first-child {
   margin-top: 0;
+}
+
+
+
+//****************************************************************************//
+//                               SOTTO MENU
+//****************************************************************************//
+
+#top .av-submenu-container {
+  height: $line-height * 2;
+  font-size: 1em;
+  line-height: inherit;
+}
+
+#top .av-subnav-menu > li {
+  font-family: $font-family-heading;
+  font-weight: family(ffh, bold);
+  font-size: font(h5, fs);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: font(h5, lh) 0;
 }
