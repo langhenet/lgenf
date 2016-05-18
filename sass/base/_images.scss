@@ -20,3 +20,71 @@ body img.alignright,
 .entry-content-wrapper a:hover img.alignright {
   margin: 0 0 0 $line-height;
 }
+
+
+body .aligncenter,
+.entry-content-wrapper a:hover .aligncenter {
+  padding: 0;
+  margin: $line-height auto;
+}
+
+/************************************/
+// CAPTIONED IMAGES
+/**********************************/
+
+#top .wp-caption.aligncenter,
+.avia-image-container-inner {
+  border:0;
+  margin: $line-height auto;
+  box-shadow: 1px 2px 7px rgba(0,0,0,.3);
+}
+
+#top .wp-caption.alignright,
+#top .wp-caption.alignleft {
+border:0;
+box-shadow: 1px 2px 7px rgba(0,0,0,.3);
+}
+
+#top .wp-caption img {
+  padding: 0;
+  border:0;
+}
+
+.wp-caption-text,
+.av-image-caption-overlay-center {
+  /* z-index: 9999999999; */
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  @include size(h5);
+  @include deco(h5);
+
+  margin-top: font(h5, lh) * -2;
+  padding-top: font(h5, lh) / 2;
+  font-style: italic;
+  font-weight: family(ffh, bold);
+  text-align: right;
+  padding-left: font(h5, lh);
+  padding-right: font(h5, lh);
+  }
+
+.main_color .wp-caption-text,
+.main_color .av-image-caption-overlay-center {
+  background: rgba($verde, 0.9);
+  color: $bianco;
+}
+
+.alternate_color .wp-caption-text,
+.alternate_color .av-image-caption-overlay-center {
+  background: rgba($verde-chiarissimo, 0.9);
+  color: $verde-scuro;
+}
+
+.socket_color .wp-caption-text,
+.socket_color .av-image-caption-overlay-center {
+  background: rgba($arancio, 0.9);
+  color: $bianco;
+}

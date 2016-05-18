@@ -65,6 +65,14 @@
   padding-bottom: $line-height * 6;
 }
 
+//EQUAL HEIGHT margini - per spaziare meglio le cose
+.av-equal-height-column-flextable {
+  margin-top: $line-height * 2;
+}
+
+#top .flex_column_table {
+    display: inline-table;
+}
 
 
 
@@ -207,4 +215,30 @@
   left: 0;
   background: rgba(0,0,0,0.4);
 }
+}
+
+
+
+//****************************************************************************//
+//                               SUB MENU
+//****************************************************************************//
+
+#top .av-submenu-container {
+  top: $line-height * 2.75;
+}
+
+
+#top .av-submenu-container {
+  height: $line-height * 2;
+  font-size: 1em;
+  line-height: inherit;
+}
+
+#top .av-subnav-menu > li {
+  font-family: $font-family-heading;
+  font-weight: family(ffh, bold);
+  font-size: font(h5, fs);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: font(h5, lh) 0;
 }
