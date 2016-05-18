@@ -28,9 +28,9 @@
  * Top Bar Scrollata
  */
 
-#top .header-scrolled #header_meta {
-  display:none;
-}
+//#top .header-scrolled #header_meta {
+//  display:none;
+//}
 
 ///*
 // * Layout Elementi Top Bar
@@ -98,6 +98,7 @@
   line-height: $line-height * 4; //TODO
   height: $line-height * 4; //TODO
   //padding: $line-height / 2;
+  transition: all 0.5s;
 }
 
 
@@ -112,10 +113,12 @@ box-shadow: 2px 4px 15px rgba(1,1,1, 0.2);
  }
 
 /*
- * Sezione logo - scrollato
+ * Sezione logo - scrollato a metà
  */
-.html_header_top.html_bottom_nav_header .header-scrolled .av-logo-container {
-
+.html_header_top.html_bottom_nav_header .header-scrolled #header_main .av-logo-container  {
+  line-height: $line-height * 2 !important; //TODO
+  height: $line-height * 2 !important; //TODO
+  transition: all 0.5s;
 }
 
 /*
@@ -153,43 +156,43 @@ transition: all 0.5s;
 ///*
 // * Contenitore LOGO + NAV
 // */
-.html_header_top.html_bottom_nav_header #header_main {
-  z-index: 3;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transition: all 0.5s;
-  background: palette(header, bg);
-  height: $line-height * 5;
+//.html_header_top.html_bottom_nav_header #header_main {
+//  z-index: 3;
+//  position: absolute;
+//  top: 0;
+//  bottom: 0;
+//  left: 0;
+//  right: 0;
+//  transition: all 0.5s;
+//  background: palette(header, bg);
+//  height: $line-height * 5;
 
 
-    @include respond-to(step-2) {
-      position: relative;
-    }
-}
-
-/*
- * Corregge il logo sovrapposto quando l'header scrolla - il bg della topbar deve essere trasparente
- */
-.html_header_top.html_bottom_nav_header .header-scrolled #header_main {
-
-  height: $line-height * 5;
-}
+//    @include respond-to(step-2) {
+//      position: relative;
+//    }
+//}
 
 /*
  * Corregge il logo sovrapposto quando l'header scrolla - il bg della topbar deve essere trasparente
  */
-.html_header_top.html_bottom_nav_header .header-scrolled-full #header_main {
-  position: fixed;
-  transition: all 0.5s;
-  top: 0em;
+//.html_header_top.html_bottom_nav_header .header-scrolled #header_main {
+
+//  height: $line-height * 5;
+//}
+
+/*
+ * Corregge il logo sovrapposto quando l'header scrolla - il bg della topbar deve essere trasparente
+ */
+//.html_header_top.html_bottom_nav_header .header-scrolled-full #header_main {
+//  position: fixed;
+//  transition: all 0.5s;
 /* bottom: 52em; */
-  left: 0;
-  right: 0;
-  height: $line-height * 2;
-}
+//  top: 0em;
+//  left: 0;
+//  right: 0;
+//  height: $line-height * 2;
+//}
 
 /*
  * MENU MOBILE
