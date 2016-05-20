@@ -15,11 +15,11 @@
 
     &> a {
       font-weight: 400; //TODO
-      padding: 0 35px; // TODO
+      padding: 0 30px; // TODO
       text-transform: uppercase;
 
       @include respond-to(step-1) {
-        padding: 0 20px;
+        padding: 0 15px;
       }
     }
   }

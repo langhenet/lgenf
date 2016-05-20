@@ -92,3 +92,44 @@ padding: $line-height * 2;
 .author-box .post-author-format-type {
   margin-top: 0;
 }
+
+#top .main_color .comment-form label {
+  color: palette(main, body);
+}
+
+#submit,
+input[type='submit'] {
+  @extend %button;
+  @include button(p, 2);
+}
+
+.single-post h3.miniheading,
+.single-post span.minitext,
+form.comment-form {
+  background: palette(main, bg-alt);
+}
+
+.single-post h3.miniheading {
+  @include size(h3);
+  @include deco(h3);
+
+  padding: font(h3, mt);
+  //padding-top: font(h3, mt);
+}
+.single-post span.minitext {
+  padding: 0 $line-height;
+  display: block;
+}
+
+form.comment-form {
+    padding: $line-height;
+}
+
+#commentform p {
+  padding: 0;
+  margin-bottom: $line-height;
+}
+
+#respond {
+  margin-top: 0;
+}

@@ -6,6 +6,10 @@
 //*                                                                          *//
 //****************************************************************************//
 
+.header_color .header_bg {
+  background-color: white;
+}
+
 //****************************************************************************//
 //                 TOP BAR - decommentare per utilizzarla
 //****************************************************************************//
@@ -98,7 +102,7 @@
   line-height: $line-height * 4; //TODO
   height: $line-height * 4; //TODO
   //padding: $line-height / 2;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 
 
@@ -114,7 +118,7 @@ box-shadow: 2px 4px 15px rgba(1,1,1, 0.2);
 .html_header_top.html_bottom_nav_header .header-scrolled #header_main .av-logo-container  {
   line-height: $line-height * 2 !important; //TODO
   height: $line-height * 2 !important; //TODO
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 
 /*
@@ -124,7 +128,7 @@ box-shadow: 2px 4px 15px rgba(1,1,1, 0.2);
 //visibility: hidden;
 line-height: 0 !important; //TODO
 height: 0 !important; //TODO
-transition: all 0.5s;
+transition: all 0.2s;
 }
 
 /*
@@ -141,54 +145,6 @@ transition: all 0.5s;
   line-height: $line-height * 2; //TODO
   height: $line-height * 2; //TODO
 }
-
-
-//****************************************************************************//
-//                        SOVRAPPOSIZIONE HEADER A TOP BAR
-//                   il bg della topbar deve essere trasparente
-//                              scommentare per usare
-//****************************************************************************//
-
-///*
-// * Contenitore LOGO + NAV
-// */
-//.html_header_top.html_bottom_nav_header #header_main {
-//  z-index: 3;
-//  position: absolute;
-//  top: 0;
-//  bottom: 0;
-//  left: 0;
-//  right: 0;
-//  transition: all 0.5s;
-//  background: palette(header, bg);
-//  height: $line-height * 5;
-
-
-//    @include respond-to(step-2) {
-//      position: relative;
-//    }
-//}
-
-/*
- * Corregge il logo sovrapposto quando l'header scrolla - il bg della topbar deve essere trasparente
- */
-//.html_header_top.html_bottom_nav_header .header-scrolled #header_main {
-
-//  height: $line-height * 5;
-//}
-
-/*
- * Corregge il logo sovrapposto quando l'header scrolla - il bg della topbar deve essere trasparente
- */
-//.html_header_top.html_bottom_nav_header .header-scrolled-full #header_main {
-//  position: fixed;
-//  transition: all 0.5s;
-/* bottom: 52em; */
-//  top: 0em;
-//  left: 0;
-//  right: 0;
-//  height: $line-height * 2;
-//}
 
 /*
  * Tablet Logo
@@ -212,7 +168,7 @@ transition: all 0.5s;
   }
 
   @include respond-to(step-4) {
-    margin-bottom: 0.0em;
+    margin-bottom: 1em;
   }
   @include respond-to(step-5) {
     margin-bottom: 1em;
