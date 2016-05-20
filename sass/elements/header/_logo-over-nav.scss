@@ -191,6 +191,35 @@ transition: all 0.5s;
 //}
 
 /*
+ * Tablet Logo
+ */
+@include respond-to(step-2) {
+  .html_header_top.html_logo_center .logo {
+    left:0;
+    transform:none;
+  }
+}
+
+
+/*
+ * Cell Logo
+ */
+
+
+.responsive #top .logo {
+  @include respond-to(step-3) {
+    margin-bottom: 0.8em;
+  }
+
+  @include respond-to(step-4) {
+    margin-bottom: 0.0em;
+  }
+  @include respond-to(step-5) {
+    margin-bottom: 1em;
+  }
+}
+
+/*
  * MENU MOBILE
  */
 @include respond-to(step-2) {
@@ -198,6 +227,7 @@ transition: all 0.5s;
     position:relative;
   }
 }
+
 
 /*
  * LOGO
