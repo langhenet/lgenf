@@ -99,8 +99,8 @@
  * Altezza Header
  */
 .av_minimal_header #header_main .container.av-logo-container {
-  line-height: $line-height * 4; //TODO
-  height: $line-height * 4; //TODO
+  line-height: $line-height * 3; //TODO
+  height: $line-height * 3; //TODO
   //padding: $line-height / 2;
   transition: all 0.2s;
 }
@@ -189,5 +189,5 @@ transition: all 0.2s;
  * LOGO
  */
  .logo a {
-   margin-top: $line-height / 2;
+   margin-top: $line-height / -2;
  }
