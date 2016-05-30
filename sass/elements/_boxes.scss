@@ -90,7 +90,7 @@
   border-bottom: 0;
   border-top-width: 2px;
   padding: bpad(1) 3em;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   font-family: $font-family-heading;
   font-weight: family(ff, bold);
 }
@@ -141,4 +141,37 @@ top: 1.125em;
 .main_color .toggler.activeTitle,
 .main_color .toggler.activeTitle:hover {
   background: palette(socket, bg);
+}
+
+/************************************************************************/
+/*   TESTIMONIAL
+/**************************************************/
+.avia-testimonial-wrapper {
+  margin: $line-height 0;
+}
+
+.avia-testimonial {
+  border: 2px dashed;
+  padding-top: bpad(2) + $line-height;
+  padding-bottom: bpad(2) + $line-height;
+  font-family: 'Arvo';
+  font-style: italic;
+}
+
+.avia-testimonial-wrapper .avia-testimonial-row:last-child .avia-testimonial,
+.avia-testimonial.avia-last-testimonial,
+.avia-grid-1-testimonials .avia-testimonial {
+  border-bottom: 2px dashed;
+  border-right: 2px dashed;
+}
+
+.avia-testimonial-meta-mini,
+.avia-testimonial-name,
+.avia-testimonial-subtitle {
+  font-size: font(p, fs);
+  line-height: font(p, lh);
+}
+
+body div .avia-testimonial {
+  float: left;
 }

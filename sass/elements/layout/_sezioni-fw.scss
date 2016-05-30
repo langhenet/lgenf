@@ -186,6 +186,16 @@
   border: 8px solid #fff;
   animation: none;
   margin-bottom: 0.5em;
+
+  @include respond-to(step-2) {
+    padding-top: 0.12em;
+  }
+
+  @include respond-to(step-4) {
+    padding-top: 0.14em;
+    border-width: 5px;
+  //  padding-bottom: 0.8em;
+  }
 }
 
 .av-parallax-inner.avia-full-stretch:before {

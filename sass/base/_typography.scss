@@ -21,7 +21,7 @@ body {
   margin:0 auto;
 
   @include respond-to(step-2) { font-size: $font-size * 0.9;} //TODO
-  @include respond-to(step-4) { font-size: $font-size * 0.7;} //TODO
+  @include respond-to(step-4) { font-size: $font-size * 0.8;} //TODO
 }
 
 p, ul, ol, pre, table, blockquote {
@@ -50,19 +50,24 @@ h1, h2, h3, h4, h5 {
 
 }
 
+p + h1, p + h2, p + h3, p + h4, p + h5, p + h6 {margin-top: inherit;}
+
 h1 {
   @include size(h1);
   @include deco(h1);
   @include respond-to(step-2) { font-size: font(h1, fs) * 0.7; }
+  @include respond-to(step-4) { font-size: font(h1, fs) * 0.55;}
 }
 
 ///*
 // * Eliminare uppercase
 // */
-//.template-page .entry-content-wrapper h1,
-//.template-page .entry-content-wrapper h2 {
-//  text-transform: none;
-//}
+  @include respond-to(step-4) {
+    .template-page .entry-content-wrapper h1,
+    .template-page .entry-content-wrapper h2 {
+    text-transform: none;
+  }
+}
 
 h2 {
   @include size(h2);
