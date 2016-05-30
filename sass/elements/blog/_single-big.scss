@@ -28,6 +28,7 @@
   margin-top: 0;
   margin-bottom: font(h1, mt);
   letter-spacing: -1px;
+  @include respond-to(step-2) { font-size: font(h1, fs) * 0.5; }
 }
 
 /*

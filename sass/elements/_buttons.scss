@@ -26,8 +26,8 @@
 //                              BOTTONI ENFOLD - Dimensioni
 //***********************************************************************//
 
-.avia-button.avia-size-small,
- #top .avia-button.avia-color-light.avia-size-small {
+.avia-button.avia-size-small
+ /*#top .avia-button.avia-color-light.avia-size-small*/ {
   @extend %button;
   @include button(h5, 1);
 
@@ -92,7 +92,7 @@
 
     &:hover {
       border-color: palette($palette, body-alt);
-      color: palette($palette, bg);
+      color: palette($palette, bg-alt);
       background: palette($palette, body-alt);
       opacity: 1;
     }
@@ -112,4 +112,15 @@
       opacity: 1;
     }
   }
+}
+
+
+
+//****************************************************************************//
+//                         BOTTONI del cazzo
+//**********************************************************************//
+#top .main_color .avia-button.avia-color-light.avia-size-small {
+  @extend %button;
+
+  @include button(h5, 2);
 }
