@@ -9,7 +9,7 @@
  */
 #avia-menu.av-main-nav {
   vertical-align: middle; //TODO - può essere middle o bottom anche!
-
+  //margin-top: $line-height / 1;
   &> li {
     line-height: $line-height;
 

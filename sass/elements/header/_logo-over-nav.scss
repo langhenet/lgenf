@@ -95,6 +95,10 @@
 //                            scommentare per usare
 //****************************************************************************//
 
+#header_main {
+//  top: -$line-height;
+}
+
 /*
  * Altezza Header
  */
@@ -103,6 +107,8 @@
   height: $line-height * 3; //TODO
   //padding: $line-height / 2;
   transition: all 0.2s;
+//  margin-bottom: $line-height;
+top: -1em;
 }
 
 
@@ -189,5 +195,6 @@ transition: all 0.2s;
  * LOGO
  */
  .logo a {
-   margin-top: $line-height / -2;
+//  margin-top: $line-height / -2;
+//  z-index: 99999999;
  }
