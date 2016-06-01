@@ -187,7 +187,11 @@ blockquote {
   }
 }
 
-.avia-section.main_color .avia_textblock p.lg-no-first-letter:first-letter {
+.avia-section.main_color .avia_textblock p.lg-no-first-letter:first-letter,
+#no-capital .avia_textblock p:first-letter,
+#no-capital-1 .avia_textblock p:first-letter,
+#no-capital-2 .avia_textblock p:first-letter,
+#no-capital-3 .avia_textblock p:first-letter {
   font-size: inherit;
   float: inherit;
   margin-top: inherit;
