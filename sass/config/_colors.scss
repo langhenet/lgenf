@@ -39,7 +39,10 @@
       overlay:    null,      //Colore sfondo overlay
 
       button:     null,      //colore bottone
-      button-bg:  green      //bg bottone
+      button-bg:  green,      //bg bottone
+
+      button-subtle: black,
+      button-subtle-bg: gray
     ),
 
     main: (
@@ -59,7 +62,10 @@
       overlay:    null,      //Colore sfondo overlay
 
       button:     null,      //colore bottone
-      button-bg:  green      //bg bottone
+      button-bg:  green,      //bg bottone
+
+      button-subtle: black,
+      button-subtle-bg: gray
     ),
 
     alternate: (
@@ -79,7 +85,10 @@
       overlay:    null,      //Colore sfondo overlay
 
       button:     null,      //colore bottone
-      button-bg:  green      //bg bottone
+      button-bg:  green,      //bg bottone
+
+      button-subtle: black,
+      button-subtle-bg: gray
     ),
 
     socket: (
@@ -99,7 +108,10 @@
       overlay:    null,      //Colore sfondo overlay
 
       button:     null,      //colore bottone
-      button-bg:  green      //bg bottone
+      button-bg:  green,      //bg bottone
+
+      button-subtle: black,
+      button-subtle-bg: gray
     ),
 
     footer: (
@@ -119,7 +131,10 @@
       overlay:    null,      //Colore sfondo overlay
 
       button:     null,      //colore bottone
-      button-bg:  green      //bg bottone
+      button-bg:  green,      //bg bottone
+
+      button-subtle: black,
+      button-subtle-bg: gray
     )
   );
 
