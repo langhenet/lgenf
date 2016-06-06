@@ -141,6 +141,27 @@
 }
 
 
+//****************************************************************************//
+//                                    BOTTONI SUBTLE
+//****************************************************************************//
+@mixin button-color-subtle($state:none, $palette:main) {
+
+  @if $state != hover {
+    background: palette($palette, button-bg-subtle);
+    color: palette($palette, button-subtle);
+    border-color: palette($palette, button-bg-subtle);
+    border-bottom-color: darken(palette($palette, button-bg-subtle), 10%);
+    opacity: 1;
+  }
+
+  @else {
+    background: darken(palette($palette, button-bg-subtle), 5%);
+    color: palette($palette, button-subtle);
+    border-color: palette($palette, button-bg-subtle);
+    border-bottom-color: darken(palette($palette, button-subtle-bg), 10%);
+  }
+}
+
 
 //****************************************************************************//
 //                                    FORMS
