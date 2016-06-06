@@ -20,8 +20,8 @@ body {
 
   margin:0 auto;
 
-  @include respond-to(step-2) { font-size: $font-size * 0.9;} //TODO
-  @include respond-to(step-4) { font-size: $font-size * 0.7;} //TODO
+  @include respond-to(step-1) { font-size: $font-size * 0.888888889;} //TODO
+  @include respond-to(step-4) { font-size: $font-size * 0.6666669;} //TODO
 }
 
 p, ul, ol, pre, table, blockquote {
@@ -49,7 +49,8 @@ h1, h2, h3, h4, h5 {
 h1 {
   @include size(h1);
   @include deco(h1);
-  @include respond-to(step-2) { font-size: font(h1, fs) * 0.7; }
+  @include respond-to(step-2) { font-size: font(h1, fs) * 0.8; }
+  @include respond-to(step-3) { font-size: font(h1, fs) * 0.7; }
 }
 
 ///*
@@ -64,6 +65,7 @@ h2 {
   @include size(h2);
   @include deco(h2);
   @include respond-to(step-2) { font-size: font(h2, fs) * 0.8; }
+  @include respond-to(step-3) { font-size: font(h2, fs) * 0.7; }
 }
 
 h3 {
