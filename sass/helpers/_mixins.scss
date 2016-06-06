@@ -122,7 +122,7 @@
 //  Nel caso specifico, verrà utilizzato un @each che looppa attraverso tutte
 //  le palette per costruire delle classi dinamiche basate sulle palette
 ///
-@mixin button-color($state:none) {
+@mixin button-color($state:none, $palette:main) {
 
   @if $state != hover {
     background: palette($palette, button-bg);
@@ -227,12 +227,12 @@
 ///
 // Overlay di colore da mettere sui ::before //TOCR
 ///
-@mixin color-overlay($bg-color: palette(main, overlay)) {
+@mixin color-overlay($palette: main) {
   content: '';
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left:0;
-  background: $bg-color;
+  background: palette($palette, overlay);
 }

@@ -66,10 +66,10 @@
 @each $palette, $bg in $colors {
   #top .#{$palette}_color .avia-color-theme-color,
   div .#{$palette}_color .button {
-    @include button-color;
+    @include button-color(none, $palette);
 
     &:hover {
-      @include button-color(hover);
+      @include button-color(hover, $palette);
     }
   }
 }
@@ -83,6 +83,21 @@
   #top .#{$palette}_color .avia-button.avia-color-light {
     border-color: white;
     color: white;
+    background: transparent;
+
+    &:hover {
+      border-color: palette($palette, body-alt);
+      color: palette($palette, bg-alt);
+      background: palette($palette, body-alt);
+      opacity: 1;
+    }
+  }
+}
+
+@each $palette, $bg in $colors {
+  #top .#{$palette}_color .avia-button.avia-color-dark {
+    border-color: palette($palette, border);
+    color: palette($palette, border);
     background: transparent;
 
     &:hover {
