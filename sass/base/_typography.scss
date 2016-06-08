@@ -20,7 +20,7 @@ body {
 
   margin:0 auto;
 
-  @include respond-to(step-1) { font-size: $font-size * 0.888888889;} //TODO
+  @include respond-to(step-0) { font-size: $font-size * 0.888888889;} //TODO
   @include respond-to(step-4) { font-size: $font-size * 0.6666669;} //TODO
 }
 
