@@ -139,9 +139,9 @@ blockquote {
  * Decorazione Link + HOVER
  */
 .content a {
-  //text-decoration: underline;
+  text-decoration: underline;
   //border-bottom: 1px dashed;
-  //font-weight: family(ff, bold);
+  font-weight: family(ff, bold);
 
   &:hover {
     //text-decoration: none;
@@ -150,6 +150,10 @@ blockquote {
   //rimuove eventuali decorazioni da immagini nel testo
   &.lightbox-added {
     border-bottom: none;
+    text-decoration: none;
+  }
+
+  @at-root .post-meta-infos a {
     text-decoration: none;
   }
 }
