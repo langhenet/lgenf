@@ -69,7 +69,7 @@
     @include button-color(none, $palette);
 
     &:hover {
-      @include button-color(hover, $palette);
+    @include button-color(none, $palette);
     }
   }
 }

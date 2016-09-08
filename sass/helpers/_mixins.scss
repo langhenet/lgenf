@@ -78,15 +78,15 @@
   @include size($size);
 
   @if $pw == half {
-    padding: bhpad($bw, font($size, fs), font($size, lh)) 1.5em;
+    padding: bhpad($bw, $size) 1.5em;
   }
 
   @else if $pw == quarter {
-    padding: bqpad($bw, font($size, fs), font($size, lh)) 1.5em;
+    padding: bqpad($bw, $size) 1.5em;
   }
 
   @else {
-    padding: bpad($bw, font($size, fs), font($size, lh)) 1.5em;
+    padding: bpad($bw, $size) 1.5em;
   }
 
   border-bottom-width: $bw * 1px;
@@ -99,7 +99,7 @@
 @mixin button-lh($size: p, $bw:2) {
   @include size($size);
 
-  line-height: blh($bw, font($size, fs), font($size, lh));
+  line-height: blh($bw, $size);
 
   padding: 0 1.5em;
   border-bottom-width: $bw * 1px;
@@ -173,7 +173,7 @@
 @mixin form-field($size: p, $bw: 1) {
   font-family: inherit;
   font-size: font($size, fs);
-  line-height: bpad($bw, font($size, fs), font($size, lh)) * 2; //TOCR - forse è più facile farla con la funzione blh?
+  line-height: bpad($bw, $size) * 2; //TOCR - forse è più facile farla con la funzione blh?
   margin-bottom: font($size, mb);
   margin-top: 0;
   padding: 0;
