@@ -79,15 +79,15 @@
   padding: $line-height * 2; //TODO
   margin: 0 !important; //TOCR - questo dovrebbe stare in un reset?
 
-  @include  respond-to(step-2) {
+  @include  breakpoint-max(lg) {
     padding: $line-height;
   }
 
-  @include  respond-to(step-3) {
+  @include  breakpoint-max(sm) {
     padding: $line-height*2;
   }
 
-  @include  respond-to(step-4) {
+  @include  breakpoint-max(sx) {
     padding: $line-height;
   }
 }
@@ -178,12 +178,12 @@
 ///
 .gform_wrapper .top_label li.gfield.gf_left_half,
 .gform_wrapper .top_label li.gfield.gf_right_half {
-  @include respond-to(step-2) {
+  @include breakpoint-max(md) {
     width: 100% !important;
     margin-right: 0% !important;
   }
 
-  @include respond-to(step-3) {
+  @include breakpoint-max(sm) {
     margin-right: 3.1% !important;
     width: 45.5% !important;
 

@@ -9,126 +9,167 @@
 // BASE DEL BODY
 ///
   $base: 16;
-  $font-size: 1.125em; //TODO
-  $line-height: 1.7777777777777777em; //TODO
+  $font-size: 1.1875em; //TODO
+  $line-height: 1.736842105263158em; //TODO
 
 
 ///
 // p and other standard elements
 ///
   $margin-top: 0em; //TODO
-  $margin-bottom: 1.7777777777777777em; //TODO
+  $margin-bottom: 1.5em; //TODO
 
 
 ///
 // Families
 ///
-  $font-family: 'Muli', sans-serif; //TODO
-  $font-family-heading: $font-family; //TODO
-  $font-family-special: 'Lora', serif; //TODO
-  $font-family-button: $font-family;
+  $serif: 'Roboto Slab', serif; //TODO
+  $sans: 'Lato', sans-serif; //TODO
+  $special: $serif; //TODO
+  $ff-button: $sans;
 
 
 ///
 // WEIGHTS per Families
 ///
-$weights: (
-  ff: (
-    family: $font-family,
-    u-thin: 100,
-    thin: 100,
-    light: 200,
+$families: (
+  serif: (
+    fm: $serif,
+    thin: 300,
     normal: 400,
     bold: 700,
+    bolder: 700,
   ),
 
-  ffh: (
-    family: $font-family-heading,
-    u-thin: 100,
-    thin: 200,
-    light: 300,
+  sans: (
+    fm: $sans,
+    thin: 400,
     normal: 400,
-    bold: 400,
+    bold: 700,
+    bolder: 900,
   ),
 
-  ffs: (
-    family: $font-family-special,
-    u-thin: 100,
-    thin: 100,
-    light: 200,
+  special: (
+    fm: $special,
+    thin: 300,
     normal: 400,
-    bold: 600,
+    bold: 700,
+    bolder: 700,
   ),
 );
 
+$decorations: (
+  p: (
+    fm: sans,
+    wt: normal,
+  ),
+
+  h1: (
+    fm: serif,
+    wt: thin
+  ),
+
+  h2: (
+    fm: serif,
+    wt: thin,
+  ),
+
+  h3: (
+    fm: serif,
+    wt: normal,
+  ),
+
+  h4: (
+    fm: serif,
+    wt: bold,
+  ),
+
+  h5: (
+    fm: serif,
+    wt: bold,
+  ),
+
+  small: (
+    fm: sans,
+    wt: normal,
+  ),
+);
 ////
 // Dimensioni & caratteristiche dei font principali
 ////
-  $fonts: (
+  $sizes: (
     p: (
       fs: 1em,
       lh: $line-height,
       mt: $margin-top,
       mb: $margin-bottom,
-      fm: family(ff, family),
-      wt: family(ff, normal),
     ),
 
     h1: (
-      fs: 6.333333333333333em,
-      lh: 1.1228070175438596em,
-      mt: 0.2807017543859649em,
-      mb: 0em,
-      fm: family(ffh, family),
-      wt: family(ffh, thin),
+      fs: 5.894736842105263em,
+      lh: 1.1785714285714286em,
+      mt: 0.29464285714285715em,
+      mb: 0,
     ),
 
     h2: (
-      fs: 3.4444444444444446em,
-      lh: 1.032258064516129em,
-      mt: 0.5161290322580645em,
-      mb: 0.5161290322580645em,
-      fm: family(ffh, family),
-      wt: family(ffh, thin),
+      fs: 3.263157894736842em,
+      lh: 1.0645161290322582em,
+      mt: 0.5322580645161291em,
+      mb: 0.5322580645161291em,
     ),
 
     h3: (
-      fs: 1.8333333333333333em,
-      lh: 1.9393939393939394em,
-      mt: 0.9696969696969697em,
-      mb: 0em,
-      fm: family(ffh, family),
-      wt: family(ffh, light),
+      fs: 1.736842105263158em,
+      lh: 1em,
+      mt: 1.5em,
+      mb: 0.5em,
     ),
 
     h4: (
       fs: 1em,
-      lh: 1.7777777777777777em,
-      mt: 1.7777777777777777em,
+      lh: 1.736842105263158em,
+      mt: 1.736842105263158em,
       mb: 0em,
-      fm: family(ffh, family),
-      wt: family(ffh, normal),
     ),
 
     h5: (
-      fs: 0.7777777777778em,
-      lh: 1.142857142857em,
-      mt: 1.9285714em,
-      mb: 0em,
-      fm: family(ffh, family),
-      wt: family(ffh, normal),
+      fs: 0.8421052631578947em,
+      lh: 1.03125em,
+      mt: 1.03125em,
+      mb: 0,
     ),
 
-    blockquote: (
-      fs: 2em,
+    small: (
+      fs: 0.75em,
       lh: 2em,
       mt: 2em,
-      mb: 0em,
-      fm: family(ffh, family),
-      wt: family(ffh, light),
-  ),
+      mb: 0,
+    ),
 );
 
+$mobile-sizes: (
+  h1: (
+    fs: 1.953125em,
+    lh: 1.538461538461538em,
+    mt: 1.536em,
+    mb: 0.768em,
+  ),
+
+  h2: (
+    fs: 1.5625em,
+    lh: 1.935483870967742em,
+    mt: 0.96em,
+    mb: 0.96em,
+  ),
+
+  h3: (
+    fs: 1.25em,
+    lh: 1.2em,
+    mt: 1.8em,
+    mb: 0.6em,
+  ),
+);
 
 ////
 // DETTAGLI
@@ -145,17 +186,17 @@ $weights: (
 
 $forms: (
   field: (
-    fm: family(ffh, family),
-    wt: family(ffh, normal),
+    fm: family(sans, fm),
+    wt: family(sans, normal),
   ),
 
   label: (
-    fm: family(ffh, family),
-    wt: family(ffh, normal),
+    fm: family(sans, fm),
+    wt: family(sans, normal),
   ),
 
   desc: (
-    fm: family(ffh, family),
-    wt: family(ffh, normal),
+    fm: family(sans, fm),
+    wt: family(sans, normal),
   ),
 );
