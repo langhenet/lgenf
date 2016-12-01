@@ -1,0 +1,9 @@
+.hr {
+  line-height: $line-height;
+  height: $line-height;
+}
+
+.hr-custom {
+  min-height: $line-height;
+  height: auto;
+}

@@ -1,0 +1,35 @@
+//***********************************************************************//
+//*                                                                     *//
+//*                     IL MENU DELLA PAGINA
+//*              descrizione - descrizione - descrizione
+//*                                                                     *//
+//***********************************************************************//
+
+#top .av-submenu-container {
+  font-size: 1em;
+  height: auto;
+}
+
+////
+// ELemento UL
+////
+.av-subnav-menu {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+////
+// Gli elementi LI
+////
+#top .av-subnav-menu > li {
+  @include font(small, $mt: 0);
+  padding: ( $line-height / 2 ) 0;
+  text-transform: uppercase;
+}
+
+#top .av-subnav-menu > li > a {
+  border-left-width: 0;
+}

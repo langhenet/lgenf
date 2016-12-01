@@ -50,10 +50,14 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   @include font(h1);
-
+  letter-spacing: -2px !important;
   @include breakpoint-max(sm) {
     @include m-size(h1);
   }
+}
+
+#intro h1 {
+  font-weight: normal;
 }
 
 ///*
@@ -66,6 +70,7 @@ h1 {
 
 h2 {
   @include font(h2);
+  letter-spacing: -1px !important;
 
   @include breakpoint-max(sm) {
     @include m-size(h2);
@@ -86,7 +91,10 @@ h5 { @include font(h3) }
  * Dettagli
  */
 
-hr { @include hr-spacing; }
+hr {
+  @include hr-spacing;
+}
+
 
 b, strong, em, small, code { line-height: 1; }
 
@@ -163,5 +171,14 @@ blockquote {
     &:hover {
       color: lighten(palette($palette, link), 20%);
     }
+  }
+}
+
+///
+// Colori Grassetti
+////
+@each $palette, $bg in $colors {
+  .#{$palette}_color strong {
+    color: lighten(palette($palette, body), 20%);
   }
 }

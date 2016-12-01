@@ -87,7 +87,7 @@
     padding: $line-height*2;
   }
 
-  @include  breakpoint-max(sx) {
+  @include  breakpoint-max(xs) {
     padding: $line-height;
   }
 }
@@ -104,6 +104,7 @@
   // Il Padding e i Margini dei campi standard
   ///
   ul li.gfield {
+    margin-top: 0;
     margin-bottom: $line-height !important;
     padding:0;
 
@@ -126,7 +127,7 @@
     height: $line-height;
 
       option {
-        font-size: font-size(h5, fs); //TODO
+        font-size: font-size(small, fs); //TODO
         line-height: $line-height;
         padding: ($line-height / 2) .125em;
       }
@@ -162,14 +163,14 @@
 ///
 .gform_wrapper .top_label .gfield_description {
   @include form-desc(); //TODO - selezionare la corrispondenza di dimensione
-  padding: (font(h5, lh) / 2) 0 !important;
+  padding: (size(small, lh) / 2) 0 !important;
 }
 ///
 // Sotto-etichette dei campi complessi (p.es nome)
 ///
 #top .ginput_complex label {
   @include form-desc(); //TODO - selezionare la corrispondenza di dimensione
-  padding: (font(h5, lh) / 2) 0!important;
+  padding: (size(small, lh) / 2) 0!important;
 }
 
 
@@ -200,7 +201,7 @@
 
 #top .gform_wrapper .gform_footer input.button {
   @extend %button;
-  @include button-lh(h3, 4); //TODO
+  @include button(h3, 4); //TODO
 
   width: 100%;
   border-right-width: 0;
@@ -213,90 +214,38 @@
 //****************************************************************************//
 //                            Colori FORM, LABEL e DESCRIZIONI CAMPI
 //****************************************************************************//
-
-/*
- * MAIN COLOR - bg del form e dei link
- */
-.main_color .gform_wrapper {
-  background: palette(main, bg-alt);
-
-
-  a {
-    color: palette(main, body-alt);
-    text-decoration: underline;
+////
+// BACKGROUND
+////
+@each $palette, $bg in $colors {
+  .#{$palette}_color .gform_wrapper {
+    background-color: palette($palette, bg-alt);
   }
 }
 
+@each $palette, $bg in $colors {
+  #top .#{$palette}_color {
 
-/*
- * MAIN COLOR - campi
- */
-#top .main_color .input-text,
-#top .main_color input[type='text'],
-#top .main_color input[type='input'],
-#top .main_color input[type='password'],
-#top .main_color input[type='email'],
-#top .main_color input[type='number'],
-#top .main_color input[type='url'],
-#top .main_color input[type='tel'],
-#top .main_color input[type='search'],
-#top .main_color textarea,
-#top .main_color select,
-#top .main_color .select2-container .select2-choice {
-  border-color: palette(main, border);
-  background: palette(main, bg);
-  color: palette(main, body-alt);
-}
+    .input-text,
+    input[type='text'],
+    input[type='input'],
+    input[type='password'],
+    input[type='email'],
+    input[type='number'],
+    input[type='url'],
+    input[type='tel'],
+    input[type='search'],
+    textarea,
+    select,
+    .select2-container .select2-choice {
+      border-color: palette(main, border);
+      background: palette(main, bg);
+      color: palette(main, body);
+    }
 
-
-/*
- * MAIN COLOR - label e descrizioni
- */
-#top .main_color label,
-#top .main_color .gfield_description {
-  color: palette(main, body);
-}
-
-
-
-
-/*
- * SOCKET COLOR - - bg del form e dei link
- */
-.socket_color .gform_wrapper {
-  background: palette(socket, bg-alt);
-
-  a {
-    color: palette(socket, body-alt);
-    text-decoration: underline;
+    label,
+    .gfield_description {
+      color: palette($palette, form-dec)
+    }
   }
 }
-
-
-/*
- * SOCKET COLOR - label e descrizioni
- */
-#top .socket_color label,
-#top .socket_color .gfield_description {
-  color: palette(socket, body-alt);
-}
-
-
-///
-// Quest cose erano presenti nel template... ma non sembrano necessarie. visto
-// che il margin bottom è già impostato a 0 in gravity mod
-///
-//#top .gform_wrapper .input-text,
-//#top .gform_wrapper input[type='text'],
-//#top .gform_wrapper input[type='input'],
-//#top .gform_wrapper input[type='password'],
-//#top .gform_wrapper input[type='email'],
-//#top .gform_wrapper input[type='number'],
-//#top .gform_wrapper input[type='url'],
-//#top .gform_wrapper input[type='tel'],
-//#top .gform_wrapper input[type='search'],
-//#top .gform_wrapper textarea,
-//#top .gform_wrapper select,
-//#top .gform_wrapper .select2-container .select2-choice  {
-//    margin-bottom: 0!important;
-//}
