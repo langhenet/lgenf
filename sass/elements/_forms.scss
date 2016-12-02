@@ -108,7 +108,7 @@
   ///
   ul li.gfield {
     margin-bottom: $line-height !important;
-    padding:0;
+    padding:0 ($line-height / 2) 0 ($line-height / 2) 0;
 
     ///
     // Campo HTML di gravity - check marigni
@@ -137,6 +137,7 @@
   }
 
 
+
   ///
   // Padding dei campi complessi (nome)
   ///
@@ -160,6 +161,26 @@
   }
 }
 
+//slargo il body - FIX CSS aggiornamento gravity
+.gform_wrapper .gform_body {
+  width: 100% !important;
+}
+
+//margine negativo per l'UL- FIX CSS aggiornamento gravity
+#top .gform_wrapper ul.gform_fields {
+  margin-left: -$line-height / 2 !important;
+  margin-right: -$line-height / 2 !important;
+}
+
+//annullo il margine top - FIX CSS aggiornamento gravity
+body .gform_wrapper ul.gform_fields li.gfield,
+.gform_wrapper .top_label li.gfield.gf_right_half {
+  margin-top: 0;
+}
+//annulla margine top della sezione HTML - FIX CSS aggiornamento gravity
+.gform_wrapper li.gfield.field_description_below+li.gsection {
+  margin-top: inherit !important;
+}
 
 ///
 // Descrizioni campi Gravity Forms
