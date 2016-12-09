@@ -67,9 +67,9 @@ $verde: #4CAF50;
 
       accent:     $viola,      //Accento - sfondo lista icone / grassetti / icone
 
-      body-alt:   $bianco,      //body alternativo - testo in un form o in un box
-      bg-alt:     mix($blu, $bianco, 75%),      //sfondo alt - il bg di un form o di un box
-      accent-alt: $bianco,      //accento alt - il di un link nel form
+      body-alt:   $nero,      //body alternativo - testo in un form o in un box
+      bg-alt:     $grigio-chiaro,      //sfondo alt - il bg di un form o di un box
+      accent-alt: $blu,      //accento alt - il di un link nel form
 
       overlay:    #000,      //Colore sfondo overlay
 
@@ -101,8 +101,8 @@ $verde: #4CAF50;
 
       overlay:    #000,      //Colore sfondo overlay
 
-      button:     null,      //colore bottone
-      button-bg:  green,      //bg bottone
+      button:     $bianco,      //colore bottone
+      button-bg:  $verde,      //bg bottone
 
       button-subtle: black,
       button-bg-subtle: gray,

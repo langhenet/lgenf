@@ -41,11 +41,18 @@
  */
 .content,
 .sidebar {
-  padding-top: $line-height * 6;
-  padding-bottom: $line-height * 6;
+  padding-top: $line-height * 4;
+  padding-bottom: $line-height * 4;
 }
 
+.content {
+  border: 0;
+  margin-right: 0;
+}
 
+.container {
+  padding: 0 ($line-height * 1.5)
+}
 
 
 //****************************************************************************//

@@ -1,9 +1,15 @@
 .hr {
   line-height: $line-height;
   height: $line-height;
+  margin-top: $line-height;
+  margin-bottom: $line-height;
 }
 
 .hr-custom {
   min-height: $line-height;
   height: auto;
+}
+
+#top .hr-invisible {
+  height: $line-height * 2;
 }

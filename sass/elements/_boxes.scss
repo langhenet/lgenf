@@ -8,7 +8,8 @@
 .iconbox .iconbox_content .iconbox_content_title {
   padding: 0;
   letter-spacing: 0;
-  margin-bottom: ($line-height / 2);
+  margin-bottom: 0;
+  font-weight: family(serif, bold);
 }
 
 //****************************************************************************//
@@ -81,6 +82,13 @@
   left: -0.5em;
 }
 
+
+///
+// Titolo
+///
+.iconbox .iconbox_content .iconbox_content_title {
+
+}
 //****************************************************************************//
 //                            ICONBOX - Icon Left / Right / BIG
 //****************************************************************************//

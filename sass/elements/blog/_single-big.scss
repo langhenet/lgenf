@@ -23,13 +23,45 @@
  * TITOLO
  */
 .entry-content-wrapper h1.post-title {
-  @include font(h1);
-  letter-spacing: -2px;
+  @include font(h2, $mt: 0);
 }
 
 /*
  * Meta - contenitore // uno span
  */
 .single-post .single-big .post-meta-infos {
-  background: blue;
+}
+
+.single-post h2 {
+  @include font(h3);
+}
+
+.single-post h3 {
+  @include font(h4);
+}
+
+///
+// AUTHOR box
+///
+.author-box {
+  position: relative;
+  display: inline-block;
+  padding: ($line-height * 1.5);
+  background: palette(main, bg-alt);
+}
+
+
+///
+// commenti
+///
+.comment-entry {
+  margin-top: ($line-height * 2);
+}
+
+.form-submit input {
+  @extend %button;
+
+  @include button(p);
+
+  text-transform: uppercase;
 }

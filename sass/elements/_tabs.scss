@@ -1,0 +1,49 @@
+.tab_inner_content {
+  margin-top: $line-height * 2;
+  margin-bottom: $line-height * 2;
+
+  h1:first-child,
+  h2:first-child,
+  h3:first-child,
+  h4:first-child {
+    margin-top: 0;
+  }
+}
+
+.noborder_tabs.sidebar_tab_left .tab_content {
+  padding-left: $line-height;
+}
+.noborder_tabs.sidebar_tab_right .tab_content {
+  padding-right: $line-height;
+}
+
+.av_one_full {
+  .tab_titles {
+    max-width: 350px;
+  }
+
+  .noborder_tabs.sidebar_tab_left .tab_content {
+    padding-left: $line-height * 2;
+  }
+  .noborder_tabs.sidebar_tab_right .tab_content {
+    padding-right: $line-height * 2;
+  }
+}
+
+
+
+
+//************************************************************************************************//
+// COLORI TAB VERTICALI
+//************************************************************************************************//
+
+@each $palette, $bg in $colors {
+  .#{$palette}_color .tab_titles {
+    background-color: palette($palette, bg-alt);
+  }
+}
+
+.noborder_tabs.sidebar_tab_left .tab_content,
+.noborder_tabs.sidebar_tab_right .tab_content {
+  z-index: 8;
+}

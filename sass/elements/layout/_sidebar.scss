@@ -1,0 +1,15 @@
+#top #main .sidebar {
+  border: 0;
+
+  .inner_sidebar {
+    margin-left: 0;
+    padding: ($line-height * 1.5);
+  }
+}
+
+@each $palette, $bg in $colors {
+
+  #top #main .#{$palette}_color .inner_sidebar {
+    background-color: palette($palette, bg-alt);
+  }
+}

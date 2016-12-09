@@ -138,19 +138,21 @@ blockquote {
 //                      COLORI TIPOGRAFIA
 //****************************************************************************//
 
-.socket_color {
-}
 
 /*
  * Decorazione Link + HOVER
  */
-.content a {
-  //text-decoration: underline;
-  //border-bottom: 1px dashed;
-  //font-weight: family(ff, bold);
+ #top .content h1 a,
+ #top .content h2 a,
+ #top .content h3 a,
+ #top .content h4 a,
+ #top .content h5 a,
+ #top .content h6 a,
+ #top .content p a {
+   text-decoration: underline;
 
   &:hover {
-    //text-decoration: none;
+    text-decoration: none;
   }
 
   //rimuove eventuali decorazioni da immagini nel testo
@@ -158,7 +160,13 @@ blockquote {
     border-bottom: none;
     text-decoration: none;
   }
+
+  &.underline--none {
+    text-decoration: none;
+  }
 }
+
+
 
 
 /*
@@ -180,5 +188,6 @@ blockquote {
 @each $palette, $bg in $colors {
   .#{$palette}_color strong {
     color: lighten(palette($palette, body), 20%);
+    font-weight: 600;
   }
 }

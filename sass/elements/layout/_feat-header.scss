@@ -10,8 +10,26 @@
 //                            GENERICO
 //****************************************************************************//
 
+.stretch_full.alternate_color {
+//  background: palette(header, bg-alt);
+}
 
+#top .title_container .container {
+  padding: ($line-height / 2) ($line-height * 1.5);
+}
 
+.title_container .main-title {
+  display: inline;
+  letter-spacing: 0 !important;
+  line-height: $line-height;
+}
+
+.title_container .breadcrumb {
+  @include font(small, $mt: 0);
+  position: relative;
+  float: right;
+  right: 0;
+}
 
 //****************************************************************************//
 //                            PAGINE

@@ -32,7 +32,7 @@
   input[type='search'],
   select,
   .select2-container .select2-choice {
-    @include form-field;
+    @include form-field(small);
   }
 
 
@@ -40,7 +40,7 @@
   // Dimensioni text area generica - anche gravity
   ///
   textarea {
-    @include form-field;
+    @include form-field(small);
     line-height: $line-height;
     min-height: $line-height * 6;
     padding: bpad(1);

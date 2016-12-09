@@ -14,12 +14,20 @@
     line-height: $line-height;
 
     &> a {
-      font-weight: 400; //TODO
-      padding: 0 35px; // TODO
+      font-weight: 600; //TODO
+      padding: 0 ($line-height / 1.5); // TODO
+      text-transform: uppercase;
 
       @include breakpoint-max(md) {
         padding: 0 20px;
       }
+    }
+
+    &> li:first-child > a {
+      padding-left: 0;
+    }
+    &> li:last-of-type > a {
+      padding-right: 0;
     }
   }
 }
