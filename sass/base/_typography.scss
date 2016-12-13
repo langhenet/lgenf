@@ -142,14 +142,8 @@ blockquote {
 /*
  * Decorazione Link + HOVER
  */
- #top .content h1 a,
- #top .content h2 a,
- #top .content h3 a,
- #top .content h4 a,
- #top .content h5 a,
- #top .content h6 a,
  #top .content p a {
-   text-decoration: underline;
+   text-decoration: none;
 
   &:hover {
     text-decoration: none;
@@ -166,6 +160,13 @@ blockquote {
   }
 }
 
+#top .content {
+  h1, h2, h3, h4, h5, h6 {
+    a.link--underline {
+      text-decoration: underline;
+    }
+  }
+}
 
 
 

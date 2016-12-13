@@ -4,22 +4,29 @@
 //*                    Posizione - Hover & Tipografia
 //*                                                                          *//
 //****************************************************************************//
-/*
- * Impostazione navigazione
- */
+
+///
+// UL
+///
 #avia-menu.av-main-nav {
   vertical-align: top; //TODO - può essere middle o bottom anche!
+  line-height: $line-height * 4;
 
   &> li {
-    line-height: $line-height;
+    line-height: $line-height * 2;
+    //height: $line-height * 4;
+
 
     &> a {
-      font-weight: 600; //TODO
+      font-weight: weights(sans, bold); //TODO
       padding: 0 ($line-height / 1.5); // TODO
       text-transform: uppercase;
 
       @include breakpoint-max(md) {
         padding: 0 20px;
+      }
+
+      &:hover {
       }
     }
 
@@ -27,7 +34,7 @@
       padding-left: 0;
     }
     &> li:last-of-type > a {
-      padding-right: 0;
+    //  padding-right: 0;
     }
   }
 }
@@ -37,10 +44,13 @@
  */
 .av-main-nav > li {
   // il font family della navigazione
-  //font-family: inherit;
+//  font-family: $serif;
+//  letter-spacing: 1px;
   //text-transform: uppercase;
+  @include font(p, $mb: 0);
 
   &:hover {
+    background: palette(header, bg-alt);
 
     &>a>span {
     //font-weight: 600;
@@ -60,12 +70,50 @@
     }
   }
 
-  &.current-menu-item {
+  &.current-menu-item,
+  &.current-page-ancestor,
+  &.current-menu-ancestor,
+  &.current-menu-parent,
+  &.current-page-parent {
+    background: palette(header, bg-alt);
     &>a>span {
-      font-weight: 600;
+    //  font-weight: 600;
     }
     &::after {
     //  @extend :hover::after; //estende l'elemento "corrente" con l'elemento grafico degli elementi ::hover
     }
   }
+}
+
+.av_header_transparency .av-main-nav > li {
+  &:hover {
+    background: palette(header, bg);
+  }
+  &.current-menu-item,
+  &.current-page-ancestor,
+  &.current-menu-ancestor,
+  &.current-menu-parent,
+  &.current-page-parent {
+    background: palette(header, bg);
+  }
+}
+
+//**********************************************************************************************//
+//          SOTTOMENU
+//**********************************************************************************************//
+.header_color .main_menu ul ul,
+.header_color ul ul li,
+.header_color .main_menu ul ul li a,
+.header_color .main_menu .menu ul li a {
+  background-color: palette(header, bg-alt);
+}
+
+.header_color ul ul li {
+  @include font(small, $mt: 0);
+  text-transform: uppercase;
+}
+
+.header_color .main_menu ul ul li a:hover,
+.header_color .main_menu .menu ul li a:hover {
+  background: palette(header, bg);
 }

@@ -14,7 +14,7 @@
 #top {
 
   form {
-    margin-bottom: $line-height; //TODO
+    margin-bottom: 0; //TODO
   }
 
 
@@ -33,6 +33,7 @@
   select,
   .select2-container .select2-choice {
     @include form-field(small);
+    padding: 0 1em !important;
   }
 
 
@@ -163,14 +164,14 @@
 ///
 .gform_wrapper .top_label .gfield_description {
   @include form-desc(); //TODO - selezionare la corrispondenza di dimensione
-  padding: (size(small, lh) / 2) 0 !important;
+  padding: 0 !important;
 }
 ///
 // Sotto-etichette dei campi complessi (p.es nome)
 ///
 #top .ginput_complex label {
   @include form-desc(); //TODO - selezionare la corrispondenza di dimensione
-  padding: (size(small, lh) / 2) 0!important;
+  padding: 0!important;
 }
 
 
@@ -219,7 +220,7 @@
 ////
 @each $palette, $bg in $colors {
   .#{$palette}_color .gform_wrapper {
-    background-color: palette($palette, bg-alt);
+    background-color: palette($palette, form-bg);
   }
 }
 
@@ -241,11 +242,15 @@
       border-color: palette(main, border);
       background: palette(main, bg);
       color: palette(main, body);
+
+      &:focus {
+        border-color: darken(palette($palette, border), 20%);
+      }
     }
 
     label,
     .gfield_description {
-      color: palette($palette, form-dec)
+      color: palette($palette, form-body)
     }
   }
 }

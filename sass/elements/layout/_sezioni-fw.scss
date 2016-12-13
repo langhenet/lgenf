@@ -108,14 +108,13 @@
 
 @include breakpoint-min(xl) {
   .av-flex-cells .flex_cell.av_one_half {
-    .flex_cell_inner {
+    .flex_cell_inner .av_textblock_section {
       max-width: 700px;
-      //background: #111;  //- control
     }
-    &:first-child .flex_cell_inner {
+    &:first-child .flex_cell_inner .av_textblock_section {
       float:right;
     }
-    &:last-child .flex_cell_inner {
+    &:last-child .flex_cell_inner .av_textblock_section {
       float:left;
     }
   }

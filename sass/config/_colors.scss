@@ -20,6 +20,7 @@
 ///
 $viola: #ec4079;
 $blu: #597591;
+$blu-brillante: #0097A7;
 $nero: #333333;
 $nero-scuro: #222222;
 $grigio-scuro: #686868;
@@ -31,16 +32,16 @@ $verde: #4CAF50;
   $colors: (
     header: (
       body:       $bianco,      //Corpo - testo
-      body-sec:   mix($blu, $bianco, 20%),      //Secondario - blockquote o blog meta
+      body-sec:   mix($blu-brillante, $bianco, 20%),      //Secondario - blockquote o blog meta
       heading:    $bianco,      //Titoli
       link:       $bianco,      //Link
-      bg:         $blu,      //Sfondo principale
+      bg:         $blu-brillante,      //Sfondo principale
       border:     $bianco,      //Bordi
 
       accent:     $bianco,      //Accento - sfondo lista icone / grassetti / icone
 
       body-alt:   $bianco,      //body alternativo - testo in un form o in un box
-      bg-alt:     mix($blu, $bianco, 75%),      //sfondo alt - il bg di un form o di un box
+      bg-alt:     mix($blu-brillante, $bianco, 75%),      //sfondo alt - il bg di un form o di un box
       accent-alt: $bianco,      //accento alt - il di un link nel form
 
       overlay:    #000,      //Colore sfondo overlay
@@ -52,8 +53,8 @@ $verde: #4CAF50;
       button-bg-subtle: gray,
 
       form-body: $nero,
-      form-bg: $bianco,
-      form-link: $blu,
+      form-bg: $grigio-chiaro,
+      form-link: $blu-brillante,
       form-desc: $nero
     ),
 
@@ -69,7 +70,7 @@ $verde: #4CAF50;
 
       body-alt:   $nero,      //body alternativo - testo in un form o in un box
       bg-alt:     $grigio-chiaro,      //sfondo alt - il bg di un form o di un box
-      accent-alt: $blu,      //accento alt - il di un link nel form
+      accent-alt: $blu-brillante,      //accento alt - il di un link nel form
 
       overlay:    #000,      //Colore sfondo overlay
 
@@ -89,11 +90,11 @@ $verde: #4CAF50;
       body:       $nero,      //Corpo - testo
       body-sec:   $grigio-scuro,      //Secondario - blockquote o blog meta
       heading:    $grigio-scuro,      //Titoli
-      link:       $blu,      //Link
+      link:       $blu-brillante,      //Link
       bg:         $grigio-chiaro,      //Sfondo principale
       border:     $grigio,      //Bordi
 
-      accent:     $blu,      //Accento - sfondo lista icone / grassetti / icone
+      accent:     $blu-brillante,      //Accento - sfondo lista icone / grassetti / icone
 
       body-alt:   $bianco,      //body alternativo - testo in un form o in un box
       bg-alt:     mix($viola, $bianco, 75%),      //sfondo alt - il bg di un form o di un box
@@ -109,7 +110,7 @@ $verde: #4CAF50;
 
       form-body: $nero,
       form-bg: $bianco,
-      form-link: $blu,
+      form-link: $blu-brillante,
       form-desc: $nero
     ),
 
@@ -165,7 +166,7 @@ $verde: #4CAF50;
 
       form-body: $nero,
       form-bg: $bianco,
-      form-link: $blu,
+      form-link: $blu-brillante,
       form-desc: $nero
     )
   );

@@ -4,10 +4,48 @@
 //*                    in versione LOGO affiancato a NAVIGAZIONE
 //*                                                                          *//
 //****************************************************************************//
+//****************************************************************************//
+//                 TOP BAR - decommentare per utilizzarla
+//****************************************************************************//
+
+/*
+ * Colori e altezza
+ */
+#top #header_meta {
+  background-color: palette(header, bg-alt); //TODO
+  line-height: $line-height; //TODO
+  margin-bottom:0;
+
+  a {
+    color: palette(header, body); //TODO
+  }
+
+  @include breakpoint-min(lg) {
+    display: none;
+  };
+}
+
+//****************************************************************************//
+//                 HEADER
+//****************************************************************************//
+
 /*
  * Altezza Header
  */
-.av_minimal_header #header_main .container.av-logo-container {
+
+.av_minimal_header #header_main .container.av-logo-container,
+.html_header_top.html_header_sticky.html_large .av_minimal_header #header_main .container {
   line-height: $line-height * 4; //TODO
   height: $line-height * 4; //TODO
+}
+
+
+////
+// Background Header
+////
+.header_color .header_bg {
+}
+
+.header_color.header-scrolled-full .header_bg {
+  //background: palette(header, bg-alt)
 }

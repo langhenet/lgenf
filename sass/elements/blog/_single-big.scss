@@ -20,16 +20,10 @@
 }
 
 /*
- * TITOLO
+ * TITOLO e titoli
  */
 .entry-content-wrapper h1.post-title {
   @include font(h2, $mt: 0);
-}
-
-/*
- * Meta - contenitore // uno span
- */
-.single-post .single-big .post-meta-infos {
 }
 
 .single-post h2 {
@@ -39,6 +33,25 @@
 .single-post h3 {
   @include font(h4);
 }
+
+/*
+ * TITOLO e titoli - con page builder
+ */
+.single-post {
+  .avia-section,
+  .av-layout-grid-container {
+    h1 { @include font(h1); }
+    h2 { @include font(h2); }
+    h3 { @include font(h3); } 
+  }
+}
+
+/*
+ * Meta - contenitore // uno span
+ */
+.single-post .single-big .post-meta-infos {
+}
+
 
 ///
 // AUTHOR box
