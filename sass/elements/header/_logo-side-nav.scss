@@ -35,8 +35,22 @@
 
 .av_minimal_header #header_main .container.av-logo-container,
 .html_header_top.html_header_sticky.html_large .av_minimal_header #header_main .container {
-  line-height: $line-height * 4; //TODO
-  height: $line-height * 4; //TODO
+  line-height: $line-height * 3; //TODO
+  height: $line-height * 3; //TODO
+}
+.av_minimal_header.header-scrolled-full #header_main .container.av-logo-container,
+.html_header_top.html_header_sticky.html_large .av_minimal_header.header-scrolled-full #header_main .container {
+  line-height: $line-height * 2 !important; //TODO
+  height: $line-height * 2 !important; //TODO
+
+  .logo img,
+  .logo a {
+    max-height: $line-height * 2 !important;
+  }
+}
+
+.av_minimal_header.header-scrolled-full #header_main {
+  box-shadow: 2px 2px 2px rgba(0,0,0, 0.2);
 }
 
 

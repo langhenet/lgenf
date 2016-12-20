@@ -11,3 +11,86 @@
 .content .widget .widgettitle {
   margin-top: $line-height;
 }
+
+.widget {
+  padding: 0;
+  margin-bottom: $line-height;
+  margin-top: $line-height;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+//************************************************************************************************//
+//          TITOLI
+//************************************************************************************************//
+///
+// Titoli in sidebar
+///
+.sidebar .widget .widgettitle {
+  margin-left: -$line-height * 1.5;
+  margin-right: -$line-height * 1.5;
+  padding: $line-height;
+  background: palette(header, bg);
+  color: palette(header, body);
+  margin-top: 0;
+  position: relative;
+  box-shadow: 2px 2px 4px rgba(0,0,0, 0.2);
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: 0 $line-height $line-height 0;
+    border-style: solid;
+    border-color: darken(palette(header, bg), 10%) palette(main, bg-alt);
+  }
+}
+
+//************************************************************************************************//
+//          WIDGET LATEST NEWS
+//************************************************************************************************//
+
+.news-thumb  {
+  padding: 0;
+  height: 36px;
+  width: 36px;
+}
+
+.news-thumb img,
+.news-thumb img {
+  height: 36px;
+  width: 36px;
+}
+
+.news-link {
+  .news-time {
+    display: none;
+  }
+}
+
+//************************************************************************************************//
+//          WIDGET WP ULTIMI ARTICOLI
+//************************************************************************************************//
+.recentcomments,
+.widget_recent_entries li {
+  padding: ($line-height / 2) 0;
+}
+
+//************************************************************************************************//
+//          WIDGET di TEST
+//************************************************************************************************//
+.widget_text {
+  margin-left: -$line-height * 1.5;
+  margin-right: -$line-height * 1.5;
+
+  img {
+    display: block;
+  }
+}

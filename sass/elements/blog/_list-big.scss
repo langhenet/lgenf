@@ -9,10 +9,24 @@
  * Immagine
  */
 ///
+// FIX display nel builder
+///
+.avia-section .big-preview.single-big {
+  display: block;
+  max-width: 770px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+///
 // Immagine - Elegant
 ///
 .big-preview {
   padding: 0;
+  max-width: 690px;
+  margin-left: auto;
+  //margin-right: auto;
+  padding-right: $line-height * 2;
 }
 ////
 // Pallino Autore
@@ -33,6 +47,13 @@
  */
 .entry-content-wrapper h2.post-title {
   @include font(h3);
+}
+/*
+ * Titolo & meta in builder
+ */
+#top .fullsize .template-blog .post-title,
+#top .fullsize .template-blog .post-meta-infos {
+  text-align: left;
 }
 
 .html_elegant-blog #top .post-entry .post-title {

@@ -40,8 +40,11 @@
 // * CON TOPBAR - HEADER STICKY e NAV INLINE
 // */
 .html_header_top.html_header_topbar_active.html_header_sticky.html_large #top #main {
-  padding-top: $line-height * 4;
+  padding-top: $line-height * 3;
 }
+
+
+
 /*
  * Margine Sopra Sidebar e contenuto
  */
@@ -60,6 +63,10 @@
   padding: 0 ($line-height * 1.5)
 }
 
+//padding del contenuto rispetto alla sidebar
+.content .entry-content-wrapper {
+  padding-right: $line-height * 2;
+}
 
 //****************************************************************************//
 //                               COLONNE

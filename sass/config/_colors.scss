@@ -19,6 +19,7 @@
 // Usare qui le variabili semantiche segnate sopra
 ///
 $viola: #ec4079;
+$viola-scuro: #d15379;
 $blu: #597591;
 $blu-brillante: #0097A7;
 $nero: #333333;
@@ -30,7 +31,7 @@ $bianco: #fff;
 $verde: #4CAF50;
 
   $colors: (
-    header: (
+    socket: (
       body:       $bianco,      //Corpo - testo
       body-sec:   mix($blu-brillante, $bianco, 20%),      //Secondario - blockquote o blog meta
       heading:    $bianco,      //Titoli
@@ -114,13 +115,13 @@ $verde: #4CAF50;
       form-desc: $nero
     ),
 
-    socket: (
+    header: (
       body:       $bianco,      //Corpo - testo
       body-sec:   mix($viola, $bianco, 20%),      //Secondario - blockquote o blog meta
       heading:    $bianco,      //Titoli
       link:       $bianco,      //Link
       bg:         $viola,      //Sfondo principale
-      border:     mix($viola, $bianco, 20%),      //Bordi
+      border:     mix($viola, $bianco, 0%),      //Bordi
 
       accent:     $bianco,      //Accento - sfondo lista icone / grassetti / icone
 

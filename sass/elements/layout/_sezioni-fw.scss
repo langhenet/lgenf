@@ -69,6 +69,16 @@
 
 
 //****************************************************************************//
+//                               FLEX COLUMN CONTAINER
+//****************************************************************************//
+.flex_column_table {
+  padding-top: $line-height;
+
+  &:first-child {
+    padding-top: 0;
+  }
+}
+//****************************************************************************//
 //                               FLEX CELLS
 //****************************************************************************//
 .flex_cell {
@@ -108,13 +118,19 @@
 
 @include breakpoint-min(xl) {
   .av-flex-cells .flex_cell.av_one_half {
-    .flex_cell_inner .av_textblock_section {
+    .flex_cell_inner .av_textblock_section,
+    .flex_cell_inner .tabcontainer,
+    .flex_cell_inner .avia-image-container {
       max-width: 700px;
     }
-    &:first-child .flex_cell_inner .av_textblock_section {
+    &:first-child .flex_cell_inner .av_textblock_section,
+    &:first-child .flex_cell_inner .tabcontainer,
+    &:first-child .flex_cell_inner .avia-image-container {
       float:right;
     }
-    &:last-child .flex_cell_inner .av_textblock_section {
+    &:last-child .flex_cell_inner .av_textblock_section,
+    &:last-child .flex_cell_inner .tabcontainer,
+    &:last-child .flex_cell_inner .avia-image-container {
       float:left;
     }
   }
