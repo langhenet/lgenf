@@ -108,3 +108,9 @@
   color: palette(header, body);
   border-color: palette(header, body)
 }
+
+.html_av-overlay-side #top .av-burger-overlay-scroll,
+#top .av-burger-overlay-scroll,
+.html_av-overlay-side .av-burger-overlay-scroll {
+  background: $bianco;
+}
