@@ -18,7 +18,7 @@
 // SEZIONI COLORI - //TODO
 // Usare qui le variabili semantiche segnate sopra
 ///
-$viola: #ec4079;
+$viola: #ed4179;
 $viola-scuro: #d15379;
 $blu: #597591;
 $blu-brillante: #0097A7;
@@ -82,7 +82,7 @@ $verde: #4CAF50;
       button-bg-subtle: gray,
 
       form-body: $nero,
-      form-bg: $bianco,
+      form-bg: $grigio-chiaro,
       form-link: $viola,
       form-desc: $nero,
     ),
@@ -98,7 +98,7 @@ $verde: #4CAF50;
       accent:     $blu-brillante,      //Accento - sfondo lista icone / grassetti / icone
 
       body-alt:   $bianco,      //body alternativo - testo in un form o in un box
-      bg-alt:     mix($viola, $bianco, 75%),      //sfondo alt - il bg di un form o di un box
+      bg-alt:     $grigio-scuro,      //sfondo alt - il bg di un form o di un box
       accent-alt: $bianco,      //accento alt - il di un link nel form
 
       overlay:    #000,      //Colore sfondo overlay
@@ -109,10 +109,10 @@ $verde: #4CAF50;
       button-subtle: black,
       button-bg-subtle: gray,
 
-      form-body: $nero,
-      form-bg: $bianco,
+      form-body: $bianco,
+      form-bg: $grigio-scuro,
       form-link: $blu-brillante,
-      form-desc: $nero
+      form-desc: $bianco
     ),
 
     header: (

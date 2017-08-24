@@ -17,6 +17,14 @@
     margin-bottom: 0; //TODO
   }
 
+.gform_wrapper .gform_body {
+  width: auto;
+
+  .gform_fields {
+    margin-left: -$line-height !important;
+    margin-right: -$line-height !important;
+  }
+}
 
   ///
   // Dimensioni dei Campi generici - anche gravity
@@ -107,7 +115,25 @@
   ul li.gfield {
     margin-top: 0;
     margin-bottom: $line-height !important;
-    padding:0;
+    padding:0 ($line-height / 2);
+
+    // CAMPI COMPLESSI: MArgine negativo e padding:
+    .ginput_complex {
+
+      &.has_street {
+        padding: 0;
+        margin: 0;
+
+        span {
+          margin-bottom: $line-height !important;
+          display: inline-block;
+
+          &.ginput_full {
+            width: 100%;
+          }
+        }
+      }
+    }
 
     ///
     // Campo HTML di gravity - check marigni
@@ -239,8 +265,8 @@
     textarea,
     select,
     .select2-container .select2-choice {
-      border-color: palette(main, border);
-      background: palette(main, bg);
+      border-color: darken( palette(main, border), 5%);
+      background-color: palette(main, bg);
       color: palette(main, body);
 
       &:focus {

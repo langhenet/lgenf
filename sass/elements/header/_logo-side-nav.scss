@@ -12,15 +12,16 @@
  * Colori e altezza
  */
 #top #header_meta {
-  background-color: palette(header, bg-alt); //TODO
+  background-color: transparent; //TODO
   line-height: $line-height; //TODO
   margin-bottom:0;
+  //border-bottom: 0;
 
   a {
     color: palette(header, body); //TODO
   }
 
-  @include breakpoint-min(lg) {
+  @include breakpoint-min(md) {
     display: none;
   };
 }
@@ -39,7 +40,8 @@
   height: $line-height * 3; //TODO
 }
 .av_minimal_header.header-scrolled-full #header_main .container.av-logo-container,
-.html_header_top.html_header_sticky.html_large .av_minimal_header.header-scrolled-full #header_main .container {
+.html_header_top.html_header_sticky.html_large .av_minimal_header.header-scrolled-full #header_main .container,
+.html_header_top.html_header_sticky.html_large .av_minimal_header.header-scrolled #header_main .container {
   line-height: $line-height * 2 !important; //TODO
   height: $line-height * 2 !important; //TODO
 
@@ -49,7 +51,8 @@
   }
 }
 
-.av_minimal_header.header-scrolled-full #header_main {
+.av_minimal_header.header-scrolled-full #header_main,
+.av_minimal_header.header-scrolled #header_main, {
   box-shadow: 2px 2px 2px rgba(0,0,0, 0.2);
 }
 

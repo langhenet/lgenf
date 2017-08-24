@@ -96,8 +96,8 @@
 
 @each $palette, $bg in $colors {
   #top .#{$palette}_color .avia-button.avia-color-dark {
-    border-color: palette($palette, border);
-    color: palette($palette, border);
+    border-color: palette($palette, bg-alt);
+    color: palette($palette, bog-alt);
     background: transparent;
 
     &:hover {

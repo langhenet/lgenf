@@ -20,10 +20,6 @@
    font-family: $sans;
    text-rendering: optimizeLegibility;
    text-rendering: geometricPrecision;
-
-   @include breakpoint-max(lg) {
-     font-size: $font-size / 1.111111111111111;
-   }
  }
 
 p, ul, ol, pre, table, blockquote {
@@ -51,7 +47,7 @@ h1, h2, h3, h4, h5 {
 h1 {
   @include font(h1);
   letter-spacing: -2px !important;
-  @include breakpoint-max(sm) {
+  @include breakpoint-max(md) {
     @include m-size(h1);
   }
 }
@@ -72,7 +68,7 @@ h2 {
   @include font(h2);
   letter-spacing: -1px !important;
 
-  @include breakpoint-max(sm) {
+  @include breakpoint-max(md) {
     @include m-size(h2);
   }
 }
@@ -81,7 +77,12 @@ h2 {
   text-transform: none;
 }
 
-h3 { @include font(h3) }
+h3 {
+  @include font(h3)
+  @include breakpoint-max(md) {
+    @include m-size(h3);
+  }
+}
 
 h4 { @include font(h4) }
 

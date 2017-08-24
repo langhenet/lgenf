@@ -1,0 +1,22 @@
+//*==========================================================================*//
+//*                                                                          *//
+//*                       POST SINGOLO - BIG IMAGE
+//*                          DIMENSIONI & FACE
+//*                                                                          *//
+//*==========================================================================*//
+
+.slide-entry {
+  margin-bottom: $line-height;
+}
+
+///
+// META
+///
+.avia-content-slider .slide-meta {
+  padding-bottom: 0;
+}
+
+.avia-content-slider .slide-meta div,
+.avia-content-slider .slide-meta time {
+  @include size(small);
+}

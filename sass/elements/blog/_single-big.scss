@@ -24,10 +24,16 @@
  */
 .entry-content-wrapper h1.post-title {
   @include font(h2, $mt: 0);
+  @include breakpoint-max(md) {
+    @include m-size(h2);
+  }
 }
 
 .single-post h2 {
   @include font(h3);
+  @include breakpoint-max(md) {
+    @include m-size(h3);
+  }
 }
 
 .single-post h3 {
@@ -40,9 +46,29 @@
 .single-post {
   .avia-section,
   .av-layout-grid-container {
-    h1 { @include font(h1); }
-    h2 { @include font(h2); }
-    h3 { @include font(h3); }
+    h1 {
+        @include font(h1);
+
+        @include breakpoint-max(md) {
+          @include m-size(h1);
+        }
+      }
+
+    h2 {
+      @include font(h2);
+
+      @include breakpoint-max(md) {
+        @include m-size(h2);
+      }
+    }
+
+    h3 {
+      @include font(h3);
+
+      @include breakpoint-max(md) {
+        @include m-size(h3);
+      }
+    }
   }
 }
 
@@ -57,7 +83,7 @@
 // AUTHOR box
 ///
 .author-box {
-  
+
   display: inline-block;
   padding: ($line-height * 1.5);
   background: palette(main, bg-alt);

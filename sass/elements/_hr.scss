@@ -1,12 +1,12 @@
 .hr {
-  line-height: $line-height;
-  height: $line-height;
-  margin-top: $line-height;
-  margin-bottom: $line-height;
+  line-height: $line-height * 2;
+  height: $line-height * 2;
+  margin-top: $line-height * 1.5;
+  margin-bottom: $line-height * 1.5;
 }
 
 .hr-custom {
-  min-height: $line-height;
+  min-height: $line-height * 2;
   height: auto;
 }
 

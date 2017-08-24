@@ -36,16 +36,22 @@
       padding-left: 0;
     }
     &> li:last-of-type > a {
-    //  padding-right: 0;
+      padding-right: ($line-height / 1.5);
     }
   }
+}
+
+.html_main_nav_header.html_logo_left #top .main_menu .menu>li:last-child>a,
+.html_bottom_nav_header #top #menu-item-search>a {
+  padding-right: ($line-height / 1.5);
 }
 
 .header-scrolled  #avia-menu.av-main-nav {
   padding-top: $line-height * 0.5;
   &> li {
       border-bottom-color: transparent;
-      
+      padding-bottom: bhpad(5, p);
+
   }
 }
 
@@ -116,11 +122,20 @@
 //**********************************************************************************************//
 //          SOTTOMENU
 //**********************************************************************************************//
+
+.header_color .main_menu ul ul {
+  margin-top: 5px;
+}
+
+.header_color.header-scrolled-full .main_menu ul ul {
+}
+
 .header_color .main_menu ul ul,
 .header_color ul ul li,
 .header_color .main_menu ul ul li a,
 .header_color .main_menu .menu ul li a {
-  background-color: palette(header, bg-alt);
+  background-color: palette(header, body);
+  color: palette(main, body)
 }
 
 .header_color ul ul li {
@@ -131,4 +146,25 @@
 .header_color .main_menu ul ul li a:hover,
 .header_color .main_menu .menu ul li a:hover {
   background: palette(header, bg);
+}
+
+/*************************
+** MOBILE NAV
+*******************************/
+
+.html_av-overlay-side.av-burger-overlay-active-delayed .av-burger-overlay-scroll,
+.html_av-overlay-side #top .av-burger-overlay-scroll {
+  background: $grigio-chiaro;
+
+  a {
+    color: $grigio-scuro !important;
+  }
+
+  ul li ul li {
+    background-color: transparent !important;
+
+    a {
+      background-color: transparent !important;
+    }
+  }
 }

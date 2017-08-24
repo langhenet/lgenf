@@ -19,6 +19,10 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @include breakpoint-max(lg) {
+    justify-content: center;
+  }
 }
 
 ////
