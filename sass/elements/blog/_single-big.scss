@@ -105,3 +105,16 @@
 
   text-transform: uppercase;
 }
+
+/*
+ * Immagini con Caption
+ */
+#top.single-post .wp-caption {
+  margin-top: 0;
+  margin-bottom: $line-height;
+
+  .wp-caption-text {
+    @include font(h5, $mt: 0, $wt: normal);
+    padding: size(h5, lh) / 2 0;
+  }
+}
