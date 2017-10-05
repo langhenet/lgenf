@@ -23,21 +23,21 @@
  * TITOLO e titoli
  */
 .entry-content-wrapper h1.post-title {
-  @include font(h2, $mt: 0);
+  @include m-size(h1, $mt: 0);
+  @include breakpoint-max(md) {
+    @include m-size(h1);
+  }
+}
+
+.single-post h2 {
+  @include m-size(h2);
   @include breakpoint-max(md) {
     @include m-size(h2);
   }
 }
 
-.single-post h2 {
-  @include font(h3);
-  @include breakpoint-max(md) {
-    @include m-size(h3);
-  }
-}
-
 .single-post h3 {
-  @include font(h4);
+  @include m-size(h3);
 }
 
 /*
@@ -116,5 +116,17 @@
   .wp-caption-text {
     @include font(h5, $mt: 0, $wt: normal);
     padding: size(h5, lh) / 2 0;
+  }
+}
+
+///
+// Related Entries
+///
+.main_color .related_posts.av-related-style-full a {
+  background: transparent;
+  border: 0;
+
+  strong {
+    @include font(h5, $wt: normal, $fm: primary);
   }
 }

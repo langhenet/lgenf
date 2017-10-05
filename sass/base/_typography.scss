@@ -17,7 +17,7 @@
  body {
    font-size: $font-size;
    line-height: $line-height;
-   font-family: $sans;
+   font-family: $ff-primary;
    text-rendering: optimizeLegibility;
    text-rendering: geometricPrecision;
  }
@@ -192,4 +192,38 @@ blockquote {
     color: lighten(palette($palette, body), 20%);
     font-weight: 600;
   }
+}
+
+.main_color .evidenzia {
+  color: $bianco;
+  background-color: $viola;
+  padding: 0 0.25em;
+}
+
+.main_color .successo {
+  color: $verde;
+  font-weight: bold;
+  zoom: 1.1;
+  position: relative;
+  bottom: -$line-height / 32;
+  line-height: 0;
+  text-transform: uppercase;
+}
+.main_color .errore {
+  color: $rosso;
+  font-weight: bold;
+  zoom: 1.1;
+  position: relative;
+  bottom: -$line-height / 32;
+  line-height: 0;
+  text-transform: uppercase;
+}
+.main_color .forse {
+  color: $arancio;
+  font-weight: bold;
+  zoom: 1.1;
+  position: relative;
+  bottom: -$line-height / 32;
+  line-height: 0;
+  text-transform: uppercase;
 }
