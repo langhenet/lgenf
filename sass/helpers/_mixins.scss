@@ -132,7 +132,7 @@
 //  Nel caso specifico, verrà utilizzato un @each che looppa attraverso tutte
 //  le palette per costruire delle classi dinamiche basate sulle palette
 ///
-@mixin button-color($state:none) {
+@mixin button-color($palette: main, $state:none) {
 
   @if $state != hover {
     background: palette($palette, button-bg);
@@ -154,7 +154,7 @@
 //****************************************************************************//
 //                       COLORI BOTTONI SUBTLE
 //****************************************************************************//
-@mixin button-subtle-color($state:none) {
+@mixin button-subtle-color($palette: main, $state:none) {
 
   @if $state != hover {
     background: palette($palette, button-subtle-bg);
