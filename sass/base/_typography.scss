@@ -143,8 +143,9 @@ blockquote {
 /*
  * Decorazione Link + HOVER
  */
- #top .content p a {
-   text-decoration: none;
+ #top .entry-content a,
+ #top .av_textblock_section a {
+   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 
   &:hover {
     text-decoration: none;
@@ -175,11 +176,26 @@ blockquote {
  * Colore Link + HOVER
  */
 @each $palette, $bg in $colors {
-  .#{$palette}_color .content a {
-    color: palette($palette, link);
 
-    &:hover {
-      color: lighten(palette($palette, link), 20%);
+  #top .#{$palette}_color .entry-content a,
+  #top .#{$palette}_color .av_textblock_section  a {
+      background-image: linear-gradient(to top,transparent,transparent 0.5px, palette($palette, link) -0.8px, palette($palette, link) 1.4px,transparent 1.2px);
+      color: palette($palette, body);
+      text-shadow: -1px -1px 0 palette($palette, bg), 1px -1px 0 palette($palette, bg), -1px 1px 0 palette($palette, bg), 1px 1px 0 palette($palette, bg);
+
+      &:hover {
+        color: palette($palette, link);
+        text-decoration: none;
+      }
+  }
+
+  #top .#{$palette}_color .entry-content,
+  #top .#{$palette}_color .av_textblock_section {
+    h1, h2, h3, h4, h5 {
+      a {
+        background-image: none;
+        text-shadow: none
+      }
     }
   }
 }

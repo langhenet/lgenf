@@ -104,3 +104,45 @@
   border-radius: 100%;
   margin-right: 0.5em;
 }
+
+//****************************************************************************//
+//                            TOC
+//****************************************************************************//
+
+#top .toc {
+  position: fixed;
+  top: 20%;
+  right: 0;
+  z-index: 999999;
+  padding: 1.5em 1.5em;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  width: 300px;
+}
+
+#top .main_color .toc {
+  background: rgba(palette(header, bg), 0.8);
+
+  h3,
+  ul li {
+    color: palette(header, body);
+    a {
+      background-image: none;
+      color: palette(header, link);
+      text-shadow: none;
+
+      &:hover {
+        color: palette(header, link);
+        text-decoration: none;
+      }
+    }
+
+    ul li {
+      @include font(small, $mb: 0, $mt: 0);
+    }
+  }
+
+  @include breakpoint-max(xl) {
+    position: relative;
+    width: 100%;
+  }
+}
