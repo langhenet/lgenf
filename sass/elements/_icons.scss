@@ -8,6 +8,7 @@
 //****************************************************************************//
 //                            ICON LIST - colori
 //****************************************************************************//
+
 /*
  * Main color
  */
@@ -62,11 +63,21 @@
 //****************************************************************************//
 //                            ICON LIST - Layout
 //****************************************************************************//
+.entry-content-wrapper .avia-icon-list {
+  list-style: none;
+}
+
+
 ////
 // Lista
 ////
 .avia-icon-list li {
   padding-bottom: $line-height;
+  margin-left: 0;
+
+  &.avia_start_animation {
+    padding: 0;
+  }
 }
 
 ////
@@ -80,6 +91,9 @@
   border-radius: 100%;
   margin-right: 1em;
   margin-left: 0;
+  text-align: center;
+
+
 
   [data-av_icon]:before {
     line-height: 2.3em;
@@ -89,6 +103,22 @@
 .avia-icon-list-right .iconlist_icon {
   margin-right: 0;
   margin-left: 1em;
+  float: right;
+}
+
+.avia-icon-list-right * {
+  text-align: right;
+}
+
+.avia-icon-list-left .iconlist_icon {
+  float: left;
+}
+
+////
+// descrizione
+///
+.iconlist_content_wrap {
+  overflow: auto;
 }
 
 ////
@@ -97,4 +127,20 @@
 .avia-icon-list .iconlist_title {
   margin-top: 0;
   top: 0;
+  text-transform: uppercase;
+}
+
+
+/**************************
+/* ICONBOX
+*****************************/
+.iconbox {
+  .iconbox_icon,
+  .iconbox_content_title  {
+    display: inline-block;
+  }
+
+  &_left .iconbox_icon {
+    margin-right: 0.5em;
+  }
 }

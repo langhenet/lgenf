@@ -133,6 +133,9 @@
   white-space: normal;
   border-style: solid;
   box-shadow: $button-shadow;
+  text-decoration: none !important;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 ///
@@ -161,6 +164,9 @@
 
   border-bottom-width: $bw * 1px;
   border-top-width: $bw * 1px;
+  border-right-width: $bw * 1px;
+  border-left-width: $bw * 1px;
+  text-shadow: none !important;
 }
 
 ///
