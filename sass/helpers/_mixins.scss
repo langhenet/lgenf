@@ -69,6 +69,7 @@
   white-space: normal;
   border-style: solid;
   box-shadow: $button-shadow;
+  text-decoration: none !important;
 }
 
 ///
@@ -103,6 +104,8 @@
   border-top-width: $bw * 1px;
   border-left-width: $bw * 1px;
   border-right-width: $bw * 1px;
+  text-decoration: none !important;
+  text-shadow: none !important;
 }
 
 ///
