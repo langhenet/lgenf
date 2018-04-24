@@ -55,3 +55,62 @@
   background: palette(alternate, accent);
   color: palette(alternate, bg);
 }
+
+.entry-content-wrapper .avia-icon-list {
+ List-style: none;
+}
+
+.avia-icon-list li {
+  margin-left: 0;
+}
+
+.avia-icon-list .iconlist_icon {
+Text-align: center;
+}
+
+.avia-icon-list-right .iconlist_icon {
+  margin-right: 0;
+  margin-left: 1em;
+  float: right;
+}
+
+.avia-icon-list-right * {
+  text-align: right;
+}
+
+.avia-icon-list-right .iconlist_icon {
+  margin-right: 0;
+  margin-left: 1em; // CHECK
+  float: right;
+}
+
+.avia-icon-list-right * {
+  text-align: right;
+}
+
+.avia-icon-list-left .iconlist_icon {
+  float: left;
+}
+
+////
+// descrizione
+///
+.iconlist_content_wrap {
+  overflow: auto;
+}
+
+
+
+/***
+ ICONBOX */
+
+.iconbox {
+  .iconbox_icon,
+  .iconbox_content_title  {
+    display: inline-block;
+  }
+
+  &_left .iconbox_icon {
+    margin-right: 0.5em;
+  }
+}
